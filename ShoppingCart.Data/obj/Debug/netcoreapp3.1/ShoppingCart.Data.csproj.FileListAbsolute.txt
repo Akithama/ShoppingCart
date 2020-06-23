@@ -1,8 +1,0 @@
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\bin\Debug\netcoreapp3.1\ShoppingCart.Data.deps.json
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\bin\Debug\netcoreapp3.1\ShoppingCart.Data.dll
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\bin\Debug\netcoreapp3.1\ShoppingCart.Data.pdb
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\obj\Debug\netcoreapp3.1\ShoppingCart.Data.csprojAssemblyReference.cache
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\obj\Debug\netcoreapp3.1\ShoppingCart.Data.AssemblyInfoInputs.cache
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\obj\Debug\netcoreapp3.1\ShoppingCart.Data.AssemblyInfo.cs
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\obj\Debug\netcoreapp3.1\ShoppingCart.Data.dll
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.Data\obj\Debug\netcoreapp3.1\ShoppingCart.Data.pdb
