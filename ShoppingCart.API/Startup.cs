@@ -1,21 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using ShoppingCart.API.Helpers;
-using ShoppingCart.API.Services;
-using ShoppingCart.API.Services.Interfaces;
+using ShoppingCart.Data.Models;
+using ShoppingCart.Data.Services;
+using ShoppingCart.Data.Services.Interfaces;
+using System;
+using System.Text;
+using AutoMapper;
 
 namespace ShoppingCart.API
 {
@@ -33,6 +30,7 @@ namespace ShoppingCart.API
         {
             services.AddCors();
             services.AddControllers();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());            
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -61,6 +59,9 @@ namespace ShoppingCart.API
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
+
+            services.AddDbContext<ShoppingCartContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("CartDatabase")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
