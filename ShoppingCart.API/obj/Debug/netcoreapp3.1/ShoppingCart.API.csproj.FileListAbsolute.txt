@@ -1,7 +1,5 @@
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfoInputs.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfo.cs
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csprojAssemblyReference.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\appsettings.json
@@ -63,3 +61,17 @@ D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.pdb
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.genruntimeconfig.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache

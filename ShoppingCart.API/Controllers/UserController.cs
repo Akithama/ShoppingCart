@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ShoppingCart.API.Helpers;
@@ -23,19 +24,23 @@ namespace ShoppingCart.API.Controllers
         private IUserService userService;
         private IMapper mapper;
         private readonly AppSettings appSettings;
+        private readonly ILogger logger;
 
-        public UserController(IUserService _userService, IMapper _mapper, IOptions<AppSettings> _appSettings)
+        public UserController(ILogger<UserController> _logger, IUserService _userService, IMapper _mapper,
+            IOptions<AppSettings> _appSettings)
         {
             userService = _userService;
             appSettings = _appSettings.Value;
             mapper = _mapper;
+            logger = _logger;
         }
 
         [AllowAnonymous]
         [HttpGet("Test")]
         public IEnumerable<string> Get()
         {
-            return new string[] { "API", "Working" };
+            logger.LogInformation("Start : API Working Log...");
+            return new string[] { "API", "Working User Controller......" };
         }
 
         [AllowAnonymous]
@@ -71,7 +76,8 @@ namespace ShoppingCart.API.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(new { message = ex.Message });
+                logger.LogError("Error : ", ex.Message);
+                return BadRequest(new { message = ex.Message });                
             }
         }
 

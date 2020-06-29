@@ -1,0 +1,26 @@
+2020-06-28 20:27:12.707 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-28 20:27:13.971 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-28 20:27:13.972 +05:30 [Information] Hosting environment: "Development"
+2020-06-28 20:27:13.977 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-06-28 20:27:14.025 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-06-28 20:27:14.036 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-06-28 20:27:14.316 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-06-28 20:27:14.423 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-06-28 20:27:15.170 +05:30 [Information] Start : 
+2020-06-28 20:27:15.180 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-06-28 20:27:15.218 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 782.2012ms
+2020-06-28 20:27:15.220 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-06-28 20:27:15.226 +05:30 [Information] Request finished in 1211.0222ms 200 application/json; charset=utf-8
+2020-06-28 20:29:38.115 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-06-28 20:29:38.749 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-06-28 20:29:38.749 +05:30 [Information] Hosting environment: "Development"
+2020-06-28 20:29:38.749 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-06-28 20:29:38.812 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-06-28 20:29:38.829 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-06-28 20:29:39.040 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-06-28 20:29:39.089 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-06-28 20:29:39.787 +05:30 [Information] Start : API Working Log.........
+2020-06-28 20:29:39.795 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-06-28 20:29:39.823 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 724.5324ms
+2020-06-28 20:29:39.824 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-06-28 20:29:39.829 +05:30 [Information] Request finished in 1025.1173ms 200 application/json; charset=utf-8
