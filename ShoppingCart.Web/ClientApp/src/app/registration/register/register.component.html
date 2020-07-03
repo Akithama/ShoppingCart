@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <div class="card-header text-center">
+                <h3>Register</h3>
+            </div>
+            <div class="card-body">
+                <form #loginForm="ngForm" (ngSubmit)="register()">
+                    <div class="form-group">
+                      <label for="username">Username</label>
+                      <input id="username" class="form-control" [ngClass]="{ 'is-invalid': username.touched && username.invalid }"
+                             name="username" #username="ngModel" [(ngModel)]="userRegistration.username" required />
+                      <span class="invalid-feedback">Username can't be blank.</span>
+                    </div>
+          
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" id="password" name="password" class="form-control"
+                             [ngClass]="{ 'is-invalid': password.touched && password.invalid }" #password="ngModel" [(ngModel)]="userRegistration.password" required />
+                      <span class="invalid-feedback">Password can't be blank.</span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="firstname">FirstName</label>
+                      <input id="firstname" class="form-control" [ngClass]="{ 'is-invalid': firstname.touched && firstname.invalid }"
+                             name="firstname" #firstname="ngModel" [(ngModel)]="userRegistration.firstname" required />
+                      <span class="invalid-feedback">FirstName can't be blank.</span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="lastname">Last Name</label>
+                      <input id="lastname" class="form-control" [ngClass]="{ 'is-invalid': lastname.touched && lastname.invalid }"
+                             name="lastname" #lastname="ngModel" [(ngModel)]="userRegistration.lastname" required />
+                      <span class="invalid-feedback">Last Name can't be blank.</span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input id="email" class="form-control" [ngClass]="{ 'is-invalid': email.touched && email.invalid }"
+                             name="email" #email="ngModel" [(ngModel)]="userRegistration.email" required />
+                      <span class="invalid-feedback">E-mail can't be blank.</span>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="mobilenumber">Mobile Number</label>
+                      <input id="mobilenumber" class="form-control" [ngClass]="{ 'is-invalid': mobilenumber.touched && mobilenumber.invalid }"
+                             name="mobilenumber" #mobilenumber="ngModel" [(ngModel)]="userRegistration.mobilenumber" required />
+                      <span class="invalid-feedback">Mobile Number can't be blank.</span>
+                    </div>
+                   
+                    <button class="btn btn-primary btn-block" [disabled]="loginForm.invalid">Register</button>
+                  </form>
+            </div>
+        </div>
+        
+    </div>
+</div>

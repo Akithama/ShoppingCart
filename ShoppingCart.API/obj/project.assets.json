@@ -6583,11 +6583,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.API\\ShoppingCart.API.csproj",
+      "projectUniqueName": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.API\\ShoppingCart.API.csproj",
       "projectName": "ShoppingCart.API",
-      "projectPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.API\\ShoppingCart.API.csproj",
+      "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.API\\ShoppingCart.API.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.API\\obj\\",
+      "outputPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6605,8 +6605,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
-              "projectPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj"
+            "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
+              "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj"
             }
           }
         }

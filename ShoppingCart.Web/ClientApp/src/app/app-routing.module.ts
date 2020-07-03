@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
-
 
 const routes: Routes = [
-  {path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent}
+  { path: 'registration', loadChildren: () => import('./registration/registration.module').
+                                        then(m => m.RegistrationModule) },
+  { path: 'shoppingcart', loadChildren: () => import('./shoppingcart/shoppingcart.module').then(m => m.ShoppingcartModule) },
+  { path: 'shared', loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule) }
 ];
 
 @NgModule({

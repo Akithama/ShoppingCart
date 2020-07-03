@@ -30,7 +30,7 @@ namespace ShoppingCart.API
         {
             services.AddCors();
             services.AddControllers();
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());            
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
