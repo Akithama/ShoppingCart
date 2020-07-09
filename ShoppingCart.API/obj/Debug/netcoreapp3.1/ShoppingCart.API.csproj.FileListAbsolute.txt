@@ -75,11 +75,6 @@ D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache
-D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfoInputs.cache
-D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfo.cs
-D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
-D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache
-D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csprojAssemblyReference.cache
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -147,6 +142,11 @@ D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Sho
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\ShoppingCart.Data.dll
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\ShoppingCart.Bll.pdb
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\ShoppingCart.Data.pdb
+D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csprojAssemblyReference.cache
+D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfoInputs.cache
+D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfo.cs
+D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
+D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.RazorTargetAssemblyInfo.cache
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CopyComplete
 D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\staticwebassets\ShoppingCart.API.StaticWebAssets.Manifest.cache

@@ -26,12 +26,11 @@ namespace ShoppingCart.API.Controllers
         private readonly AppSettings appSettings;
         private readonly ILogger logger;
 
-        public UserController(ILogger<UserController> _logger, IUserService _userService, IMapper _mapper,
+        public UserController(ILogger<UserController> _logger, IUserService _userService,
             IOptions<AppSettings> _appSettings)
         {
             userService = _userService;
             appSettings = _appSettings.Value;
-            mapper = _mapper;
             logger = _logger;
         }
 
