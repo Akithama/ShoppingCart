@@ -16,8 +16,9 @@ namespace ShoppingCart.Data.Models
         public DateTime? DateShipped { get; set; }
         public string Status { get; set; }
         public decimal? TotalAmount { get; set; }
-        public int CustomerId { get; set; }
+        public int UserId { get; set; }
 
+        public virtual User User { get; set; }
         public virtual ICollection<OrderDetail> OrderDetail { get; set; }
         public virtual ICollection<Payment> Payment { get; set; }
     }

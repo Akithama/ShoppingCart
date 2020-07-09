@@ -17,7 +17,6 @@ namespace ShoppingCart.Data.Models
 
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<Category> Category { get; set; }
-        public virtual DbSet<Customer> Customer { get; set; }
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderDetail> OrderDetail { get; set; }
         public virtual DbSet<Payment> Payment { get; set; }
@@ -29,7 +28,7 @@ namespace ShoppingCart.Data.Models
             if (!optionsBuilder.IsConfigured)
             {
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                //optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=ShoppingCart;Trusted_Connection=True;");
+//                optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=ShoppingCart;Trusted_Connection=True;");
             }
         }
 
@@ -39,17 +38,19 @@ namespace ShoppingCart.Data.Models
             {
                 entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.BillingAddress).HasMaxLength(500);
+                entity.Property(e => e.Address1).HasMaxLength(500);
 
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
+                entity.Property(e => e.Address2).HasMaxLength(500);
 
-                entity.Property(e => e.DeliveryAddress).HasMaxLength(500);
+                entity.Property(e => e.Address3).HasMaxLength(500);
 
-                entity.HasOne(d => d.Customer)
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.User)
                     .WithMany(p => p.Address)
-                    .HasForeignKey(d => d.CustomerId)
+                    .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Address_Customer");
+                    .HasConstraintName("FK_Address_User");
             });
 
             modelBuilder.Entity<Category>(entity =>
@@ -59,40 +60,11 @@ namespace ShoppingCart.Data.Models
                 entity.Property(e => e.CategoryName).HasMaxLength(50);
             });
 
-            modelBuilder.Entity<Customer>(entity =>
-            {
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
-                entity.Property(e => e.DateRegister).HasColumnType("datetime");
-
-                entity.Property(e => e.Email)
-                    .IsRequired()
-                    .HasMaxLength(50);
-
-                entity.Property(e => e.FirstName)
-                    .IsRequired()
-                    .HasMaxLength(500);
-
-                entity.Property(e => e.LastName)
-                    .IsRequired()
-                    .HasMaxLength(500);
-
-                entity.Property(e => e.MobileNumber).HasMaxLength(50);
-
-                entity.Property(e => e.PasswordHash).IsRequired();
-
-                entity.Property(e => e.PasswordSalt).IsRequired();
-
-                entity.Property(e => e.UserName).IsRequired();
-            });
-
             modelBuilder.Entity<Order>(entity =>
             {
                 entity.Property(e => e.OrderId)
                     .HasColumnName("OrderID")
                     .ValueGeneratedNever();
-
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
 
                 entity.Property(e => e.DateCreated).HasColumnType("datetime");
 
@@ -104,6 +76,14 @@ namespace ShoppingCart.Data.Models
                     .IsFixedLength();
 
                 entity.Property(e => e.TotalAmount).HasColumnType("money");
+
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Order)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Order_User");
             });
 
             modelBuilder.Entity<OrderDetail>(entity =>
@@ -140,23 +120,23 @@ namespace ShoppingCart.Data.Models
 
                 entity.Property(e => e.Amount).HasColumnType("money");
 
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-
                 entity.Property(e => e.DatePayment).HasColumnType("datetime");
 
                 entity.Property(e => e.OrderId).HasColumnName("OrderID");
 
-                entity.HasOne(d => d.Customer)
-                    .WithMany(p => p.Payment)
-                    .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Payment_Customer");
+                entity.Property(e => e.UserId).HasColumnName("UserID");
 
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.Payment)
                     .HasForeignKey(d => d.OrderId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Payment_Order");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Payment)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Payment_User");
             });
 
             modelBuilder.Entity<Product>(entity =>
@@ -188,9 +168,17 @@ namespace ShoppingCart.Data.Models
             {
                 entity.Property(e => e.UserId).HasColumnName("UserID");
 
+                entity.Property(e => e.DateRegister).HasColumnType("datetime");
+
                 entity.Property(e => e.Email)
                     .IsRequired()
                     .HasMaxLength(50);
+
+                entity.Property(e => e.FirstName).HasMaxLength(500);
+
+                entity.Property(e => e.LastName).HasMaxLength(500);
+
+                entity.Property(e => e.MobileNumber).HasMaxLength(50);
 
                 entity.Property(e => e.PasswordHash).IsRequired();
 

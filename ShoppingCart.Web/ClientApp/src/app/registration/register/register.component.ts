@@ -14,16 +14,17 @@ export class RegisterComponent implements OnInit {
 
   success: boolean;
   error: string;
-  userRegistration: UserRegistration = { username: '', password: '', firstname: '', lastname: '',email:'', mobilenumber:'' };
-  //model:any={};
-  
+  userRegistration: UserRegistration = {
+    username: '', password: '', firstname: '', lastname: '', email: '', mobilenumber: '',
+    address1: '', address2: '', address3: '', confirmPassword: ''
+  };
+
   constructor(private authService: AuthService, private spinner: NgxSpinnerService, private alertService: AlertService) { }
 
   ngOnInit(): void {
   }
 
-  register(){
-    //console.log(this.model);
+  register() {
     this.spinner.show();
 
     this.authService.register(this.userRegistration)
@@ -40,7 +41,5 @@ export class RegisterComponent implements OnInit {
         error => {
           this.alertService.error(error);
         });
-  
   }
-
 }

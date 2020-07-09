@@ -1862,6 +1862,19 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "ShoppingCart.Bll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ShoppingCart.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ShoppingCart.Bll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ShoppingCart.Bll.dll": {}
+        }
+      },
       "ShoppingCart.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -6560,6 +6573,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "ShoppingCart.Bll/1.0.0": {
+      "type": "project",
+      "path": "../ShoppingCart.Bll/ShoppingCart.Bll.csproj",
+      "msbuildProject": "../ShoppingCart.Bll/ShoppingCart.Bll.csproj"
+    },
     "ShoppingCart.Data/1.0.0": {
       "type": "project",
       "path": "../ShoppingCart.Data/ShoppingCart.Data.csproj",
@@ -6573,7 +6591,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.5",
       "Serilog.AspNetCore >= 3.2.0",
       "Serilog.Sinks.RollingFile >= 3.3.0",
-      "ShoppingCart.Data >= 1.0.0",
+      "ShoppingCart.Bll >= 1.0.0",
       "System.IdentityModel.Tokens.Jwt >= 6.6.0"
     ]
   },
@@ -6605,8 +6623,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
-              "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj"
+            "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj": {
+              "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj"
             }
           }
         }

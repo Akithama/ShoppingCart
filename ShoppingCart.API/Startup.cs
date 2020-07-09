@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -7,12 +8,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using ShoppingCart.API.Helpers;
+using ShoppingCart.Bll.Service;
+using ShoppingCart.Bll.Service.Interface;
 using ShoppingCart.Data.Models;
-using ShoppingCart.Data.Services;
-using ShoppingCart.Data.Services.Interfaces;
 using System;
 using System.Text;
-using AutoMapper;
 
 namespace ShoppingCart.API
 {
@@ -31,6 +31,9 @@ namespace ShoppingCart.API
             services.AddCors();
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
+            services.AddControllers(options =>
+            options.Filters.Add(new ExceptionFilter()));
 
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -65,7 +68,7 @@ namespace ShoppingCart.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env/*,ILogger logger*/)
         {
             if (env.IsDevelopment())
             {
@@ -76,6 +79,7 @@ namespace ShoppingCart.API
 
             app.UseRouting();
 
+            //app.ConfigureExceptionHandler(logger);
 
             // global cors policy
             app.UseCors(x => x

@@ -14,11 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShoppingCart.Data\ShoppingCart.Data.csproj" />
+    <Folder Include="Enum\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Enum\" />
+    <ProjectReference Include="..\ShoppingCart.Bll\ShoppingCart.Bll.csproj" />
   </ItemGroup>
 
 

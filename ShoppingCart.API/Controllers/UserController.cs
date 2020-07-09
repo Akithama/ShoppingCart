@@ -1,14 +1,12 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using ShoppingCart.API.Helpers;
-using ShoppingCart.API.ViewModels;
-using ShoppingCart.Data.Models;
-using ShoppingCart.Data.Services.Interfaces;
+using ShoppingCart.Bll.Service;
+using ShoppingCart.Bll.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -19,6 +17,7 @@ namespace ShoppingCart.API.Controllers
 {
     [Authorize]
     [ApiController]
+    //[ExceptionFilter]
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
@@ -40,7 +39,12 @@ namespace ShoppingCart.API.Controllers
         [HttpGet("Test")]
         public IEnumerable<string> Get()
         {
-            logger.LogInformation("Start : API Working Log...");
+            //logger.LogInformation("Fetching all the Students from the storage");
+
+            //throw new Exception("Exception while fetching all the students from the storage.");
+
+            //logger.LogInformation($"Returning {students.Count} students.");
+            //logger.LogInformation("Start : API Working Log...");
             return new string[] { "API", "Working User Controller......" };
         }
 
@@ -56,30 +60,40 @@ namespace ShoppingCart.API.Controllers
             // return user info and token
             return Ok(new
             {
-                Id = user.CustomerId,
+                Id = user.UserId,
                 Username = user.UserName,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                Token = generateJwtToken(user.CustomerId,user.Email)
+                Token = generateJwtToken(user.UserId,user.Email)
             });
         }
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public IActionResult Register([FromBody] CustomerViewModel model)
+        public IActionResult Register([FromBody] UserViewModel model)
         {
-            var customer = mapper.Map<Customer>(model);
+            //Address address = mapper.Map<Address>(model);
+            //var customer = userService.RegisterUser(mapper.Map<User>(model), address, model.Password);
+            var user = userService.RegisterUser(model, model.Password);
+            if (user != null)
+                return Ok(user);
+            else
+            {
+                logger.LogError("Error : ", "Registration Unsucessfull.");
+                return BadRequest(new { message = "Registration Unsucessfull." });                
+            }
 
-            try
-            {
-                userService.RegisterCustomer(customer, model.Password);
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                logger.LogError("Error : ", ex.Message);
-                return BadRequest(new { message = ex.Message });                
-            }
+            //var customer = mapper.Map<Customer>(model);
+            //try
+            //{
+            //    userService.RegisterCustomer(customer, model.Password);
+            //    return Ok();
+            //}
+            //catch (Exception ex)
+            //{
+            //    logger.LogError("Error : ", ex.Message);
+            //    return BadRequest(new { message = ex.Message });                
+            //}
         }
 
         private string generateJwtToken(int customerId, string email)

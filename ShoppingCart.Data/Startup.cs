@@ -1,10 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ShoppingCart.Data.Models;
-using ShoppingCart.Data.Services;
-using ShoppingCart.Data.Services.Interfaces;
-using System;
 
 
 namespace ShoppingCart.Data
