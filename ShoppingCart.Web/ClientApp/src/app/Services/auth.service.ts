@@ -1,27 +1,56 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { ConfigService } from '../shared/config.service';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { catchError, map } from 'rxjs/operators';
-import { throwError } from 'rxjs';
+import { throwError, BehaviorSubject, Observable } from 'rxjs';
+import { User } from '../shared/Models/user.model';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
+  private currentUserSubject: BehaviorSubject<User>;
+  public currentUser: Observable<User>;
 
-  constructor(private http: HttpClient, private configService: ConfigService) {
+  constructor(private http: HttpClient) {
+    this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
+    this.currentUser = this.currentUserSubject.asObservable();
+  }
 
-   }
+  public get currentUserValue(): User {
+    return this.currentUserSubject.value;
+  }
 
-   register(userRegistration: any) {    
-     return this.http.post(this.configService.authApiURI + '/user/register', userRegistration)
-     .pipe(
-       map((data: any) => {
-         return data;
-       }), catchError(error => {
-         return throwError('Something went wrong!' + error);
-       })
-     )
-     //.pipe(catchError(this.handleError));
+  register(userRegistration: any) {
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    let options = { headers: headers };
+    return this.http.post(environment.apiUrl + '/user/register', userRegistration, options)
+      .pipe(
+        map((data: any) => {
+          return data;
+        }), catchError(error => {
+          return throwError(error);
+        })
+      )
+  }
+
+  login(username: string, password: string) {
+    return this.http.post(environment.apiUrl + '/user/Authenticate', { username, password })
+      .pipe(
+        map((data: any) => {
+          return data;
+        }), catchError(error => {
+          console.log(error);
+          return throwError(error);
+        })
+      )
+  }
+
+  logout() {
+    // remove user from local storage to log user out
+    localStorage.removeItem('currentUser');
+    this.currentUserSubject.next(null);
   }
 }

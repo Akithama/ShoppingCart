@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/Services/auth.service';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { UserRegistration } from 'src/app/shared/Models/user-registration.model';
-import { finalize } from 'rxjs/operators';
-
+import { User } from '../../shared/Models/user.model';
+import { AlertService } from 'src/app/Services/alert.service';
+import { first } from 'rxjs/operators';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,19 +13,40 @@ import { finalize } from 'rxjs/operators';
 })
 export class LoginComponent implements OnInit {
 
-  // success: boolean;
-  // error: string;
-  // userRegistration: UserRegistration = { username: '', password: '', firstname: '' };
-  model:any={};
+  returnUrl: string;
+  success: boolean;
 
-  constructor(private authService: AuthService, private spinner: NgxSpinnerService) { }
+  user: User = {
+    id: 0, username: '', password: '', firstName: '', lastName: '', token: '', remember: false
+  };
 
-  ngOnInit(): void {
+  constructor(
+    private authService: AuthService,
+    private spinner: NgxSpinnerService,
+    private alertService: AlertService,
+    private route: ActivatedRoute,
+    private router: Router) {
+    // redirect to home if already logged in
+    if (this.authService.currentUserValue) {
+      this.router.navigate(['/']);
+    }
   }
 
-  login() {
-    //console.log(this.model);
+  ngOnInit(): void {
+    // get return url from route parameters or default to '/'
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+  }
 
-    
+
+  login() {
+    this.authService.login(this.user.username, this.user.password)
+      .pipe(first())
+      .subscribe(
+        data => {
+          this.router.navigate([this.returnUrl]);
+        },
+        error => {
+          this.alertService.error(error);
+        });
   }
 }

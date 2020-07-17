@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LlazrIGaGnkKNWuaEnB6hKYznRAi4ZFCM91+SNMkFkGD+EB/oGdonLmMYrCVjDneI9rdDXwbWo41/FrjbH3pwQ==",
+  "dgSpecHash": "5qojsOXM+rJzN2Vgjgv3zy2anWwDAjZ8qyXAMllgKJDoZ/rvFhy13H9/jT36ZyVV78RTQ84PrDTsU/iTlrqsnw==",
   "success": true,
-  "projectFilePath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj",
+  "projectFilePath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

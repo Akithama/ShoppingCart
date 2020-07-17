@@ -3,8 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
-const routes: Routes = [{ path: 'login/login', component: LoginComponent},
-{ path: 'register/register', component: RegisterComponent}];
+const routes: Routes = [
+  { path: 'login/login', component: LoginComponent },
+  { path: 'register/register', component: RegisterComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

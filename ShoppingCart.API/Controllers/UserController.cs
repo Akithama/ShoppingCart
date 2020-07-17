@@ -17,12 +17,11 @@ namespace ShoppingCart.API.Controllers
 {
     [Authorize]
     [ApiController]
-    //[ExceptionFilter]
+    
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private IUserService userService;
-        private IMapper mapper;
+        private IUserService userService;        
         private readonly AppSettings appSettings;
         private readonly ILogger logger;
 
@@ -54,7 +53,9 @@ namespace ShoppingCart.API.Controllers
             var user = userService.Authenticate(model.Username, model.Password);
 
             if (user == null)
-                return BadRequest(new { message = "Username or password is incorrect" });
+                return BadRequest("Username or password is incorrect");
+                //return BadRequest(new { message = "Username or password is incorrect" });
+
                         
             // return user info and token
             return Ok(new
@@ -71,8 +72,6 @@ namespace ShoppingCart.API.Controllers
         [HttpPost("register")]
         public IActionResult Register([FromBody] UserViewModel model)
         {
-            //Address address = mapper.Map<Address>(model);
-            //var customer = userService.RegisterUser(mapper.Map<User>(model), address, model.Password);
             var user = userService.RegisterUser(model, model.Password);
             if (user != null)
                 return Ok(user);
@@ -81,18 +80,6 @@ namespace ShoppingCart.API.Controllers
                 logger.LogError("Error : ", "Registration Unsucessfull.");
                 return BadRequest(new { message = "Registration Unsucessfull." });                
             }
-
-            //var customer = mapper.Map<Customer>(model);
-            //try
-            //{
-            //    userService.RegisterCustomer(customer, model.Password);
-            //    return Ok();
-            //}
-            //catch (Exception ex)
-            //{
-            //    logger.LogError("Error : ", ex.Message);
-            //    return BadRequest(new { message = ex.Message });                
-            //}
         }
 
         private string generateJwtToken(int customerId, string email)

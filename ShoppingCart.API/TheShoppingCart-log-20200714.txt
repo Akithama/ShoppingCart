@@ -1,0 +1,570 @@
+2020-07-14 18:33:07.939 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 18:33:09.681 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 18:33:09.682 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 18:33:09.682 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 18:33:11.041 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 18:33:11.053 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 18:33:13.477 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:33:13.574 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:33:14.642 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 18:33:14.786 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 1200.29ms
+2020-07-14 18:33:14.788 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:33:14.850 +05:30 [Information] Request finished in 3816.5724ms 200 application/json; charset=utf-8
+2020-07-14 18:33:15.120 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 18:33:15.160 +05:30 [Information] Request finished in 40.506ms 404 
+2020-07-14 18:37:33.895 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 18:37:34.996 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 18:37:34.997 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 18:37:34.997 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 18:37:35.058 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 18:37:35.072 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 18:37:35.318 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:37:35.360 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:37:35.703 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 18:37:35.761 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 389.0493ms
+2020-07-14 18:37:35.765 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:37:35.773 +05:30 [Information] Request finished in 720.444ms 200 application/json; charset=utf-8
+2020-07-14 18:37:35.834 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 18:37:35.841 +05:30 [Information] Request finished in 5.6801ms 404 
+2020-07-14 18:41:26.494 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 18:41:27.136 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 18:41:27.137 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 18:41:27.137 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 18:41:27.194 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 18:41:27.210 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 18:41:27.462 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:41:27.511 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:41:27.871 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 18:41:27.924 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 388.5739ms
+2020-07-14 18:41:27.928 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:41:27.939 +05:30 [Information] Request finished in 750.5986ms 200 application/json; charset=utf-8
+2020-07-14 18:41:27.997 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 18:41:28.011 +05:30 [Information] Request finished in 13.756ms 404 
+2020-07-14 18:44:06.546 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 18:44:06.551 +05:30 [Information] CORS policy execution successful.
+2020-07-14 18:44:06.555 +05:30 [Information] Request finished in 15.2697ms 204 
+2020-07-14 18:44:06.599 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 36
+2020-07-14 18:44:06.599 +05:30 [Information] CORS policy execution successful.
+2020-07-14 18:44:06.604 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 18:44:06.651 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:44:53.228 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 18:44:55.215 +05:30 [Information] Executed DbCommand ("144"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 18:46:35.965 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 149313.2109ms
+2020-07-14 18:46:35.976 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 18:46:35.984 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid length of password salt (128 bytes expected). (Parameter 'passwordHash')
+   at ShoppingCart.Bll.Service.UserService.VerifyPasswordHash(String password, Byte[] storedHash, Byte[] storedSalt) in D:\Project\Office\Working\ShoppingCart\ShoppingCart.Bll\Service\UserService.cs:line 105
+   at ShoppingCart.Bll.Service.UserService.Authenticate(String username, String password) in D:\Project\Office\Working\ShoppingCart\ShoppingCart.Bll\Service\UserService.cs:line 31
+   at ShoppingCart.API.Controllers.UserController.Authenticate(AuthenticateViewModel model) in D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\Controllers\UserController.cs:line 54
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-14 18:46:36.296 +05:30 [Information] Request finished in 149697.8358ms 500 text/plain
+2020-07-14 18:53:24.208 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 18:53:24.897 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 18:53:24.898 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 18:53:24.898 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 18:53:24.975 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 18:53:24.993 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 18:53:25.309 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:53:25.351 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:53:25.716 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 18:53:25.772 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 406.4898ms
+2020-07-14 18:53:25.775 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 18:53:25.790 +05:30 [Information] Request finished in 820.572ms 200 application/json; charset=utf-8
+2020-07-14 18:53:25.908 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 18:53:25.914 +05:30 [Information] Request finished in 6.2815ms 404 
+2020-07-14 18:55:15.303 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/register  
+2020-07-14 18:55:15.310 +05:30 [Information] CORS policy execution successful.
+2020-07-14 18:55:15.314 +05:30 [Information] Request finished in 11.5898ms 204 
+2020-07-14 18:55:15.317 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/register application/json 214
+2020-07-14 18:55:15.318 +05:30 [Information] CORS policy execution successful.
+2020-07-14 18:55:15.328 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)"'
+2020-07-14 18:55:15.357 +05:30 [Information] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(ShoppingCart.Bll.Service.UserViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:55:27.317 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 18:55:28.516 +05:30 [Information] Executed DbCommand ("142"ms) [Parameters=["@__userVM_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[UserName] = @__userVM_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2020-07-14 18:55:28.581 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__userVM_Email_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Email] = @__userVM_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2020-07-14 18:55:29.149 +05:30 [Information] Executed DbCommand ("76"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (Size = 50), @p2='?' (Size = 500), @p3='?' (DbType = Boolean), @p4='?' (Size = 500), @p5='?' (Size = 50), @p6='?' (Size = 8000) (DbType = Binary), @p7='?' (Size = 8000) (DbType = Binary), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([DateRegister], [Email], [FirstName], [IsAdmin], [LastName], [MobileNumber], [PasswordHash], [PasswordSalt], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [UserID]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserID] = scope_identity();"
+2020-07-14 18:55:29.217 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@p9='?' (Size = 500), @p10='?' (Size = 500), @p11='?' (Size = 500), @p12='?' (DbType = Boolean), @p13='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([Address1], [Address2], [Address3], [IsDelivery], [UserID])
+VALUES (@p9, @p10, @p11, @p12, @p13);
+SELECT [ID]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-07-14 18:55:29.268 +05:30 [Information] Executing ObjectResult, writing value of type '"ShoppingCart.Bll.Service.UserViewModel"'.
+2020-07-14 18:55:29.276 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)" in 13917.9125ms
+2020-07-14 18:55:29.276 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)"'
+2020-07-14 18:55:29.289 +05:30 [Information] Request finished in 13972.411ms 200 application/json; charset=utf-8
+2020-07-14 18:55:56.613 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 18:55:56.614 +05:30 [Information] CORS policy execution successful.
+2020-07-14 18:55:56.615 +05:30 [Information] Request finished in 9.009ms 204 
+2020-07-14 18:55:56.619 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 42
+2020-07-14 18:55:56.620 +05:30 [Information] CORS policy execution successful.
+2020-07-14 18:55:56.624 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 18:55:56.635 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 18:56:06.788 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 18:56:06.849 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 18:56:53.049 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 56412.5943ms
+2020-07-14 18:56:53.051 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 18:56:53.054 +05:30 [Error] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Invalid length of password salt (128 bytes expected). (Parameter 'passwordHash')
+   at ShoppingCart.Bll.Service.UserService.VerifyPasswordHash(String password, Byte[] storedHash, Byte[] storedSalt) in D:\Project\Office\Working\ShoppingCart\ShoppingCart.Bll\Service\UserService.cs:line 105
+   at ShoppingCart.Bll.Service.UserService.Authenticate(String username, String password) in D:\Project\Office\Working\ShoppingCart\ShoppingCart.Bll\Service\UserService.cs:line 31
+   at ShoppingCart.API.Controllers.UserController.Authenticate(AuthenticateViewModel model) in D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\Controllers\UserController.cs:line 54
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ExceptionContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-07-14 18:56:53.159 +05:30 [Information] Request finished in 56540.1017ms 500 text/plain
+2020-07-14 19:05:19.109 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:05:19.832 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:05:19.833 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:05:19.833 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:05:19.907 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:05:19.930 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:05:20.264 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:05:20.324 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:05:20.630 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:05:20.680 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 332.7945ms
+2020-07-14 19:05:20.683 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:05:20.693 +05:30 [Information] Request finished in 800.7568ms 200 application/json; charset=utf-8
+2020-07-14 19:05:20.755 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:05:20.780 +05:30 [Information] Request finished in 25.6251ms 404 
+2020-07-14 19:06:46.085 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 19:06:46.091 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:06:46.097 +05:30 [Information] Request finished in 18.0925ms 204 
+2020-07-14 19:06:46.102 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 42
+2020-07-14 19:06:46.103 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:06:46.110 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:06:46.148 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:06:53.347 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:06:54.195 +05:30 [Information] Executed DbCommand ("92"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:07:48.319 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 19:07:48.325 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 62175.4019ms
+2020-07-14 19:07:48.329 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:07:48.336 +05:30 [Information] Request finished in 62235.2322ms 400 application/json; charset=utf-8
+2020-07-14 19:12:34.519 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:12:35.164 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:12:35.164 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:12:35.165 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:12:35.215 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:12:35.227 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:12:35.452 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:12:35.555 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:12:36.003 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:12:36.057 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 484.3165ms
+2020-07-14 19:12:36.063 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:12:36.073 +05:30 [Information] Request finished in 864.0162ms 200 application/json; charset=utf-8
+2020-07-14 19:12:36.240 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:12:36.249 +05:30 [Information] Request finished in 9.5751ms 404 
+2020-07-14 19:14:34.351 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/register  
+2020-07-14 19:14:34.356 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:14:34.360 +05:30 [Information] Request finished in 8.865ms 204 
+2020-07-14 19:14:34.364 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/register application/json 221
+2020-07-14 19:14:34.365 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:14:34.369 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)"'
+2020-07-14 19:14:34.392 +05:30 [Information] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(ShoppingCart.Bll.Service.UserViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:14:35.797 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:14:36.900 +05:30 [Information] Executed DbCommand ("158"ms) [Parameters=["@__userVM_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[UserName] = @__userVM_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2020-07-14 19:14:36.954 +05:30 [Information] Executed DbCommand ("10"ms) [Parameters=["@__userVM_Email_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Email] = @__userVM_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2020-07-14 19:16:25.865 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:16:26.637 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:16:26.637 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:16:26.638 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:16:26.694 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:16:26.710 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:16:27.040 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:16:27.102 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:16:27.448 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:16:27.539 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 425.7917ms
+2020-07-14 19:16:27.542 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:16:27.548 +05:30 [Information] Request finished in 861.7569ms 200 application/json; charset=utf-8
+2020-07-14 19:16:27.675 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:16:27.693 +05:30 [Information] Request finished in 18.1282ms 404 
+2020-07-14 19:17:54.149 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 19:17:54.154 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:17:54.157 +05:30 [Information] Request finished in 9.2561ms 204 
+2020-07-14 19:17:54.161 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 42
+2020-07-14 19:17:54.161 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:17:54.165 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:17:54.190 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:18:00.855 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:18:01.981 +05:30 [Information] Executed DbCommand ("149"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:19:56.046 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:19:56.525 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:19:56.525 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:19:56.525 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:19:56.560 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:19:56.570 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:19:56.742 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:19:56.787 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:19:57.091 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:19:57.141 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 342.4359ms
+2020-07-14 19:19:57.147 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:19:57.153 +05:30 [Information] Request finished in 598.2161ms 200 application/json; charset=utf-8
+2020-07-14 19:19:57.251 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:19:57.268 +05:30 [Information] Request finished in 16.687ms 404 
+2020-07-14 19:21:36.234 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/register  
+2020-07-14 19:21:36.239 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:21:36.243 +05:30 [Information] Request finished in 13.4542ms 204 
+2020-07-14 19:21:36.247 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/register application/json 202
+2020-07-14 19:21:36.247 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:21:36.251 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)"'
+2020-07-14 19:21:36.273 +05:30 [Information] Route matched with "{action = \"Register\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Register(ShoppingCart.Bll.Service.UserViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:21:37.548 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:21:38.456 +05:30 [Information] Executed DbCommand ("115"ms) [Parameters=["@__userVM_UserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[UserName] = @__userVM_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2020-07-14 19:21:38.520 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__userVM_Email_0='?' (Size = 50)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u]
+        WHERE [u].[Email] = @__userVM_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+2020-07-14 19:21:45.697 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=["@p0='?' (DbType = DateTime), @p1='?' (Size = 50), @p2='?' (Size = 500), @p3='?' (DbType = Boolean), @p4='?' (Size = 500), @p5='?' (Size = 50), @p6='?' (Size = 8000) (DbType = Binary), @p7='?' (Size = 8000) (DbType = Binary), @p8='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [User] ([DateRegister], [Email], [FirstName], [IsAdmin], [LastName], [MobileNumber], [PasswordHash], [PasswordSalt], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [UserID]
+FROM [User]
+WHERE @@ROWCOUNT = 1 AND [UserID] = scope_identity();"
+2020-07-14 19:21:45.767 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@p9='?' (Size = 500), @p10='?' (Size = 500), @p11='?' (Size = 500), @p12='?' (DbType = Boolean), @p13='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Address] ([Address1], [Address2], [Address3], [IsDelivery], [UserID])
+VALUES (@p9, @p10, @p11, @p12, @p13);
+SELECT [ID]
+FROM [Address]
+WHERE @@ROWCOUNT = 1 AND [ID] = scope_identity();"
+2020-07-14 19:21:45.801 +05:30 [Information] Executing ObjectResult, writing value of type '"ShoppingCart.Bll.Service.UserViewModel"'.
+2020-07-14 19:21:45.807 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)" in 9532.7655ms
+2020-07-14 19:21:45.807 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Register (ShoppingCart.API)"'
+2020-07-14 19:21:45.814 +05:30 [Information] Request finished in 9567.398ms 200 application/json; charset=utf-8
+2020-07-14 19:22:19.150 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 19:22:19.151 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:22:19.153 +05:30 [Information] Request finished in 9.9046ms 204 
+2020-07-14 19:22:19.157 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 36
+2020-07-14 19:22:19.158 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:22:19.161 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:22:19.171 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:22:23.908 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:22:23.980 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:24:05.866 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 19:24:06.282 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 107106.4319ms
+2020-07-14 19:24:06.283 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:24:06.284 +05:30 [Information] Request finished in 107127.5496ms 200 application/json; charset=utf-8
+2020-07-14 19:33:56.405 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:33:58.554 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:33:58.554 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:33:58.554 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:33:58.780 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:33:58.792 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:33:59.608 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:33:59.733 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:34:01.311 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:34:01.470 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 1722.6088ms
+2020-07-14 19:34:01.479 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:34:01.492 +05:30 [Information] Request finished in 2718.5725ms 200 application/json; charset=utf-8
+2020-07-14 19:34:01.895 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:34:01.907 +05:30 [Information] Request finished in 11.6182ms 404 
+2020-07-14 19:34:11.269 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/authenticate application/json 49
+2020-07-14 19:34:11.301 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:34:11.421 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:34:33.547 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:34:42.379 +05:30 [Information] Executed DbCommand ("771"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:34:53.415 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 19:34:53.465 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 42043.4031ms
+2020-07-14 19:34:53.465 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:34:53.533 +05:30 [Information] Request finished in 42264.8017ms 200 application/json; charset=utf-8
+2020-07-14 19:35:00.519 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/authenticate application/json 49
+2020-07-14 19:35:00.524 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:35:00.525 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:35:00.597 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:35:00.990 +05:30 [Information] Executed DbCommand ("384"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:35:00.995 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 19:35:01.004 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 477.3803ms
+2020-07-14 19:35:01.004 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:35:01.004 +05:30 [Information] Request finished in 485.9855ms 200 application/json; charset=utf-8
+2020-07-14 19:35:06.649 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/authenticate application/json 50
+2020-07-14 19:35:06.652 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:35:06.653 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:35:06.677 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:35:07.539 +05:30 [Information] Executed DbCommand ("850"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:35:07.554 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 19:35:07.559 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 905.7503ms
+2020-07-14 19:35:07.560 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:35:07.560 +05:30 [Information] Request finished in 911.9694ms 400 application/json; charset=utf-8
+2020-07-14 19:54:01.772 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:54:02.665 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:54:02.684 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:54:02.684 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:54:02.769 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:54:02.805 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:54:04.147 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:54:04.211 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:54:04.596 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:54:04.642 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 418.5398ms
+2020-07-14 19:54:04.645 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:54:04.653 +05:30 [Information] Request finished in 1901.3939ms 200 application/json; charset=utf-8
+2020-07-14 19:54:04.793 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:54:04.809 +05:30 [Information] Request finished in 15.7002ms 404 
+2020-07-14 19:57:02.028 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 19:57:02.034 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:57:02.037 +05:30 [Information] Request finished in 10.9057ms 204 
+2020-07-14 19:57:02.041 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 37
+2020-07-14 19:57:02.043 +05:30 [Information] CORS policy execution successful.
+2020-07-14 19:57:02.063 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:57:02.090 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:57:03.485 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 19:57:05.265 +05:30 [Information] Executed DbCommand ("141"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 19:57:05.469 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 19:57:05.472 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 3381.7992ms
+2020-07-14 19:57:05.473 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 19:57:05.480 +05:30 [Information] Request finished in 3439.7372ms 400 application/json; charset=utf-8
+2020-07-14 19:59:01.073 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 19:59:01.671 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 19:59:01.672 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 19:59:01.672 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 19:59:01.729 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 19:59:01.744 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 19:59:02.052 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:59:02.116 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 19:59:02.478 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 19:59:02.529 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 388.0653ms
+2020-07-14 19:59:02.531 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 19:59:02.544 +05:30 [Information] Request finished in 825.5667ms 200 application/json; charset=utf-8
+2020-07-14 19:59:02.641 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 19:59:02.649 +05:30 [Information] Request finished in 7.051ms 404 
+2020-07-14 20:00:52.913 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 20:00:52.919 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:00:52.924 +05:30 [Information] Request finished in 11.2719ms 204 
+2020-07-14 20:00:52.928 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 37
+2020-07-14 20:00:52.929 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:00:52.934 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 20:00:52.963 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 20:00:54.292 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 20:00:55.529 +05:30 [Information] Executed DbCommand ("212"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 20:00:55.711 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 20:00:55.714 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 2750.516ms
+2020-07-14 20:00:55.715 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 20:00:55.732 +05:30 [Information] Request finished in 2804.9206ms 400 application/json; charset=utf-8
+2020-07-14 20:01:37.710 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 20:01:37.712 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:01:37.713 +05:30 [Information] Request finished in 9.7847ms 204 
+2020-07-14 20:01:37.720 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 37
+2020-07-14 20:01:37.721 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:01:37.729 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 20:01:37.730 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 20:01:37.814 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 20:01:37.859 +05:30 [Information] Executed DbCommand ("34"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 20:01:37.861 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 20:01:37.863 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 131.7006ms
+2020-07-14 20:01:37.863 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 20:01:37.863 +05:30 [Information] Request finished in 143.8111ms 400 application/json; charset=utf-8
+2020-07-14 20:04:14.643 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 20:04:15.371 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 20:04:15.372 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 20:04:15.372 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 20:04:15.421 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 20:04:15.439 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 20:04:15.743 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 20:04:15.787 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 20:04:16.141 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 20:04:16.189 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 383.662ms
+2020-07-14 20:04:16.191 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 20:04:16.202 +05:30 [Information] Request finished in 790.1822ms 200 application/json; charset=utf-8
+2020-07-14 20:04:16.284 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 20:04:16.311 +05:30 [Information] Request finished in 27.0565ms 404 
+2020-07-14 20:05:46.821 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 20:05:46.827 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:05:46.830 +05:30 [Information] Request finished in 10.1389ms 204 
+2020-07-14 20:05:46.834 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 37
+2020-07-14 20:05:46.835 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:05:46.840 +05:30 [Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2020-07-14 20:05:46.840 +05:30 [Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2020-07-14 20:05:46.842 +05:30 [Information] Request finished in 8.2854ms 405 
+2020-07-14 20:06:04.451 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 20:06:04.452 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:06:04.454 +05:30 [Information] Request finished in 4.0962ms 204 
+2020-07-14 20:06:04.457 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 37
+2020-07-14 20:06:04.458 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:06:04.459 +05:30 [Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2020-07-14 20:06:04.460 +05:30 [Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2020-07-14 20:06:04.462 +05:30 [Information] Request finished in 4.8271ms 405 
+2020-07-14 20:06:27.461 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 20:06:27.462 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:06:27.463 +05:30 [Information] Request finished in 2.2192ms 204 
+2020-07-14 20:06:27.472 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 37
+2020-07-14 20:06:27.472 +05:30 [Information] CORS policy execution successful.
+2020-07-14 20:06:27.473 +05:30 [Information] Executing endpoint '"405 HTTP Method Not Supported"'
+2020-07-14 20:06:27.473 +05:30 [Information] Executed endpoint '"405 HTTP Method Not Supported"'
+2020-07-14 20:06:27.474 +05:30 [Information] Request finished in 2.2162ms 405 
+2020-07-14 21:24:43.362 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 21:24:44.063 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 21:24:44.064 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 21:24:44.064 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 21:24:44.116 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 21:24:44.130 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 21:24:44.390 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 21:24:44.450 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 21:24:44.787 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 21:24:44.845 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 375.3555ms
+2020-07-14 21:24:44.847 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 21:24:44.855 +05:30 [Information] Request finished in 747.9238ms 200 application/json; charset=utf-8
+2020-07-14 21:24:44.913 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 21:24:44.919 +05:30 [Information] Request finished in 6.8363ms 404 
+2020-07-14 21:26:19.294 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/user/Authenticate?Username=test&Password=123  
+2020-07-14 21:26:19.297 +05:30 [Information] CORS policy execution successful.
+2020-07-14 21:26:19.301 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 21:26:19.350 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 21:26:19.411 +05:30 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2020-07-14 21:26:19.441 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 90.8852ms
+2020-07-14 21:26:19.442 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 21:26:19.442 +05:30 [Information] Request finished in 152.7751ms 415 application/problem+json; charset=utf-8
+2020-07-14 21:26:23.201 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/user/Authenticate?Username=test&Password=123  
+2020-07-14 21:26:23.203 +05:30 [Information] CORS policy execution successful.
+2020-07-14 21:26:23.206 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 21:26:23.207 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 21:26:23.212 +05:30 [Information] Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Mvc.ProblemDetails"'.
+2020-07-14 21:26:23.213 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 5.4765ms
+2020-07-14 21:26:23.213 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 21:26:23.213 +05:30 [Information] Request finished in 13.2235ms 415 application/problem+json; charset=utf-8
+2020-07-14 21:32:38.386 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-07-14 21:32:38.958 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-07-14 21:32:38.959 +05:30 [Information] Hosting environment: "Development"
+2020-07-14 21:32:38.966 +05:30 [Information] Content root path: "D:\Project\Office\Working\ShoppingCart\ShoppingCart.API"
+2020-07-14 21:32:39.020 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/User/Test  
+2020-07-14 21:32:39.037 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-07-14 21:32:39.314 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 21:32:39.373 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"User\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[System.String] Get()" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 21:32:39.701 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String[]"'.
+2020-07-14 21:32:39.756 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)" in 361.971ms
+2020-07-14 21:32:39.758 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Get (ShoppingCart.API)"'
+2020-07-14 21:32:39.839 +05:30 [Information] Request finished in 768.89ms 200 application/json; charset=utf-8
+2020-07-14 21:32:39.887 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-07-14 21:32:39.900 +05:30 [Information] Request finished in 21.8423ms 404 
+2020-07-14 21:35:06.924 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-07-14 21:35:06.928 +05:30 [Information] CORS policy execution successful.
+2020-07-14 21:35:06.934 +05:30 [Information] Request finished in 10.078ms 204 
+2020-07-14 21:35:06.945 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 36
+2020-07-14 21:35:06.945 +05:30 [Information] CORS policy execution successful.
+2020-07-14 21:35:06.951 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 21:35:06.967 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-07-14 21:35:13.718 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-07-14 21:35:14.954 +05:30 [Information] Executed DbCommand ("108"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-07-14 21:35:15.573 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType1`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-07-14 21:35:15.581 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 8613.373ms
+2020-07-14 21:35:15.581 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-07-14 21:35:15.592 +05:30 [Information] Request finished in 8647.7078ms 200 application/json; charset=utf-8

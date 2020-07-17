@@ -54,7 +54,7 @@ namespace ShoppingCart.Bll.Service
             {
                 UserName = userVM.UserName,
                 PasswordHash = passwordHash,
-                PasswordSalt = passwordHash,
+                PasswordSalt = passwordSalt,
                 DateRegister = DateTime.Now,
                 Email = userVM.Email,
                 FirstName = userVM.FirstName,

@@ -1,13 +1,13 @@
-import { Injectable } from '@angular/core';
+//import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class ConfigService {
+//@Injectable({
+//  providedIn: 'root'
+//})
+//export class ConfigService {
 
-  constructor() { }
+//  constructor() { }
 
-  get authApiURI() {
-    return 'http://localhost:4000';
-  }
-}
+//  get authApiURI() {
+//    return 'http://localhost:4000';
+//  }
+//}

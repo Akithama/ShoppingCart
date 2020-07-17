@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RegistrationRoutingModule } from './registration-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../Services/auth.service';
 
 
@@ -14,7 +14,8 @@ import { AuthService } from '../Services/auth.service';
   imports: [
     CommonModule,
     RegistrationRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class RegistrationModule { }
