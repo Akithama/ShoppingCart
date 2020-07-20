@@ -9,5 +9,6 @@ namespace ShoppingCart.Bll.Service.Interface
     {
         User Authenticate(string username, string password);
         UserViewModel RegisterUser(UserViewModel user, string password);
+        string GenerateJwtToken(int customerId, string email,string secret);
     }
 }

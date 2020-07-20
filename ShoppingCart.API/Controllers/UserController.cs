@@ -54,8 +54,6 @@ namespace ShoppingCart.API.Controllers
 
             if (user == null)
                 return BadRequest("Username or password is incorrect");
-                //return BadRequest(new { message = "Username or password is incorrect" });
-
                         
             // return user info and token
             return Ok(new
@@ -64,7 +62,8 @@ namespace ShoppingCart.API.Controllers
                 Username = user.UserName,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                Token = generateJwtToken(user.UserId,user.Email)
+                //Token = generateJwtToken(user.UserId,user.Email)
+                Token = userService.GenerateJwtToken(user.UserId, user.Email, appSettings.Secret)
             });
         }
 
@@ -82,23 +81,23 @@ namespace ShoppingCart.API.Controllers
             }
         }
 
-        private string generateJwtToken(int customerId, string email)
-        {
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(appSettings.Secret);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.Name, customerId.ToString()),
-                    new Claim(ClaimTypes.Email, email.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddDays(1),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
-            };
+        //private string generateJwtToken(int customerId, string email)
+        //{
+        //    var tokenHandler = new JwtSecurityTokenHandler();
+        //    var key = Encoding.ASCII.GetBytes(appSettings.Secret);
+        //    var tokenDescriptor = new SecurityTokenDescriptor
+        //    {
+        //        Subject = new ClaimsIdentity(new Claim[]
+        //        {
+        //            new Claim(ClaimTypes.Name, customerId.ToString()),
+        //            new Claim(ClaimTypes.Email, email.ToString())
+        //        }),
+        //        Expires = DateTime.UtcNow.AddDays(1),
+        //        SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+        //    };
 
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            return tokenHandler.WriteToken(token);
-        }
+        //    var token = tokenHandler.CreateToken(tokenDescriptor);
+        //    return tokenHandler.WriteToken(token);
+        //}
     }
 }

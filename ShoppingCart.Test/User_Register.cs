@@ -12,7 +12,7 @@ using System.Net;
 namespace ShoppingCart.Test
 {
     [TestClass]
-    public class User_Test
+    public class User_Register
     {
         [TestMethod]
         public void UserRegister_Post_GetResult()
