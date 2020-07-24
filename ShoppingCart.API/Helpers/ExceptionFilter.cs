@@ -22,6 +22,9 @@ namespace ShoppingCart.API.Helpers
 
             var exception = context.Exception;
             context.Result = new JsonResult(exception.Message);
+
+
+            // Add serilog hear.....
         }
     }
 }

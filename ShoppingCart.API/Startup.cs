@@ -1,18 +1,17 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
 using ShoppingCart.API.Helpers;
 using ShoppingCart.Bll.Service;
 using ShoppingCart.Bll.Service.Interface;
+using ShoppingCart.Data.Infrastructure.Interfaces;
+using ShoppingCart.Data.Infrastructure.Repository;
 using ShoppingCart.Data.Models;
 using System;
 using System.Text;
@@ -38,8 +37,8 @@ namespace ShoppingCart.API
             services.AddControllers(options =>
             options.Filters.Add(new ExceptionFilter()));
 
-            services.AddControllers(options =>
-            options.Filters.Add(new TestFilter()));
+            //services.AddControllers(options =>
+            //options.Filters.Add(new TestFilter()));
 
 
             // configure strongly typed settings objects
@@ -68,10 +67,13 @@ namespace ShoppingCart.API
             });
 
             // configure DI for application services
-            services.AddScoped<IUserService, UserService>();
-
             services.AddDbContext<ShoppingCartContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("CartDatabase")));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IUserService, UserService>();
+            //services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -101,9 +103,6 @@ namespace ShoppingCart.API
             {
                 endpoints.MapControllers();
             });
-
-
-
         }
     }
 }

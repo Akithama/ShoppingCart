@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ShoppingCart.Data.Infrastructure.Interfaces
 {
-    interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         IEnumerable<T> GetAll();
         T GetById(object id);

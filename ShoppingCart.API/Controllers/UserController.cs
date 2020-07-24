@@ -16,8 +16,7 @@ using System.Text;
 namespace ShoppingCart.API.Controllers
 {
     [Authorize]
-    [ApiController]
-    
+    [ApiController]    
     [Route("[controller]")]
     public class UserController : ControllerBase
     {

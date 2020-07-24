@@ -1,5 +1,6 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using ShoppingCart.Bll.Service.Interface;
+using ShoppingCart.Data.Infrastructure.Interfaces;
 using ShoppingCart.Data.Models;
 using System;
 using System.IdentityModel.Tokens.Jwt;
@@ -11,11 +12,11 @@ namespace ShoppingCart.Bll.Service
 {
     public class UserService : IUserService
     {
-        private ShoppingCartContext _context;
+        private IUnitOfWork _unitOfWork;
 
-        public UserService(ShoppingCartContext context)
+        public UserService(IUnitOfWork unitOfWork)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
         public User Authenticate(string username, string password)
@@ -23,7 +24,8 @@ namespace ShoppingCart.Bll.Service
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
                 return null;
 
-            var user = _context.User.SingleOrDefault(x => x.UserName == username);
+            //var user = _context.User.SingleOrDefault(x => x.UserName == username);
+            var user = _unitOfWork.User.GetUserByName(username);
 
             // check if username exists
             if (user == null)
@@ -43,10 +45,10 @@ namespace ShoppingCart.Bll.Service
             if (string.IsNullOrWhiteSpace(password))
                 throw new Exception("Password is required");
 
-            if (_context.User.Any(x => x.UserName == userVM.UserName))
+            if (_unitOfWork.User.UserExists(userVM.UserName))
                 throw new Exception("Username \"" + userVM.UserName + "\" is already taken");
 
-            if (_context.User.Any(x => x.Email == userVM.Email))
+            if (_unitOfWork.User.UserEmailExists(userVM.Email))
                 throw new Exception("E-Mail \"" + userVM.Email + "\" is already taken");
 
             byte[] passwordHash, passwordSalt;
@@ -65,8 +67,8 @@ namespace ShoppingCart.Bll.Service
                 MobileNumber = userVM.MobileNumber
             };
 
-            _context.User.Add(user);
-            
+            //_context.User.Add(user);
+            _unitOfWork.User.Add(user);
 
             Address address = new Address
             {
@@ -77,12 +79,13 @@ namespace ShoppingCart.Bll.Service
                 User = user
             };
 
-            _context.Address.Add(address);
+            // _context.Address.Add(address);
+            _unitOfWork.Address.Add(address);
 
-            _context.SaveChanges();
+            //_context.SaveChanges();
+            _unitOfWork.Save();
 
             return userVM;
-
         }
 
         private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)

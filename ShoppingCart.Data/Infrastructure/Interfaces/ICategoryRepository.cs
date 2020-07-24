@@ -1,17 +1,16 @@
 ﻿using ShoppingCart.Data.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ShoppingCart.Data.Infrastructure.Interfaces
 {
-    public interface IUserRepository : IRepository<User>
+    public interface ICategoryRepository : IRepository<Category>
     {
-        User GetUserByName(string username);
+        //IEnumerable GetCategoryAll();
 
-        bool UserEmailExists(string email);
-
-        bool UserExists(string username);
+        //Task<Category> GetByName(string firstName);
     }
 }

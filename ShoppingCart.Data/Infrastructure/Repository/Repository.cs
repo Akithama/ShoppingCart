@@ -8,43 +8,43 @@ using System.Text;
 
 namespace ShoppingCart.Data.Infrastructure.Repository
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public abstract class Repository<T> : IRepository<T> where T : class
     {
-        protected ShoppingCartContext context { get; set; }
+        protected ShoppingCartContext Context { get; set; }
 
         public Repository(ShoppingCartContext _Context)
         {
-            this.context = _Context;
+            this.Context = _Context;
         }
         public void Delete(object id)
         {
             //this.context.Set<T>().Remove(id);
 
-            var entity = context.Set<T>().Find(id);
-            context.Set<T>().Remove(entity);
-            context.SaveChanges();
+            var entity = Context.Set<T>().Find(id);
+            Context.Set<T>().Remove(entity);
+            //context.SaveChanges();
         }
 
         public IEnumerable<T> GetAll()
         {
-            return this.context.Set<T>().ToList();
+            return this.Context.Set<T>().ToList();
         }
 
         public T GetById(object id)
         {
-            return context.Set<T>().Find(id);
+            return Context.Set<T>().Find(id);
         }
 
         public void Add(T obj)
         {
-            context.Set<T>().Add(obj);
-            context.SaveChangesAsync();
+            Context.Set<T>().Add(obj);
+            //context.SaveChangesAsync();
         }
 
         public void Update(T obj)
         {
-            this.context.Entry(obj).State = EntityState.Modified;
-            context.SaveChangesAsync();
+            this.Context.Entry(obj).State = EntityState.Modified;
+            //context.SaveChangesAsync();
         }
     }
 }
