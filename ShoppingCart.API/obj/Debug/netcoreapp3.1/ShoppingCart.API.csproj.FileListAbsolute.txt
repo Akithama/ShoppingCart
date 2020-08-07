@@ -83,8 +83,6 @@ D:\Project\Office\Test\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\Sho
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csprojAssemblyReference.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfoInputs.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.AssemblyInfo.cs
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
-D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\appsettings.json
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -162,3 +160,5 @@ D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.dll
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.pdb
 D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.genruntimeconfig.cache
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.csproj.CoreCompileInputs.cache
+D:\Project\Office\Working\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.MvcApplicationPartsAssemblyInfo.cache

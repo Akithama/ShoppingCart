@@ -12,46 +12,23 @@ namespace ShoppingCart.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class CategoryController : ControllerBase
     {
         private ICategoryRepository categoryRepository;
 
-        public CategoryController(ICategoryRepository _categoryRepository)
+        public CategoryController(ICategoryRepository repo)
         {
-            categoryRepository = _categoryRepository;
+            categoryRepository = repo;
         }
 
-        // GET: api/<CategoryController>
         [HttpGet]
-        public IEnumerable<Category> Get()
+        public ActionResult<IEnumerable<Category>> Get()
         {
-            return categoryRepository.GetAll().ToList();
-        }
+            var categories= categoryRepository.GetAll().ToList();
+            if (categories.Count != 0)
+                return categories;
 
-        // GET api/<CategoryController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<CategoryController>
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/<CategoryController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<CategoryController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            return NotFound("Categories Not Found");
         }
     }
 }

@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:4200",
-            "webRoot": "D:/Project/Office/Test/ShoppingCart/ShoppingCart.Web/ClientApp"
+            "webRoot": "D:/Project/Office/Working/ShoppingCart/ShoppingCart.Web/ClientApp"
             //"webRoot": "${workspaceFolder}/ShoppingCart.Web/ClientApp"
         }
     ]

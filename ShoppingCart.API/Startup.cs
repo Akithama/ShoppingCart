@@ -72,12 +72,12 @@ namespace ShoppingCart.API
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserService, UserService>();
-            //services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env/*,ILogger logger*/)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -101,6 +101,12 @@ namespace ShoppingCart.API
 
             app.UseEndpoints(endpoints =>
             {
+                //endpoints.MapControllerRoute(name: "default",
+                //    pattern: "{controller}/{action}/{id?}");
+
+                //endpoints.MapControllerRoute(name: "category",
+                //    pattern: "{controller}/{action}/{id?}");
+
                 endpoints.MapControllers();
             });
         }

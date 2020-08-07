@@ -3,13 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { ShoppingcartRoutingModule } from './shoppingcart-routing.module';
 import { ShoppingcartComponent } from './shoppingcart.component';
-
+import { FiltersComponent } from './filters/filters.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductItemComponent } from './product-list/product-item/product-item.component';
 
 @NgModule({
-  declarations: [ShoppingcartComponent],
+  declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent],
   imports: [
     CommonModule,
     ShoppingcartRoutingModule
+  ],
+  exports:[
+
   ]
 })
 export class ShoppingcartModule { }

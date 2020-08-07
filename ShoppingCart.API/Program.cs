@@ -15,7 +15,7 @@ namespace ShoppingCart.API
         public static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
-            .WriteTo.RollingFile("TheShoppingCart-log-{Date}.txt")
+            .WriteTo.RollingFile("/Logs/ShoppingCart-log-{Date}.txt")
             .CreateLogger();
 
             CreateHostBuilder(args).Build().Run();

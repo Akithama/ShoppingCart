@@ -12,19 +12,33 @@ namespace ShoppingCart.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET: api/<ValuesController>
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+        //    return new string[] { "API", "Working" };
+        //}
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "API", "Working" };
+            List<string> list = new List<string>(){ "API", "Working" };
+
+            return list;
+            //return NotFound("Not Found");
         }
 
-        // GET api/<ValuesController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// http://localhost:4000/Values/category?=id=2
+        //[HttpGet("category")]
+        //public string Get(int id)
+        //{
+        //    return "With Para";
+        //}
+
+        //[HttpGet]
+        //public string Get()
+        //{
+        //    return "No para";
+        //}
 
         // POST api/<ValuesController>
         [HttpPost]

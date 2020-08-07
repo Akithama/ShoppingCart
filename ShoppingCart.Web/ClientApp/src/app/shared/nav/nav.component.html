@@ -2,14 +2,10 @@
     <h5 class="my-0 mr-md-auto font-weight-normal">
         <app-header></app-header>
     </h5>
-    
-    <nav class="my-2 my-md-0 mr-md-3">
-      <a class="p-2 text-dark" href="#">Consumer Electronics</a>
-      <a class="p-2 text-dark" href="#">Computer & Office</a>
-      <a class="p-2 text-dark" href="#">Jewelry & Accessories</a>
-      <a class="p-2 text-dark" href="#">Home & Garden</a>
-      <a class="p-2 text-dark" href="#">Luggage & Bags</a>
-      <a class="p-2 text-dark" href="#">Sports & Entertainment</a>
+    <!-- class="my-2 my-md-0 mr-md-3" -->
+    <nav *ngFor="let category of categoryList">
+      <a class="p-2 text-dark" href="javascript:void(0);" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
+      <!-- <a class="p-2 text-dark" href="#">Consumer Electronics</a> -->
     </nav>
     <a class="btn btn-primary" [routerLink]="['registration/register/register']">Sign up</a>
     <a class="btn btn-outline-secondary" [routerLink]="['registration/login/login']">Login</a>

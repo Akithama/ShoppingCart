@@ -9,6 +9,7 @@ namespace ShoppingCart.Data.Infrastructure.Repository
         private ICategoryRepository _category;
         private IUserRepository _user;
         private IAddressRepository _address;
+        private IProductRepository _product;
 
         public UnitOfWork(ShoppingCartContext context)
         {
@@ -48,6 +49,17 @@ namespace ShoppingCart.Data.Infrastructure.Repository
                     _address = new AddressRepository(_context);
                 }
                 return _address;
+            }
+        }
+        public IProductRepository Product
+        {
+            get
+            {
+                if (_product == null)
+                {
+                    _product = new ProductRepository(_context);
+                }
+                return _product;
             }
         }
 
