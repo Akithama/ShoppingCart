@@ -3,6 +3,7 @@ import { CategoryService } from 'src/app/Services/category.service';
 import { Category } from '../../Models/category';
 import { ProductService } from '../../Services/product.service';
 import { Product } from '../../Models/product';
+import { AuthService } from '../../Services/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -12,21 +13,25 @@ import { Product } from '../../Models/product';
 export class NavComponent implements OnInit {
 
   categoryList: Category[] = []
-  //prodList: Product[] = []
 
-  constructor(private categoryService: CategoryService, private productService: ProductService) {
+  constructor(
+    private categoryService: CategoryService,
+    private productService: ProductService,
+    public authService: AuthService) {
   }
 
   ngOnInit(): void {
     this.categoryService.getProducts().subscribe((categories) => {
       this.categoryList = categories;
-      console.log(this.categoryList);
     })
-    console.log(this.categoryList);
   }
 
   getCategoryId(categoryId: number) {
 
     this.productService.setProductsByCategoryId(categoryId);
+  }
+
+  logOut() {
+    this.authService.logOut();
   }
 }

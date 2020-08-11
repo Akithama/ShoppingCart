@@ -9,21 +9,19 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
-  private currentUserSubject: BehaviorSubject<User>;
-  public currentUser: Observable<User>;
-  private loggedIn = new BehaviorSubject<boolean>(false); // {1}
 
   constructor(private http: HttpClient) {
-    this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
-    this.currentUser = this.currentUserSubject.asObservable();
+
   }
 
-  public get currentUserValue(): User {
-    return this.currentUserSubject.value;
+  //Check whether the user is logged or not.
+  get isLoggedIn(): boolean {
+    let authToken = localStorage.getItem('auth_token');
+    return (authToken !== null) ? true : false;
   }
 
-  get isLoggedIn() {
-    return this.loggedIn.asObservable(); // {1}
+  getUserName() {
+    return localStorage.getItem('logged_userName');
   }
 
   register(userRegistration: any) {
@@ -45,19 +43,17 @@ export class AuthService {
     return this.http.post(environment.apiUrl + '/user/Authenticate', { username, password })
       .pipe(
         map((data: any) => {
-          this.loggedIn.next(true); // {1}
+          localStorage.setItem('auth_token', data.token);
+          localStorage.setItem('logged_userName', data.username);
           return data;
         }), catchError(error => {
-          console.log(error);
           return throwError(error);
         })
       )
   }
 
-  logout() {
-    this.loggedIn.next(false);
-    // remove user from local storage to log user out
-    localStorage.removeItem('currentUser');
-    this.currentUserSubject.next(null);
+  logOut() {
+    let removeToken = localStorage.removeItem('auth_token');
+    let removeUser = localStorage.removeItem('logged_userName');
   }
 }

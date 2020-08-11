@@ -61,10 +61,6 @@ export class RegisterComponent implements OnInit {
         error => {
           this.alertService.error(error);
         });
-
-    //console.log(this.registerForm.value);
-
-    //alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.registerForm.value, null, 4));
   }
 
   onReset() {

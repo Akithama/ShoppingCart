@@ -1,12 +1,38 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-    <h5 class="my-0 mr-md-auto font-weight-normal">
-        <app-header></app-header>
-    </h5>
-    <!-- class="my-2 my-md-0 mr-md-3" -->
-    <nav *ngFor="let category of categoryList">
-      <a class="p-2 text-dark" href="javascript:void(0);" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
-      <!-- <a class="p-2 text-dark" href="#">Consumer Electronics</a> -->
-    </nav>
-    <a class="btn btn-primary" [routerLink]="['registration/register/register']">Sign up</a>
-    <a class="btn btn-outline-secondary" [routerLink]="['registration/login/login']">Login</a>
+<!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+    <app-header></app-header>
+  </h5>
+
+  <nav *ngFor="let category of categoryList">
+    <a class="p-2 text-dark" href="javascript:void(0);" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
+
+  </nav>
+  <a class="btn btn-primary" [routerLink]="['registration/register/register']">Sign up</a>
+  <a class="btn btn-outline-secondary" *ngIf="!this.authService.isLoggedIn" [routerLink]="['registration/login/login']">Login</a>
+</div>-->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="#" class="navbar-brand">Shopping<b>Cart</b></a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collection of nav links, forms, and other content for toggling -->
+  <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+    <div class="navbar-nav" *ngFor="let category of categoryList">
+      <a href="javascript:void(0);" class="nav-item nav-link" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
+    </div>
+    <div class="navbar-nav ml-auto action-buttons" *ngIf="!this.authService.isLoggedIn">
+      <div class="nav-item dropdown">
+        <a href="#" class="nav-link dropdown-toggle mr-4" [routerLink]="['registration/login/login']">Login</a>
+      </div>
+      <div class="nav-item dropdown">
+        <a href="#" class="btn btn-primary dropdown-toggle sign-up-btn" [routerLink]="['registration/register/register']">Sign up</a>
+      </div>
+    </div>
+    <div class="navbar-nav ml-auto action-buttons" *ngIf="this.authService.isLoggedIn">
+      <a href="javascript:void(0);" (click)="logOut()" class="dropdown-item"><i class="fa fa-sign-out"><b>Welcome {{this.authService.getUserName()}}</b></i> Logout</a>
+    </div>    
   </div>
+</nav>
+<div class="px-md-4 mb-3 bg-white"></div>
+

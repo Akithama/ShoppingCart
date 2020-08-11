@@ -7,9 +7,10 @@ import { FiltersComponent } from './filters/filters.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductItemComponent } from './product-list/product-item/product-item.component';
+import { CartItemComponent } from './cart/cart-item/cart-item.component';
 
 @NgModule({
-  declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent],
+  declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent, CartItemComponent],
   imports: [
     CommonModule,
     ShoppingcartRoutingModule

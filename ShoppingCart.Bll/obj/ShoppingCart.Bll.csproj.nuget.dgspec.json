@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj": {}
+    "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj": {
+    "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj",
+        "projectUniqueName": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj",
         "projectName": "ShoppingCart.Bll",
-        "projectPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj",
+        "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\ShoppingCart.Bll.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Bll\\obj\\",
+        "outputPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Bll\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
-                "projectPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj"
+              "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
+                "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
+    "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj",
+        "projectUniqueName": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj",
         "projectName": "ShoppingCart.Data",
-        "projectPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj",
+        "projectPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\ShoppingCart.Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Office\\Working\\ShoppingCart\\ShoppingCart.Data\\obj\\",
+        "outputPath": "D:\\Project\\Office\\Test\\ShoppingCart\\ShoppingCart.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
