@@ -1,0 +1,7 @@
+.item-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f6f6f6;
+  margin-right: 50px;
+}

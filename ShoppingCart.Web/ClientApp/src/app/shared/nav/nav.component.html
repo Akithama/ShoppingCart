@@ -1,16 +1,3 @@
-<!--<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-  <h5 class="my-0 mr-md-auto font-weight-normal">
-    <app-header></app-header>
-  </h5>
-
-  <nav *ngFor="let category of categoryList">
-    <a class="p-2 text-dark" href="javascript:void(0);" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
-
-  </nav>
-  <a class="btn btn-primary" [routerLink]="['registration/register/register']">Sign up</a>
-  <a class="btn btn-outline-secondary" *ngIf="!this.authService.isLoggedIn" [routerLink]="['registration/login/login']">Login</a>
-</div>-->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a href="#" class="navbar-brand">Shopping<b>Cart</b></a>
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -30,7 +17,8 @@
       </div>
     </div>
     <div class="navbar-nav ml-auto action-buttons" *ngIf="this.authService.isLoggedIn">
-      <a href="javascript:void(0);" (click)="logOut()" class="dropdown-item"><i class="fa fa-sign-out"><b>Welcome {{this.authService.getUserName()}}</b></i> Logout</a>
+      <b><span class="label label-default">Welcome {{this.authService.getUserName()}}</span></b>
+      <a href="javascript:void(0);" (click)="logOut()" class="text-right"><i class="fa fa-sign-out"></i>Logout</a>
     </div>    
   </div>
 </nav>

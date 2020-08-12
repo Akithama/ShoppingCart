@@ -8,9 +8,10 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductItemComponent } from './product-list/product-item/product-item.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
-  declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent, CartItemComponent],
+  declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent, CartItemComponent, ProductDetailsComponent],
   imports: [
     CommonModule,
     ShoppingcartRoutingModule
