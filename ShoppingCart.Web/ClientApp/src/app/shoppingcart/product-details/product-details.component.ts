@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ProductService } from '../../Services/product.service';
+import { Product } from '../../Models/product';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-product-details',
@@ -7,9 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  @Input() product: Product;
+  subscription: Subscription;
 
-  ngOnInit(): void {
+  constructor(private productService: ProductService) {
+    this.subscription = this.productService.onProduct().subscribe(product => {
+      if (product) {
+        this.product = product;
+        //console.log(product)
+      } else {
+        this.product = null
+      }
+    });
   }
 
+  ngOnInit(): void {
+    //this.productService.getProduct().subscribe((products) => {
+    //  this.productList = products;
+    //})
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 }

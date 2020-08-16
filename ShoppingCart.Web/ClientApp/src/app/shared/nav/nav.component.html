@@ -8,6 +8,9 @@
     <div class="navbar-nav" *ngFor="let category of categoryList">
       <a href="javascript:void(0);" class="nav-item nav-link" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
     </div>
+    <div class="navbar-nav ml-auto action-buttons">      
+      <a href="" class="text-right" [routerLink]="['registration/test/test']"><i class="fa fa-sign-out"></i>Test</a>
+    </div>
     <div class="navbar-nav ml-auto action-buttons" *ngIf="!this.authService.isLoggedIn">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle mr-4" [routerLink]="['registration/login/login']">Login</a>
@@ -19,7 +22,7 @@
     <div class="navbar-nav ml-auto action-buttons" *ngIf="this.authService.isLoggedIn">
       <b><span class="label label-default">Welcome {{this.authService.getUserName()}}</span></b>
       <a href="javascript:void(0);" (click)="logOut()" class="text-right"><i class="fa fa-sign-out"></i>Logout</a>
-    </div>    
+    </div>
   </div>
 </nav>
 <div class="px-md-4 mb-3 bg-white"></div>

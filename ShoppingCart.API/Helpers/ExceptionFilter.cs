@@ -15,7 +15,6 @@ namespace ShoppingCart.API.Helpers
     /// </summary>
     public class ExceptionFilter : ExceptionFilterAttribute
     {
-
         public override void OnException(ExceptionContext context)
         {
             context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;

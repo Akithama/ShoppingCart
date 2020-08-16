@@ -37,10 +37,6 @@ namespace ShoppingCart.API
             services.AddControllers(options =>
             options.Filters.Add(new ExceptionFilter()));
 
-            //services.AddControllers(options =>
-            //options.Filters.Add(new TestFilter()));
-
-
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
@@ -101,12 +97,6 @@ namespace ShoppingCart.API
 
             app.UseEndpoints(endpoints =>
             {
-                //endpoints.MapControllerRoute(name: "default",
-                //    pattern: "{controller}/{action}/{id?}");
-
-                //endpoints.MapControllerRoute(name: "category",
-                //    pattern: "{controller}/{action}/{id?}");
-
                 endpoints.MapControllers();
             });
         }

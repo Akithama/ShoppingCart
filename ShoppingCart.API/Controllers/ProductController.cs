@@ -14,7 +14,7 @@ namespace ShoppingCart.API.Controllers
 
     public class ProductController : ControllerBase
     {
-        private IProductRepository productRepository;
+        private readonly IProductRepository productRepository;
 
         public ProductController(IProductRepository repo)
         {
@@ -40,6 +40,18 @@ namespace ShoppingCart.API.Controllers
                 return products;
 
             return NotFound("Products Not Found");
+        }
+
+        [HttpGet("product")]
+        public ActionResult<Product> Get(int productId)
+        {
+            int productCode = Convert.ToInt32(productId);
+            var product = productRepository.GetById(productCode);
+            if (product != null)
+            {
+                return product;
+            }
+            return NotFound("Product Not Found");
         }
     }
 }

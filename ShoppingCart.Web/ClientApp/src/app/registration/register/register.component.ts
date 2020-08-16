@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 import { MustMatch } from '../../Helpers/must.match.validator';
 import { finalize } from 'rxjs/operators';
 import { AuthService } from '../../Services/auth.service';
@@ -22,7 +22,8 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit() {
     this.registerForm = this.formBuilder.group({
-      username: ['', Validators.required],
+      username: [{ value: null, disabled: false }, [Validators.required, this.validateUsername()]],
+      //username: ['', Validators.required],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -35,6 +36,16 @@ export class RegisterComponent implements OnInit {
     }, {
       validator: MustMatch('password', 'confirmPassword')
     });
+  }
+
+  validateUsername(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: any } => {
+      if (true) {
+        throw new Error("Method not implemented.");
+      } else {
+        return null;
+      }
+    }         
   }
 
   get f() { return this.registerForm.controls; }

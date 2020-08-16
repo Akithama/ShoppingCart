@@ -141,9 +141,7 @@ namespace ShoppingCart.Data.Models
 
             modelBuilder.Entity<Product>(entity =>
             {
-                entity.Property(e => e.ProductId)
-                    .HasColumnName("ProductID")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.ProductId).HasColumnName("ProductID");
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
