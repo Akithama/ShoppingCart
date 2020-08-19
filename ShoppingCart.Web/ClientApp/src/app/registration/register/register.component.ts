@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
-import { MustMatch } from '../../Helpers/must.match.validator';
-import { finalize } from 'rxjs/operators';
 import { AuthService } from '../../Services/auth.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AlertService } from '../../Services/alert.service';
+import { UserService } from '../../services/user-service.service';
+import { finalize } from 'rxjs/operators';
 
 
 @Component({
@@ -13,59 +13,92 @@ import { AlertService } from '../../Services/alert.service';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-  registerForm: FormGroup;
-  submitted = false;
-  success: boolean;
 
   constructor(private formBuilder: FormBuilder, private authService: AuthService, private spinner: NgxSpinnerService,
-    private alertService: AlertService) { }
+    private alertService: AlertService, private userService: UserService) { }
 
-  ngOnInit() {
-    this.registerForm = this.formBuilder.group({
-      username: [{ value: null, disabled: false }, [Validators.required, this.validateUsername()]],
-      //username: ['', Validators.required],
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
-      confirmPassword: ['', Validators.required],
-      mobilenumber: ['', [Validators.required, Validators.pattern("^[0-9]*$")]],
-      address1: ['', Validators.required],
-      address2: ['', Validators.required],
-      address3: ['', Validators.required]
+  userForm = this.formBuilder.group(
+    {
+      username: [
+        "",
+        [Validators.required, Validators.minLength(3)],
+        this.userService.validateUsernameNotTaken.bind(this.userService)
+      ],
+      email: ["",
+        [Validators.required]],
+      password: ["", Validators.required],
+      confirmPassword: ["", Validators.required],//, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+      firstname: ["", Validators.required],
+      lastname: ["", Validators.required],
+      mobilenumber: ["", Validators.required],//, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")
+      address1: ["", Validators.required],
+      address2: ["", Validators.required],
+      address3: ["", Validators.required],
     }, {
-      validator: MustMatch('password', 'confirmPassword')
-    });
+      validator: this.userService.passwordMatchValidator(
+        "password",
+        "confirmPassword"
+      )
+  }
+  );
+
+
+  get username() {
+    return this.userForm.get("username");
   }
 
-  validateUsername(): ValidatorFn {
-    return (control: AbstractControl): { [key: string]: any } => {
-      if (true) {
-        throw new Error("Method not implemented.");
-      } else {
-        return null;
-      }
-    }         
+  get email() {
+    return this.userForm.get("email");
   }
 
-  get f() { return this.registerForm.controls; }
+  get confirmPassword() {
+    return this.userForm.get("confirmPassword");
+  }
+
+  get password() {
+    return this.userForm.get("password");
+  }
+
+  get firstname() {
+    return this.userForm.get("firstname");
+  }
+
+  get lastname() {
+    return this.userForm.get("lastname");
+  }
+
+  get mobilenumber() {
+    return this.userForm.get("mobilenumber");
+  }
+
+  get address1() {
+    return this.userForm.get("address1");
+  }
+
+  get address2() {
+    return this.userForm.get("address2");
+  }
+
+  get address3() {
+    return this.userForm.get("address3");
+  }
+
+  ngOnInit() { }
+
+  clear() {
+    this.userForm.reset();
+    //this.username.setValue("");
+  }
 
   onSubmit() {
-
-    this.submitted = true;
-
-    if (this.registerForm.invalid) {
-      return;
-    }
-
-    this.authService.register(this.registerForm.value)
+    console.log(this.userForm.value);
+    this.authService.register(this.userForm.value)
       .pipe(finalize(() => {
         this.spinner.hide();
       }))
       .subscribe(
         result => {
           if (result) {
-            this.success = true;
             this.alertService.success('Registration successful');
           }
         },
@@ -73,61 +106,4 @@ export class RegisterComponent implements OnInit {
           this.alertService.error(error);
         });
   }
-
-  onReset() {
-    this.submitted = false;
-    this.registerForm.reset();
-  }
 }
-
-
-
-//import { Component, OnInit } from '@angular/core';
-//import { AuthService } from 'src/app/Services/auth.service';
-//import { NgxSpinnerService } from 'ngx-spinner';
-//import { UserRegistration } from 'src/app/shared/Models/user-registration.model';
-//import { finalize } from 'rxjs/operators';
-//import { AlertService } from 'src/app/Services/alert.service';
-//import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-//import { MustMatch } from '../../Helpers/must.match.validator';
-
-//@Component({
-//  selector: 'app-register',
-//  templateUrl: './register.component.html',
-//  styleUrls: ['./register.component.css']
-//})
-//export class RegisterComponent implements OnInit {
-
-//  success: boolean;
-//  error: string;
-//  userRegistration: UserRegistration = {
-//    username: '', password: '', firstname: '', lastname: '', email: '', mobilenumber: '',
-//    address1: '', address2: '', address3: '', confirmPassword: ''
-//  };
-
-//  constructor(private authService: AuthService, private spinner: NgxSpinnerService, private alertService: AlertService) { }
-
-//  ngOnInit(): void {
-
-//  }
-
-//  register() {
-//    this.spinner.show();
-
-//    this.authService.register(this.userRegistration)
-//      .pipe(finalize(() => {
-//        this.spinner.hide();
-//      }))
-//      .subscribe(
-//        result => {
-//          if (result) {
-//            this.success = true;
-//            this.alertService.success('Registration successful');
-//          }
-//        },
-//        error => {
-//          this.alertService.error(error);
-//        });
-//  }
-//}
-

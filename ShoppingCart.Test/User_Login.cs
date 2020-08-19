@@ -17,29 +17,27 @@ namespace ShoppingCart.Test
     [TestClass]
     public class User_Login
     {
-        AuthenticateViewModel model = new AuthenticateViewModel { Username = "Test", Password = "123" };
-
-        User userModel = new User { UserId = 1, UserName = "Test", Email = "test@gmail.com" };
+        readonly AuthenticateViewModel model = new AuthenticateViewModel { Username = "Test", Password = "123" };
+        readonly User userModel = new User { UserId = 1, UserName = "Test", Email = "test@gmail.com" };
 
         [TestMethod]
         public void UserLoginReturnModel()
         {
+            var settings = new AppSettings() { Secret = "Secret" };
+            IOptions<AppSettings> apSettings = Options.Create(settings);
+            var logger = new Mock<ILogger<UserController>>();
+            var userUservice = new Mock<IUserService>();
+            
+            //Act
+            var controller = new UserController(logger.Object, userUservice.Object, apSettings);
+            userUservice.Setup(x => x.Authenticate(model.Username, model.Password)).Returns(userModel);
+            userUservice.Setup(x => x.GenerateJwtToken(userModel.UserId, userModel.Email, apSettings.Value.Secret)).Returns("");
 
-           // var apSettings = new Mock<IOptions<AppSettings>>();
-           // var logger = new Mock<ILogger<UserController>>();
-           // var userUservice = new Mock<IUserService>();
+            var result = controller.Authenticate(model);
 
-           // //Act
-           // var controller = new UserController(logger.Object, userUservice.Object, apSettings.Object);            
-           // userUservice.Setup(x => x.Authenticate(model.Username, model.Password)).Returns(userModel);
-           // userUservice.Setup(x => x.GenerateJwtToken(userModel.UserId, userModel.Email)).Returns("");
-
-           // var result = controller.Authenticate(model);
-
-
-           // //Assert
-           // Assert.IsNotNull(result);
-           //Assert.IsInstanceOfType(result,typeof(OkObjectResult));
+            //Assert
+            Assert.IsNotNull(result);
+            Assert.IsInstanceOfType(result, typeof(OkObjectResult));
         }
 
     }

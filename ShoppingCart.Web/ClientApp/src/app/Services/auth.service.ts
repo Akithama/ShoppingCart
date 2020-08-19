@@ -56,4 +56,6 @@ export class AuthService {
     let removeToken = localStorage.removeItem('auth_token');
     let removeUser = localStorage.removeItem('logged_userName');
   }
+
+
 }

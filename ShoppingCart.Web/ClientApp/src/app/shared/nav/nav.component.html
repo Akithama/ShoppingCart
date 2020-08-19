@@ -3,14 +3,14 @@
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <!-- Collection of nav links, forms, and other content for toggling -->
+
   <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
     <div class="navbar-nav" *ngFor="let category of categoryList">
       <a href="javascript:void(0);" class="nav-item nav-link" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
     </div>
-    <div class="navbar-nav ml-auto action-buttons">      
+    <!--<div class="navbar-nav ml-auto action-buttons">
       <a href="" class="text-right" [routerLink]="['registration/test/test']"><i class="fa fa-sign-out"></i>Test</a>
-    </div>
+    </div>-->
     <div class="navbar-nav ml-auto action-buttons" *ngIf="!this.authService.isLoggedIn">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle mr-4" [routerLink]="['registration/login/login']">Login</a>
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="navbar-nav ml-auto action-buttons" *ngIf="this.authService.isLoggedIn">
-      <b><span class="label label-default">Welcome {{this.authService.getUserName()}}</span></b>
+      <label style="margin-top:auto" class="text-right"><b>Welcome {{this.authService.getUserName()}}</b></label>
       <a href="javascript:void(0);" (click)="logOut()" class="text-right"><i class="fa fa-sign-out"></i>Logout</a>
     </div>
   </div>
