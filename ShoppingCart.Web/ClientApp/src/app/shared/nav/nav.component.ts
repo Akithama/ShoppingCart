@@ -4,6 +4,7 @@ import { Category } from '../../Models/category';
 import { ProductService } from '../../Services/product.service';
 import { Product } from '../../Models/product';
 import { AuthService } from '../../Services/auth.service';
+import { CartService } from '../../Services/cart.service';
 
 @Component({
   selector: 'app-nav',
@@ -17,7 +18,8 @@ export class NavComponent implements OnInit {
   constructor(
     private categoryService: CategoryService,
     private productService: ProductService,
-    public authService: AuthService) {
+    public authService: AuthService,
+    public cartService: CartService) {
   }
 
   ngOnInit(): void {

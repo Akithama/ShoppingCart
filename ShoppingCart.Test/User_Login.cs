@@ -7,6 +7,7 @@ using ShoppingCart.API.Controllers;
 using ShoppingCart.API.Helpers;
 using ShoppingCart.Bll.Service;
 using ShoppingCart.Bll.Service.Interface;
+using ShoppingCart.Data.Infrastructure.Interfaces;
 using ShoppingCart.Data.Models;
 using System;
 using System.Collections.Generic;
@@ -27,9 +28,10 @@ namespace ShoppingCart.Test
             IOptions<AppSettings> apSettings = Options.Create(settings);
             var logger = new Mock<ILogger<UserController>>();
             var userUservice = new Mock<IUserService>();
+            var userRepo = new Mock<IUserRepository>();
             
             //Act
-            var controller = new UserController(logger.Object, userUservice.Object, apSettings);
+            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings);
             userUservice.Setup(x => x.Authenticate(model.Username, model.Password)).Returns(userModel);
             userUservice.Setup(x => x.GenerateJwtToken(userModel.UserId, userModel.Email, apSettings.Value.Secret)).Returns("");
 

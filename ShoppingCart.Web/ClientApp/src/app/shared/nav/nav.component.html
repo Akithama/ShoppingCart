@@ -11,6 +11,17 @@
     <!--<div class="navbar-nav ml-auto action-buttons">
       <a href="" class="text-right" [routerLink]="['registration/test/test']"><i class="fa fa-sign-out"></i>Test</a>
     </div>-->
+    <ul class="navbar-nav ml-auto action-buttons">
+      <li class="nav-item">
+        <a class="nav-link" 
+           [routerLink]="['/shoppingcart/cart/cart']">
+          <i class="fa fa-globe">
+            <span class="badge badge-success">{{this.cartService.getNumberOfItems()}}</span>
+          </i>
+          Cart
+        </a>
+      </li>
+    </ul>
     <div class="navbar-nav ml-auto action-buttons" *ngIf="!this.authService.isLoggedIn">
       <div class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle mr-4" [routerLink]="['registration/login/login']">Login</a>

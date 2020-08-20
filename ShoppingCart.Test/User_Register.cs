@@ -7,6 +7,7 @@ using ShoppingCart.API.Controllers;
 using ShoppingCart.API.Helpers;
 using ShoppingCart.Bll.Service;
 using ShoppingCart.Bll.Service.Interface;
+using ShoppingCart.Data.Infrastructure.Interfaces;
 using System.Net;
 
 namespace ShoppingCart.Test
@@ -33,9 +34,10 @@ namespace ShoppingCart.Test
             var apSettings = new Mock<IOptions<AppSettings>>();
             var logger = new Mock<ILogger<UserController>>();
             var userUservice = new Mock<IUserService>();
+            var userRepo = new Mock<IUserRepository>();
 
             //Act
-            var controller = new UserController(logger.Object, userUservice.Object, apSettings.Object);
+            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings.Object);
             userUservice.Setup(x => x.RegisterUser(model, model.Password)).Returns(model);
             var result = controller.Register(model);
 
@@ -63,9 +65,10 @@ namespace ShoppingCart.Test
             var apSettings = new Mock<IOptions<AppSettings>>();
             var logger = new Mock<ILogger<UserController>>();
             var userUservice = new Mock<IUserService>();
+            var userRepo = new Mock<IUserRepository>();
 
             //Act
-            var controller = new UserController(logger.Object, userUservice.Object, apSettings.Object);
+            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings.Object);
             //userUservice.Setup(x => x.RegisterUser(model, model.Password)).Returns(model);
             var result = controller.Register(model);
 

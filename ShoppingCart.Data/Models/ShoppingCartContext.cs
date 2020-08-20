@@ -145,7 +145,9 @@ namespace ShoppingCart.Data.Models
 
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
 
-                entity.Property(e => e.Description).HasMaxLength(500);
+                entity.Property(e => e.Description)
+                    .IsRequired()
+                    .HasMaxLength(500);
 
                 entity.Property(e => e.Price).HasColumnType("money");
 
@@ -153,7 +155,9 @@ namespace ShoppingCart.Data.Models
                     .IsRequired()
                     .HasMaxLength(50);
 
-                entity.Property(e => e.Url).HasMaxLength(500);
+                entity.Property(e => e.Url)
+                    .IsRequired()
+                    .HasMaxLength(500);
 
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Product)
