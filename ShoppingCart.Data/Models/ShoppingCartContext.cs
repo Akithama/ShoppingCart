@@ -155,6 +155,8 @@ namespace ShoppingCart.Data.Models
                     .IsRequired()
                     .HasMaxLength(50);
 
+                entity.Property(e => e.Specification).IsRequired();
+
                 entity.Property(e => e.Url)
                     .IsRequired()
                     .HasMaxLength(500);

@@ -7,7 +7,11 @@
     </div>
     <div class="col">
         <!--<app-cart></app-cart>-->
-      <p>Car Infor</p>
+        <a href="#" class="nav-item nav-link messages" [routerLink]="['/shoppingcart/cart/cart']">
+            <i class="fa fa-shopping-cart"></i><span class="badge"
+              *ngIf="this.cartService.getNumberOfItems()">{{this.cartService.getNumberOfItems()}}</span>
+          </a>
+      <!-- <p>Car Infor</p> -->
     </div>
 </div>
 

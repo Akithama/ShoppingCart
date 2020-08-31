@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ɵConsole } from '@angular/core';
 import { ProductService } from '../../Services/product.service';
 import { Product } from '../../Models/product';
 import { Subscription } from 'rxjs';
@@ -16,8 +16,8 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private productService: ProductService) {
     this.subscription = this.productService.onProduct().subscribe(product => {
       if (product) {
+        product.specDetails = product.specification.split(',')
         this.product = product;
-        //console.log(product)
       } else {
         this.product = null
       }

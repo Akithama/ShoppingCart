@@ -1,37 +1,38 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-4 item-photo">
-      <img style="max-width:100%;" [src]="product.url" />
-    </div>
-    <div class="col-xs-5" style="border:0px solid gray">
-      <!-- Datos del vendedor y titulo del producto -->
-      <h3>{{ product.productName }} </h3>
-
-      <!-- Precios -->
-      <h3 style="margin-top:0px;">$ {{product.price}}</h3>
-
-      <!-- Detalles especificos del producto -->
-      <div class="section" style="padding-bottom:20px;">
-        <h6 class="title-attr"><small>Quantity:</small></h6>
-        <div>
-          <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
-          <input value="1" />
-          <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
-        </div>
-      </div>
-
-      <!-- Botones de compra -->
-      <div class="section" style="padding-bottom:20px;">
-        <button class="btn btn-success"><span style="margin-right:20px" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Add To Cart</button>
-      </div>
-    </div>
-
-    <div class="col-xs-8">
-      <div style="width:100%;border-top:1px solid silver">
-        <p style="padding:15px;">
-          <small>{{product.description}}</small>
-        </p>
-      </div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="item-photo">
+      <img style="max-width:100%;" [src]='product?.url' />
     </div>
   </div>
+  <div class="col-md-8">
+    <h3>{{ product?.productName }} </h3>
+    <h3 style="margin-top:0px;">$ {{product?.price}}</h3>
+    <div class="section" style="padding-bottom:20px;">
+      <h6 class="title-attr"><small>Quantity:</small></h6>
+      <div>
+        <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
+        <input value="1" />
+        <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
+      </div>
+    </div>
+    <div class="section" style="padding-bottom:20px;">
+      <button class="btn btn-success"><span style="margin-right:20px" 
+        class="glyphicon glyphicon-shopping-cart"
+          aria-hidden="true"></span>Add To Cart</button>
+    </div>
+    <div style="width:100%;border-top:1px solid silver">
+      <h4>Description</h4><br>
+      <p>
+        <small>{{product?.description}}</small>
+      </p><br>
+    </div>
+    <div style="width:100%;border-top:1px solid silver">
+      <h4>Specification</h4><br>
+      <ul>
+        <li *ngFor="let item of product?.specDetails">
+          {{item}}
+        </li>
+      </ul>
+    </div>
   </div>
+</div>
