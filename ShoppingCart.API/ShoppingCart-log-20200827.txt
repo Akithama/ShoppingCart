@@ -1,0 +1,1292 @@
+2020-08-27 10:00:38.209 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 10:00:39.245 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-08-27 10:00:39.245 +05:30 [Information] Hosting environment: "Development"
+2020-08-27 10:00:39.245 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-08-27 10:00:39.330 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-08-27 10:00:39.349 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-08-27 10:00:40.221 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 10:00:40.282 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "ShoppingCart.API.Controllers.ValuesController" ("ShoppingCart.API").
+2020-08-27 10:00:40.295 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 10:00:40.380 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)" in 86.1582ms
+2020-08-27 10:00:40.383 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 10:00:40.388 +05:30 [Information] Request finished in 1063.3287ms 200 application/json; charset=utf-8
+2020-08-27 10:00:40.528 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-08-27 10:00:40.560 +05:30 [Information] Request finished in 32.2081ms 404 
+2020-08-27 10:03:39.144 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:03:39.153 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:03:39.163 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:03:39.173 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:03:42.255 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:03:43.493 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:03:43.502 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:03:43.505 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:03:43.512 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:03:43.623 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:03:45.277 +05:30 [Information] Executed DbCommand ("434"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:03:45.277 +05:30 [Information] Executed DbCommand ("434"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:03:45.495 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:03:45.496 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:03:45.586 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 6412.742ms
+2020-08-27 10:03:45.587 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:03:45.594 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 2082.0628ms
+2020-08-27 10:03:45.594 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:03:45.603 +05:30 [Information] Request finished in 2110.0292ms 200 application/json; charset=utf-8
+2020-08-27 10:03:45.603 +05:30 [Information] Request finished in 6464.4223ms 200 application/json; charset=utf-8
+2020-08-27 10:06:02.742 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:06:02.759 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:06:02.775 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:06:02.777 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:06:02.994 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:06:03.156 +05:30 [Information] Executed DbCommand ("133"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:06:03.159 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:06:03.162 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 383.5614ms
+2020-08-27 10:06:03.162 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:06:03.163 +05:30 [Information] Request finished in 421.9636ms 200 application/json; charset=utf-8
+2020-08-27 10:06:07.390 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:06:07.399 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:06:07.400 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:06:07.405 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:06:07.425 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:06:07.434 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:06:07.438 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:06:07.440 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 27.64ms
+2020-08-27 10:06:07.440 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:06:07.441 +05:30 [Information] Request finished in 51.6329ms 200 application/json; charset=utf-8
+2020-08-27 10:06:37.650 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 10:06:37.652 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:06:37.670 +05:30 [Information] Request finished in 26.4331ms 204 
+2020-08-27 10:06:37.678 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 10:06:37.688 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:06:37.692 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 10:06:37.774 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 10:06:37.926 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:06:38.616 +05:30 [Information] Executed DbCommand ("452"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 10:06:39.353 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 10:06:39.358 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 1583.4969ms
+2020-08-27 10:06:39.360 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 10:06:39.360 +05:30 [Information] Request finished in 1682.8684ms 200 application/json; charset=utf-8
+2020-08-27 10:06:39.412 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:06:39.414 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:06:39.417 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:06:39.418 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:06:39.443 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:06:39.476 +05:30 [Information] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:06:39.477 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:06:39.479 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 60.93ms
+2020-08-27 10:06:39.480 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:06:39.480 +05:30 [Information] Request finished in 67.7801ms 200 application/json; charset=utf-8
+2020-08-27 10:08:02.462 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:08:02.464 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:08:02.465 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:08:02.468 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:08:02.491 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:08:02.604 +05:30 [Information] Executed DbCommand ("110"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:08:02.611 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:08:02.627 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 157.3122ms
+2020-08-27 10:08:02.627 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:08:02.628 +05:30 [Information] Request finished in 166.1162ms 200 application/json; charset=utf-8
+2020-08-27 10:08:07.032 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:08:07.033 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:08:07.035 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:08:07.037 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:08:07.045 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:08:07.055 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:08:07.060 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:08:07.062 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 24.4748ms
+2020-08-27 10:08:07.063 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:08:07.068 +05:30 [Information] Request finished in 37.2502ms 200 application/json; charset=utf-8
+2020-08-27 10:11:53.924 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:11:53.925 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:11:53.927 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:11:53.929 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:11:53.932 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:11:53.941 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:11:53.945 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:11:53.949 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 19.2784ms
+2020-08-27 10:11:53.949 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:11:53.955 +05:30 [Information] Request finished in 27.1069ms 200 application/json; charset=utf-8
+2020-08-27 10:12:31.979 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:12:31.980 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:12:31.981 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:12:31.982 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:12:31.985 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:12:32.101 +05:30 [Information] Executed DbCommand ("114"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:12:32.105 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:12:32.120 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 137.9338ms
+2020-08-27 10:12:32.120 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:12:32.120 +05:30 [Information] Request finished in 142.1496ms 200 application/json; charset=utf-8
+2020-08-27 10:14:18.569 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 10:14:18.575 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:14:18.576 +05:30 [Information] Request finished in 7.5286ms 204 
+2020-08-27 10:14:18.582 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 10:14:18.583 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:14:18.589 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 10:14:18.590 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 10:14:18.613 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:14:18.642 +05:30 [Information] Executed DbCommand ("20"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 10:14:18.646 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 10:14:18.648 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 57.9631ms
+2020-08-27 10:14:18.648 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 10:14:18.648 +05:30 [Information] Request finished in 67.2196ms 200 application/json; charset=utf-8
+2020-08-27 10:14:18.703 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:14:18.703 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:14:18.704 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:14:18.705 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:14:18.708 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:14:18.724 +05:30 [Information] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:14:18.726 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:14:18.730 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 25.0753ms
+2020-08-27 10:14:18.730 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:14:18.731 +05:30 [Information] Request finished in 28.2497ms 200 application/json; charset=utf-8
+2020-08-27 10:14:49.260 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:14:49.261 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:14:49.262 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:14:49.263 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:14:49.265 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:14:49.270 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:14:49.271 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:14:49.273 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 9.9276ms
+2020-08-27 10:14:49.273 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:14:49.273 +05:30 [Information] Request finished in 13.1013ms 200 application/json; charset=utf-8
+2020-08-27 10:14:52.079 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:14:52.080 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:14:52.081 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:14:52.081 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:14:52.083 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:14:52.088 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:14:52.091 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:14:52.094 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 12.2948ms
+2020-08-27 10:14:52.094 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:14:52.094 +05:30 [Information] Request finished in 15.199ms 200 application/json; charset=utf-8
+2020-08-27 10:15:02.192 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 10:15:02.196 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:15:02.199 +05:30 [Information] Request finished in 7.1074ms 204 
+2020-08-27 10:15:02.207 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 10:15:02.207 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:15:02.209 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 10:15:02.210 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 10:15:02.223 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:15:02.242 +05:30 [Information] Executed DbCommand ("9"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 10:15:02.245 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 10:15:02.246 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 36.2594ms
+2020-08-27 10:15:02.247 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 10:15:02.247 +05:30 [Information] Request finished in 40.6288ms 200 application/json; charset=utf-8
+2020-08-27 10:15:02.433 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:15:02.433 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:15:02.434 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:15:02.435 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:15:02.438 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:15:02.442 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:15:02.444 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:15:02.444 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 8.958ms
+2020-08-27 10:15:02.445 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:15:02.446 +05:30 [Information] Request finished in 13.2989ms 200 application/json; charset=utf-8
+2020-08-27 10:18:31.375 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:18:31.376 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:18:31.377 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:18:31.378 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:18:31.392 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:18:31.400 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:18:31.401 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:18:31.402 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 24.1354ms
+2020-08-27 10:18:31.402 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:18:31.403 +05:30 [Information] Request finished in 27.9446ms 200 application/json; charset=utf-8
+2020-08-27 10:18:35.619 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:18:35.620 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:18:35.621 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:18:35.622 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:18:35.633 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:18:35.651 +05:30 [Information] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:18:35.652 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:18:35.653 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 31.5088ms
+2020-08-27 10:18:35.654 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:18:35.654 +05:30 [Information] Request finished in 34.5814ms 200 application/json; charset=utf-8
+2020-08-27 10:19:15.397 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:19:15.400 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:19:15.401 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:19:15.402 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:19:15.409 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:19:15.413 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:19:15.415 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:19:15.418 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 16.0817ms
+2020-08-27 10:19:15.418 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:19:15.418 +05:30 [Information] Request finished in 21.6899ms 200 application/json; charset=utf-8
+2020-08-27 10:19:19.843 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:19:19.844 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:19:19.845 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:19:19.846 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:19:19.852 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:19:19.858 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:19:19.860 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:19:19.862 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 15.5761ms
+2020-08-27 10:19:19.864 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:19:19.865 +05:30 [Information] Request finished in 21.619ms 200 application/json; charset=utf-8
+2020-08-27 10:20:09.247 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:20:09.252 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:20:09.253 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:20:09.254 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:20:09.256 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:20:09.262 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:20:09.262 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:20:09.263 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 9.6741ms
+2020-08-27 10:20:09.265 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:20:09.266 +05:30 [Information] Request finished in 19.0041ms 200 application/json; charset=utf-8
+2020-08-27 10:20:13.562 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:20:13.562 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:20:13.563 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:20:13.572 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:20:13.573 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:20:13.621 +05:30 [Information] Executed DbCommand ("44"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:20:13.622 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:20:13.623 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 51.0656ms
+2020-08-27 10:20:13.623 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:20:13.624 +05:30 [Information] Request finished in 61.9935ms 200 application/json; charset=utf-8
+2020-08-27 10:23:03.341 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:23:03.341 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:23:03.342 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:23:03.343 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:23:03.347 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:23:03.354 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:23:03.355 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:23:03.356 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 13.5987ms
+2020-08-27 10:23:03.362 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:23:03.362 +05:30 [Information] Request finished in 21.5782ms 200 application/json; charset=utf-8
+2020-08-27 10:23:07.707 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:23:07.708 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:23:07.720 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:23:07.720 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:23:07.728 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:23:07.761 +05:30 [Information] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:23:07.762 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:23:07.765 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 44.3487ms
+2020-08-27 10:23:07.765 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:23:07.765 +05:30 [Information] Request finished in 58.4237ms 200 application/json; charset=utf-8
+2020-08-27 10:23:08.608 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/category?categoryId=4  
+2020-08-27 10:23:08.611 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:23:08.618 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:23:08.622 +05:30 [Information] Route matched with "{action = \"GetProductsByCategoryId\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] GetProductsByCategoryId(System.String)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:23:08.630 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:23:08.731 +05:30 [Information] Executed DbCommand ("82"ms) [Parameters=["@__categoryId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[CategoryID] = @__categoryId_0"
+2020-08-27 10:23:08.732 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:23:08.733 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)" in 110.2977ms
+2020-08-27 10:23:08.733 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:23:08.736 +05:30 [Information] Request finished in 128.8459ms 200 application/json; charset=utf-8
+2020-08-27 10:23:21.790 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/product?productId=3  
+2020-08-27 10:23:21.793 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:23:21.797 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:23:21.808 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[ShoppingCart.Data.Models.Product] Get(Int32)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:23:21.823 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:23:21.905 +05:30 [Information] Executed DbCommand ("18"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[ProductID] = @__p_0"
+2020-08-27 10:23:21.906 +05:30 [Information] Executing ObjectResult, writing value of type '"ShoppingCart.Data.Models.Product"'.
+2020-08-27 10:23:21.907 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 97.6582ms
+2020-08-27 10:23:21.907 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:23:21.907 +05:30 [Information] Request finished in 117.0059ms 200 application/json; charset=utf-8
+2020-08-27 10:24:39.623 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:24:39.624 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:24:39.625 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:24:39.625 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:24:39.634 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:24:39.647 +05:30 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:24:39.649 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:24:39.650 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 24.2083ms
+2020-08-27 10:24:39.650 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:24:39.650 +05:30 [Information] Request finished in 26.876ms 200 application/json; charset=utf-8
+2020-08-27 10:24:43.890 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:24:43.891 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:24:43.892 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:24:43.893 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:24:43.915 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:24:43.941 +05:30 [Information] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:24:43.942 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:24:43.948 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 52.2709ms
+2020-08-27 10:24:43.948 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:24:43.948 +05:30 [Information] Request finished in 58.1937ms 200 application/json; charset=utf-8
+2020-08-27 10:25:23.677 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/product?productId=1  
+2020-08-27 10:25:23.687 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:25:23.688 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:25:23.689 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[ShoppingCart.Data.Models.Product] Get(Int32)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:25:23.692 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:25:23.718 +05:30 [Information] Executed DbCommand ("19"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[ProductID] = @__p_0"
+2020-08-27 10:25:23.719 +05:30 [Information] Executing ObjectResult, writing value of type '"ShoppingCart.Data.Models.Product"'.
+2020-08-27 10:25:23.720 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 30.8217ms
+2020-08-27 10:25:23.720 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:25:23.721 +05:30 [Information] Request finished in 44.1883ms 200 application/json; charset=utf-8
+2020-08-27 10:26:33.379 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:26:33.379 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:26:33.407 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:26:33.408 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:26:33.411 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:26:33.428 +05:30 [Information] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:26:33.429 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:26:33.432 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 23.9442ms
+2020-08-27 10:26:33.433 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:26:33.433 +05:30 [Information] Request finished in 53.8925ms 200 application/json; charset=utf-8
+2020-08-27 10:29:49.358 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 10:29:49.359 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:29:49.360 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:29:49.367 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 10:29:49.377 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:29:49.384 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 10:29:49.386 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:29:49.387 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 19.214ms
+2020-08-27 10:29:49.387 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 10:29:49.387 +05:30 [Information] Request finished in 29.8597ms 200 application/json; charset=utf-8
+2020-08-27 10:29:53.865 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 10:29:53.865 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:29:53.865 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:29:53.866 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:29:53.866 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:29:53.879 +05:30 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 10:29:53.881 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:29:53.885 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 19.4373ms
+2020-08-27 10:29:53.885 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 10:29:53.886 +05:30 [Information] Request finished in 20.5578ms 200 application/json; charset=utf-8
+2020-08-27 10:33:02.906 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/category?categoryId=1  
+2020-08-27 10:33:02.906 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:33:02.906 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:02.907 +05:30 [Information] Route matched with "{action = \"GetProductsByCategoryId\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] GetProductsByCategoryId(System.String)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:33:02.917 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:33:02.931 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__categoryId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[CategoryID] = @__categoryId_0"
+2020-08-27 10:33:02.932 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:33:02.934 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)" in 27.4652ms
+2020-08-27 10:33:02.934 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:02.935 +05:30 [Information] Request finished in 29.0379ms 200 application/json; charset=utf-8
+2020-08-27 10:33:06.231 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/category?categoryId=5  
+2020-08-27 10:33:06.240 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:33:06.241 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.246 +05:30 [Information] Route matched with "{action = \"GetProductsByCategoryId\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] GetProductsByCategoryId(System.String)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:33:06.249 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:33:06.253 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=["@__categoryId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[CategoryID] = @__categoryId_0"
+2020-08-27 10:33:06.254 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:33:06.254 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)" in 8.3352ms
+2020-08-27 10:33:06.255 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.255 +05:30 [Information] Request finished in 24.0749ms 200 application/json; charset=utf-8
+2020-08-27 10:33:06.357 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/category?categoryId=5  
+2020-08-27 10:33:06.357 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:33:06.357 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.358 +05:30 [Information] Route matched with "{action = \"GetProductsByCategoryId\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] GetProductsByCategoryId(System.String)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:33:06.365 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:33:06.369 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__categoryId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[CategoryID] = @__categoryId_0"
+2020-08-27 10:33:06.369 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:33:06.370 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)" in 11.3721ms
+2020-08-27 10:33:06.370 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.370 +05:30 [Information] Request finished in 13.1647ms 200 application/json; charset=utf-8
+2020-08-27 10:33:06.490 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/category?categoryId=5  
+2020-08-27 10:33:06.490 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:33:06.490 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.491 +05:30 [Information] Route matched with "{action = \"GetProductsByCategoryId\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] GetProductsByCategoryId(System.String)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:33:06.496 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:33:06.505 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__categoryId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[CategoryID] = @__categoryId_0"
+2020-08-27 10:33:06.505 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:33:06.506 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)" in 15.2689ms
+2020-08-27 10:33:06.506 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.506 +05:30 [Information] Request finished in 16.2247ms 200 application/json; charset=utf-8
+2020-08-27 10:33:06.655 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product/category?categoryId=5  
+2020-08-27 10:33:06.656 +05:30 [Information] CORS policy execution successful.
+2020-08-27 10:33:06.656 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.656 +05:30 [Information] Route matched with "{action = \"GetProductsByCategoryId\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] GetProductsByCategoryId(System.String)" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 10:33:06.658 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 10:33:06.660 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=["@__categoryId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]
+WHERE [p].[CategoryID] = @__categoryId_0"
+2020-08-27 10:33:06.660 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 10:33:06.661 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)" in 4.7519ms
+2020-08-27 10:33:06.661 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.GetProductsByCategoryId (ShoppingCart.API)"'
+2020-08-27 10:33:06.661 +05:30 [Information] Request finished in 6.1499ms 200 application/json; charset=utf-8
+2020-08-27 14:51:27.165 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 14:51:28.569 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-08-27 14:51:28.593 +05:30 [Information] Hosting environment: "Development"
+2020-08-27 14:51:28.593 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-08-27 14:51:28.736 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-08-27 14:51:28.753 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-08-27 14:51:29.803 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 14:51:29.924 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "ShoppingCart.API.Controllers.ValuesController" ("ShoppingCart.API").
+2020-08-27 14:51:29.957 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 14:51:30.046 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)" in 109.073ms
+2020-08-27 14:51:30.048 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 14:51:30.115 +05:30 [Information] Request finished in 1387.2302ms 200 application/json; charset=utf-8
+2020-08-27 14:51:30.216 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-08-27 14:51:30.339 +05:30 [Information] Request finished in 123.9578ms 404 
+2020-08-27 14:57:00.379 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 14:57:00.900 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-08-27 14:57:00.901 +05:30 [Information] Hosting environment: "Development"
+2020-08-27 14:57:00.901 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-08-27 14:57:00.943 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-08-27 14:57:01.010 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-08-27 14:57:02.035 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 14:57:02.084 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "ShoppingCart.API.Controllers.ValuesController" ("ShoppingCart.API").
+2020-08-27 14:57:02.095 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 14:57:02.135 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)" in 34.6273ms
+2020-08-27 14:57:02.139 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 14:57:02.143 +05:30 [Information] Request finished in 1209.6103ms 200 application/json; charset=utf-8
+2020-08-27 14:57:02.257 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-08-27 14:57:02.271 +05:30 [Information] Request finished in 5.5963ms 404 
+2020-08-27 15:04:49.296 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:04:49.301 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:04:49.390 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:04:49.402 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:04:49.501 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:04:49.507 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:04:49.508 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:04:49.512 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:04:51.345 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:04:51.345 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:04:52.908 +05:30 [Information] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:04:52.908 +05:30 [Information] Executed DbCommand ("77"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:04:53.026 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:04:53.026 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:04:53.077 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 3674.8274ms
+2020-08-27 15:04:53.078 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:04:53.084 +05:30 [Information] Request finished in 3793.0895ms 200 application/json; charset=utf-8
+2020-08-27 15:04:53.085 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 3572.8209ms
+2020-08-27 15:04:53.085 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:04:53.086 +05:30 [Information] Request finished in 3584.6135ms 200 application/json; charset=utf-8
+2020-08-27 15:08:17.563 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:08:17.565 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:08:17.567 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:17.570 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:08:17.673 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:08:17.730 +05:30 [Information] Executed DbCommand ("47"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:08:17.732 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:08:17.737 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 165.4156ms
+2020-08-27 15:08:17.737 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:17.737 +05:30 [Information] Request finished in 174.5762ms 200 application/json; charset=utf-8
+2020-08-27 15:08:19.624 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:08:19.625 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:08:19.626 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:19.627 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:08:19.631 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:08:19.645 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:08:19.647 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:08:19.649 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 21.1493ms
+2020-08-27 15:08:19.649 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:19.649 +05:30 [Information] Request finished in 25.6625ms 200 application/json; charset=utf-8
+2020-08-27 15:08:27.784 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:08:27.785 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:08:27.789 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:27.793 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:08:27.815 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:08:27.837 +05:30 [Information] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:08:27.841 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:08:27.844 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 50.8035ms
+2020-08-27 15:08:27.844 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:27.845 +05:30 [Information] Request finished in 61.3572ms 200 application/json; charset=utf-8
+2020-08-27 15:08:29.615 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:08:29.616 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:08:29.617 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:29.618 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:08:29.623 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:08:29.627 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:08:29.630 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:08:29.633 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 14.3776ms
+2020-08-27 15:08:29.634 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:29.634 +05:30 [Information] Request finished in 19.6725ms 200 application/json; charset=utf-8
+2020-08-27 15:08:41.878 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:08:41.880 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:08:41.880 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:41.881 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:08:41.884 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:08:41.887 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:08:41.890 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:08:41.891 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 10.0309ms
+2020-08-27 15:08:41.891 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:41.892 +05:30 [Information] Request finished in 13.6752ms 200 application/json; charset=utf-8
+2020-08-27 15:08:42.566 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:08:42.567 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:08:42.568 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:42.568 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:08:42.573 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:08:42.583 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:08:42.586 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:08:42.589 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 20.8015ms
+2020-08-27 15:08:42.590 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:08:42.590 +05:30 [Information] Request finished in 24.4398ms 200 application/json; charset=utf-8
+2020-08-27 15:22:52.770 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:22:52.772 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:22:52.780 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:22:52.781 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:22:52.785 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:22:52.875 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:22:52.881 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:22:52.884 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 100.9908ms
+2020-08-27 15:22:52.889 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:22:52.889 +05:30 [Information] Request finished in 119.7617ms 200 application/json; charset=utf-8
+2020-08-27 15:22:53.014 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:22:53.015 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:22:53.016 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:22:53.017 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:22:53.019 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:22:53.023 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:22:53.025 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:22:53.026 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 8.5392ms
+2020-08-27 15:22:53.026 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:22:53.026 +05:30 [Information] Request finished in 11.8284ms 200 application/json; charset=utf-8
+2020-08-27 15:23:02.523 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 15:23:02.529 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:23:02.531 +05:30 [Information] Request finished in 8.5542ms 204 
+2020-08-27 15:23:02.535 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 15:23:02.537 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:23:02.566 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 15:23:02.651 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 15:23:02.761 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:23:03.124 +05:30 [Information] Executed DbCommand ("136"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 15:23:03.750 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 15:23:03.753 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 1101.7266ms
+2020-08-27 15:23:03.753 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 15:23:03.754 +05:30 [Information] Request finished in 1219.4318ms 200 application/json; charset=utf-8
+2020-08-27 15:31:25.150 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:31:25.152 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:31:25.153 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:31:25.153 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:31:25.166 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:31:25.292 +05:30 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:31:25.297 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:31:25.299 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 145.8461ms
+2020-08-27 15:31:25.300 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:31:25.300 +05:30 [Information] Request finished in 149.8404ms 200 application/json; charset=utf-8
+2020-08-27 15:31:36.770 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 15:31:36.771 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:31:36.773 +05:30 [Information] Request finished in 2.0029ms 204 
+2020-08-27 15:31:36.777 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 15:31:36.778 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:31:36.792 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 15:31:36.793 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 15:31:36.801 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:31:36.812 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 15:31:36.814 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 15:31:36.815 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 22.2656ms
+2020-08-27 15:31:36.815 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 15:31:36.816 +05:30 [Information] Request finished in 38.6089ms 200 application/json; charset=utf-8
+2020-08-27 15:38:36.676 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:38:36.683 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:36.684 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:36.684 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:38:36.687 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:36.747 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:38:36.749 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:36.756 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 71.3886ms
+2020-08-27 15:38:36.756 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:36.757 +05:30 [Information] Request finished in 80.8122ms 200 application/json; charset=utf-8
+2020-08-27 15:38:37.000 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:38:37.000 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:37.001 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:37.001 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:38:37.003 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:37.008 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:38:37.010 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:37.014 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 12.5718ms
+2020-08-27 15:38:37.014 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:37.015 +05:30 [Information] Request finished in 15.1883ms 200 application/json; charset=utf-8
+2020-08-27 15:38:44.633 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:38:44.634 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:44.635 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:44.636 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:38:44.638 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:44.641 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:38:44.643 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:44.645 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 9.2831ms
+2020-08-27 15:38:44.645 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:44.646 +05:30 [Information] Request finished in 12.589ms 200 application/json; charset=utf-8
+2020-08-27 15:38:44.750 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:38:44.752 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:44.753 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:44.754 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:38:44.755 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:44.758 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:38:44.759 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:44.760 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 6.1927ms
+2020-08-27 15:38:44.760 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:44.760 +05:30 [Information] Request finished in 9.7402ms 200 application/json; charset=utf-8
+2020-08-27 15:38:49.656 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:38:49.657 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:49.658 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:49.658 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:38:49.661 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:49.670 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:38:49.671 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:49.673 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 14.7728ms
+2020-08-27 15:38:49.673 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:49.674 +05:30 [Information] Request finished in 18.17ms 200 application/json; charset=utf-8
+2020-08-27 15:38:49.762 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:38:49.762 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:49.763 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:49.763 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:38:49.764 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:49.766 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:38:49.767 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:49.769 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 5.6348ms
+2020-08-27 15:38:49.769 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:49.769 +05:30 [Information] Request finished in 7.451ms 200 application/json; charset=utf-8
+2020-08-27 15:38:58.312 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:38:58.312 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:58.313 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:58.313 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:38:58.315 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:58.368 +05:30 [Information] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:38:58.370 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:58.372 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 57.981ms
+2020-08-27 15:38:58.372 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:58.373 +05:30 [Information] Request finished in 60.6181ms 200 application/json; charset=utf-8
+2020-08-27 15:38:58.479 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:38:58.479 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:38:58.480 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:58.480 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:38:58.482 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:38:58.488 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:38:58.490 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:38:58.491 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 10.3619ms
+2020-08-27 15:38:58.491 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:38:58.491 +05:30 [Information] Request finished in 12.2585ms 200 application/json; charset=utf-8
+2020-08-27 15:40:59.468 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:40:59.469 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:40:59.469 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:40:59.470 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:40:59.571 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:40:59.592 +05:30 [Information] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:40:59.593 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:40:59.672 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 201.8586ms
+2020-08-27 15:40:59.680 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:40:59.681 +05:30 [Information] Request finished in 212.7977ms 200 application/json; charset=utf-8
+2020-08-27 15:41:01.785 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:41:01.785 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:41:01.785 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:01.786 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:41:01.787 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:41:01.932 +05:30 [Information] Executed DbCommand ("144"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:41:01.934 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:41:01.940 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 153.685ms
+2020-08-27 15:41:01.940 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:01.940 +05:30 [Information] Request finished in 155.3748ms 200 application/json; charset=utf-8
+2020-08-27 15:41:07.842 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:41:07.842 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:41:07.843 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:07.843 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:41:07.845 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:41:07.847 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:41:07.849 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:41:07.850 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 6.5071ms
+2020-08-27 15:41:07.850 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:07.850 +05:30 [Information] Request finished in 8.6221ms 200 application/json; charset=utf-8
+2020-08-27 15:41:08.062 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:41:08.062 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:41:08.064 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:08.064 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:41:08.066 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:41:08.110 +05:30 [Information] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:41:08.111 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:41:08.114 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 50.0519ms
+2020-08-27 15:41:08.115 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:08.115 +05:30 [Information] Request finished in 53.2145ms 200 application/json; charset=utf-8
+2020-08-27 15:41:49.111 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:41:49.121 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:41:49.121 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:49.121 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:41:49.123 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:41:49.127 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:41:49.128 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:41:49.129 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 7.3935ms
+2020-08-27 15:41:49.129 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:49.130 +05:30 [Information] Request finished in 18.6935ms 200 application/json; charset=utf-8
+2020-08-27 15:41:49.349 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:41:49.350 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:41:49.352 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:49.352 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:41:49.354 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:41:49.357 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:41:49.359 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:41:49.360 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 7.2356ms
+2020-08-27 15:41:49.360 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:41:49.360 +05:30 [Information] Request finished in 10.7997ms 200 application/json; charset=utf-8
+2020-08-27 15:53:31.540 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:53:31.541 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:53:31.541 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:53:31.542 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:53:31.548 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:53:31.570 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:53:31.571 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:53:31.572 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 30.2903ms
+2020-08-27 15:53:31.573 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:53:31.573 +05:30 [Information] Request finished in 32.951ms 200 application/json; charset=utf-8
+2020-08-27 15:53:31.835 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:53:31.836 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:53:31.836 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:53:31.836 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:53:31.838 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:53:31.842 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:53:31.843 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:53:31.845 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 7.9458ms
+2020-08-27 15:53:31.845 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:53:31.845 +05:30 [Information] Request finished in 9.7547ms 200 application/json; charset=utf-8
+2020-08-27 15:54:19.710 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:54:19.710 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:54:19.712 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:19.713 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:54:19.718 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:54:19.732 +05:30 [Information] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:54:19.733 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:54:19.734 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 17.9779ms
+2020-08-27 15:54:19.734 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:19.735 +05:30 [Information] Request finished in 24.9127ms 200 application/json; charset=utf-8
+2020-08-27 15:54:23.296 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:54:23.298 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:54:23.305 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:23.305 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:54:23.307 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:54:23.311 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:54:23.312 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:54:23.313 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 7.4428ms
+2020-08-27 15:54:23.314 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:23.314 +05:30 [Information] Request finished in 18.2947ms 200 application/json; charset=utf-8
+2020-08-27 15:54:32.037 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:54:32.038 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:54:32.038 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:32.038 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:54:32.039 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:54:32.042 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:54:32.043 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:54:32.044 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 5.5865ms
+2020-08-27 15:54:32.044 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:32.044 +05:30 [Information] Request finished in 6.8895ms 200 application/json; charset=utf-8
+2020-08-27 15:54:32.441 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:54:32.442 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:54:32.447 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:32.447 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:54:32.448 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:54:32.449 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:54:32.450 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:54:32.451 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 3.3226ms
+2020-08-27 15:54:32.451 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:54:32.452 +05:30 [Information] Request finished in 10.6945ms 200 application/json; charset=utf-8
+2020-08-27 15:55:29.808 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:55:29.809 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:55:29.809 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:29.809 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:55:29.837 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:55:29.840 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:55:29.841 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:55:29.842 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 32.2324ms
+2020-08-27 15:55:29.842 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:29.843 +05:30 [Information] Request finished in 35.1596ms 200 application/json; charset=utf-8
+2020-08-27 15:55:30.306 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:55:30.306 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:55:30.306 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:30.308 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:55:30.313 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:55:30.317 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:55:30.318 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:55:30.318 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 10.6403ms
+2020-08-27 15:55:30.319 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:30.319 +05:30 [Information] Request finished in 12.977ms 200 application/json; charset=utf-8
+2020-08-27 15:55:38.290 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 15:55:38.290 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:55:38.290 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:38.290 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 15:55:38.291 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:55:38.293 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 15:55:38.293 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:55:38.294 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 3.5038ms
+2020-08-27 15:55:38.294 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:38.294 +05:30 [Information] Request finished in 4.5936ms 200 application/json; charset=utf-8
+2020-08-27 15:55:38.760 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 15:55:38.760 +05:30 [Information] CORS policy execution successful.
+2020-08-27 15:55:38.760 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:38.760 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 15:55:38.761 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 15:55:38.762 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 15:55:38.763 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 15:55:38.763 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 3.0282ms
+2020-08-27 15:55:38.763 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 15:55:38.764 +05:30 [Information] Request finished in 3.9122ms 200 application/json; charset=utf-8
+2020-08-27 16:01:37.682 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:01:37.682 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:01:37.683 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:01:37.684 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:01:37.690 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:01:37.707 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:01:37.707 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:01:37.708 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 19.9374ms
+2020-08-27 16:01:37.708 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:01:37.708 +05:30 [Information] Request finished in 26.6607ms 200 application/json; charset=utf-8
+2020-08-27 16:01:37.956 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:01:37.956 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:01:37.956 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:01:37.956 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:01:37.957 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:01:37.960 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:01:37.960 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:01:37.961 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 4.442ms
+2020-08-27 16:01:37.961 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:01:37.961 +05:30 [Information] Request finished in 5.3934ms 200 application/json; charset=utf-8
+2020-08-27 16:03:11.085 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:03:11.089 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:11.090 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:11.090 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:03:11.097 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:11.104 +05:30 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:03:11.106 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:11.113 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 23.0909ms
+2020-08-27 16:03:11.113 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:11.114 +05:30 [Information] Request finished in 28.5933ms 200 application/json; charset=utf-8
+2020-08-27 16:03:11.475 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:03:11.475 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:11.475 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:11.475 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:03:11.476 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:11.479 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:03:11.480 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:11.481 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 5.1196ms
+2020-08-27 16:03:11.481 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:11.481 +05:30 [Information] Request finished in 6.0344ms 200 application/json; charset=utf-8
+2020-08-27 16:03:42.963 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:03:42.968 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:42.968 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:42.968 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:03:42.969 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:42.970 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:03:42.971 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:42.971 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 2.6436ms
+2020-08-27 16:03:42.971 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:42.971 +05:30 [Information] Request finished in 9.3816ms 200 application/json; charset=utf-8
+2020-08-27 16:03:43.313 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:03:43.314 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:43.314 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:43.314 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:03:43.315 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:43.316 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:03:43.316 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:43.317 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 2.7715ms
+2020-08-27 16:03:43.317 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:43.317 +05:30 [Information] Request finished in 3.7736ms 200 application/json; charset=utf-8
+2020-08-27 16:03:47.776 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:03:47.776 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:47.777 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:47.777 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:03:47.777 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:47.778 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:03:47.779 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:47.780 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 2.7453ms
+2020-08-27 16:03:47.780 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:47.780 +05:30 [Information] Request finished in 4.036ms 200 application/json; charset=utf-8
+2020-08-27 16:03:48.320 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:03:48.320 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:48.321 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:48.321 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:03:48.322 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:48.323 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:03:48.323 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:48.324 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 2.8729ms
+2020-08-27 16:03:48.324 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:48.324 +05:30 [Information] Request finished in 4.0971ms 200 application/json; charset=utf-8
+2020-08-27 16:03:58.701 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:03:58.701 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:58.702 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:58.702 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:03:58.703 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:58.704 +05:30 [Information] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:03:58.704 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:58.704 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 2.6784ms
+2020-08-27 16:03:58.705 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:58.705 +05:30 [Information] Request finished in 3.6696ms 200 application/json; charset=utf-8
+2020-08-27 16:03:59.009 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:03:59.010 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:03:59.010 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:59.010 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:03:59.011 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:03:59.012 +05:30 [Information] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:03:59.012 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:03:59.013 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 2.8537ms
+2020-08-27 16:03:59.013 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:03:59.013 +05:30 [Information] Request finished in 3.7934ms 200 application/json; charset=utf-8
+2020-08-27 16:04:08.745 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:04:08.746 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:04:08.746 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:08.746 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:04:08.747 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:04:08.750 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:04:08.750 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:04:08.751 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 4.8144ms
+2020-08-27 16:04:08.751 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:08.751 +05:30 [Information] Request finished in 5.8582ms 200 application/json; charset=utf-8
+2020-08-27 16:04:09.234 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:04:09.235 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:04:09.235 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:09.235 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:04:09.236 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:04:09.239 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:04:09.240 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:04:09.241 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 5.5458ms
+2020-08-27 16:04:09.241 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:09.241 +05:30 [Information] Request finished in 6.4759ms 200 application/json; charset=utf-8
+2020-08-27 16:04:19.046 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:04:19.046 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:04:19.046 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:19.047 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:04:19.047 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:04:19.052 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:04:19.052 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:04:19.053 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 6.5803ms
+2020-08-27 16:04:19.053 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:19.054 +05:30 [Information] Request finished in 7.7348ms 200 application/json; charset=utf-8
+2020-08-27 16:04:19.841 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:04:19.841 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:04:19.841 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:19.842 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:04:19.842 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:04:19.846 +05:30 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:04:19.847 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:04:19.847 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 5.5516ms
+2020-08-27 16:04:19.847 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:04:19.848 +05:30 [Information] Request finished in 6.6258ms 200 application/json; charset=utf-8
+2020-08-27 16:28:09.180 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 16:28:09.683 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-08-27 16:28:09.683 +05:30 [Information] Hosting environment: "Development"
+2020-08-27 16:28:09.683 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-08-27 16:28:09.730 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-08-27 16:28:09.740 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-08-27 16:28:09.916 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 16:28:09.944 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "ShoppingCart.API.Controllers.ValuesController" ("ShoppingCart.API").
+2020-08-27 16:28:09.951 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:28:10.010 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)" in 47.1255ms
+2020-08-27 16:28:10.012 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 16:28:10.018 +05:30 [Information] Request finished in 289.616ms 200 application/json; charset=utf-8
+2020-08-27 16:28:10.099 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-08-27 16:28:10.111 +05:30 [Information] Request finished in 12.2383ms 404 
+2020-08-27 16:28:31.701 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:28:31.788 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:28:31.794 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:28:31.802 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:28:34.550 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:28:36.220 +05:30 [Information] Executed DbCommand ("70"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:28:36.488 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:28:36.539 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 4736.6124ms
+2020-08-27 16:28:36.539 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:28:36.547 +05:30 [Information] Request finished in 4846.6713ms 200 application/json; charset=utf-8
+2020-08-27 16:28:50.414 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 16:28:50.417 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:28:50.419 +05:30 [Information] Request finished in 5.0594ms 204 
+2020-08-27 16:28:50.424 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 16:28:50.427 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:28:50.430 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:28:50.446 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 16:28:50.535 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:28:50.825 +05:30 [Information] Executed DbCommand ("110"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 16:28:51.095 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:28:51.098 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 651.719ms
+2020-08-27 16:28:51.098 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:28:51.098 +05:30 [Information] Request finished in 675.1039ms 200 application/json; charset=utf-8
+2020-08-27 16:29:19.538 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 16:29:19.546 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:29:19.547 +05:30 [Information] Request finished in 9.1686ms 204 
+2020-08-27 16:29:19.550 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 16:29:19.550 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:29:19.553 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:29:19.560 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 16:29:19.576 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:29:19.591 +05:30 [Information] Executed DbCommand ("7"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 16:29:19.593 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:29:19.594 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 34.3365ms
+2020-08-27 16:29:19.595 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:29:19.600 +05:30 [Information] Request finished in 50.4109ms 200 application/json; charset=utf-8
+2020-08-27 16:29:51.260 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:29:51.279 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:29:51.280 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:29:51.285 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:29:51.290 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:29:51.364 +05:30 [Information] Executed DbCommand ("72"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:29:51.367 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:29:51.381 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 94.5549ms
+2020-08-27 16:29:51.381 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:29:51.381 +05:30 [Information] Request finished in 122.2981ms 200 application/json; charset=utf-8
+2020-08-27 16:30:02.343 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 16:30:02.349 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:30:02.351 +05:30 [Information] Request finished in 8.0728ms 204 
+2020-08-27 16:30:02.356 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 16:30:02.358 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:30:02.360 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:30:02.360 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 16:30:02.378 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:30:02.384 +05:30 [Information] Executed DbCommand ("4"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 16:30:02.386 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:30:02.388 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 27.813ms
+2020-08-27 16:30:02.389 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:30:02.389 +05:30 [Information] Request finished in 33.3379ms 200 application/json; charset=utf-8
+2020-08-27 16:39:51.846 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 16:39:52.576 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-08-27 16:39:52.576 +05:30 [Information] Hosting environment: "Development"
+2020-08-27 16:39:52.587 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-08-27 16:39:52.649 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-08-27 16:39:52.664 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-08-27 16:39:52.908 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 16:39:52.968 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "ShoppingCart.API.Controllers.ValuesController" ("ShoppingCart.API").
+2020-08-27 16:39:52.981 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:39:53.031 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)" in 46.7118ms
+2020-08-27 16:39:53.035 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 16:39:53.041 +05:30 [Information] Request finished in 402.3493ms 200 application/json; charset=utf-8
+2020-08-27 16:39:53.149 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-08-27 16:39:53.163 +05:30 [Information] Request finished in 10.5827ms 404 
+2020-08-27 16:41:13.713 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/category  
+2020-08-27 16:41:13.722 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:41:13.728 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:41:13.780 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Category\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Category]] Get()" on controller "ShoppingCart.API.Controllers.CategoryController" ("ShoppingCart.API").
+2020-08-27 16:41:16.948 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:41:17.815 +05:30 [Information] Executed DbCommand ("55"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[CategoryID], [c].[CategoryName]
+FROM [Category] AS [c]"
+2020-08-27 16:41:18.007 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Category, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:41:18.025 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)" in 4244.4662ms
+2020-08-27 16:41:18.025 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.CategoryController.Get (ShoppingCart.API)"'
+2020-08-27 16:41:18.032 +05:30 [Information] Request finished in 4325.7038ms 200 application/json; charset=utf-8
+2020-08-27 16:41:18.148 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:41:18.161 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:41:18.162 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:41:18.180 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:41:18.265 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:41:18.281 +05:30 [Information] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:41:18.304 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:41:18.315 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 133.1715ms
+2020-08-27 16:41:18.315 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:41:18.316 +05:30 [Information] Request finished in 170.4416ms 200 application/json; charset=utf-8
+2020-08-27 16:41:50.626 +05:30 [Information] Request starting HTTP/1.1 OPTIONS http://localhost:4000/user/Authenticate  
+2020-08-27 16:41:50.629 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:41:50.638 +05:30 [Information] Request finished in 14.9319ms 204 
+2020-08-27 16:41:50.647 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/user/Authenticate application/json 39
+2020-08-27 16:41:50.650 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:41:50.654 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:41:50.670 +05:30 [Information] Route matched with "{action = \"Authenticate\", controller = \"User\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Authenticate(ShoppingCart.Bll.Service.AuthenticateViewModel)" on controller "ShoppingCart.API.Controllers.UserController" ("ShoppingCart.API").
+2020-08-27 16:41:50.724 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:41:50.927 +05:30 [Information] Executed DbCommand ("53"ms) [Parameters=["@__username_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[UserID], [u].[DateRegister], [u].[Email], [u].[FirstName], [u].[IsAdmin], [u].[LastName], [u].[MobileNumber], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserName] = @__username_0"
+2020-08-27 16:41:51.174 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`5[[System.Int32, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:41:51.180 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)" in 509.0811ms
+2020-08-27 16:41:51.180 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.UserController.Authenticate (ShoppingCart.API)"'
+2020-08-27 16:41:51.180 +05:30 [Information] Request finished in 533.6464ms 200 application/json; charset=utf-8
+2020-08-27 16:42:49.751 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/api/product  
+2020-08-27 16:42:49.753 +05:30 [Information] CORS policy execution successful.
+2020-08-27 16:42:49.753 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:42:49.754 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Product\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[ShoppingCart.Data.Models.Product]] Get()" on controller "ShoppingCart.API.Controllers.ProductController" ("ShoppingCart.API").
+2020-08-27 16:42:49.766 +05:30 [Information] Entity Framework Core "3.1.5" initialized '"ShoppingCartContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+2020-08-27 16:42:49.770 +05:30 [Information] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [p].[ProductID], [p].[CategoryID], [p].[Description], [p].[Price], [p].[ProductName], [p].[Quantity], [p].[Url]
+FROM [Product] AS [p]"
+2020-08-27 16:42:49.772 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[ShoppingCart.Data.Models.Product, ShoppingCart.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+2020-08-27 16:42:49.773 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)" in 19.0155ms
+2020-08-27 16:42:49.773 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ProductController.Get (ShoppingCart.API)"'
+2020-08-27 16:42:49.773 +05:30 [Information] Request finished in 26.9134ms 200 application/json; charset=utf-8
+2020-08-27 16:48:43.446 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-27 16:48:44.059 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-08-27 16:48:44.060 +05:30 [Information] Hosting environment: "Development"
+2020-08-27 16:48:44.060 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-08-27 16:48:44.122 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-08-27 16:48:44.148 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-08-27 16:48:44.510 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 16:48:44.573 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Values\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.String]] Get()" on controller "ShoppingCart.API.Controllers.ValuesController" ("ShoppingCart.API").
+2020-08-27 16:48:44.587 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-08-27 16:48:44.650 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)" in 47.7963ms
+2020-08-27 16:48:44.653 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.ValuesController.Get (ShoppingCart.API)"'
+2020-08-27 16:48:44.668 +05:30 [Information] Request finished in 553.1254ms 200 application/json; charset=utf-8
+2020-08-27 16:48:44.767 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/favicon.ico  
+2020-08-27 16:48:44.773 +05:30 [Information] Request finished in 6.213ms 404 

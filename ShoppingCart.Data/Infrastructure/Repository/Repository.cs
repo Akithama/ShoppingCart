@@ -18,11 +18,8 @@ namespace ShoppingCart.Data.Infrastructure.Repository
         }
         public void Delete(object id)
         {
-            //this.context.Set<T>().Remove(id);
-
             var entity = Context.Set<T>().Find(id);
             Context.Set<T>().Remove(entity);
-            //context.SaveChanges();
         }
 
         public IEnumerable<T> GetAll()
@@ -38,13 +35,11 @@ namespace ShoppingCart.Data.Infrastructure.Repository
         public void Add(T obj)
         {
             Context.Set<T>().Add(obj);
-            //context.SaveChangesAsync();
         }
 
         public void Update(T obj)
         {
             this.Context.Entry(obj).State = EntityState.Modified;
-            //context.SaveChangesAsync();
         }
     }
 }

@@ -29,7 +29,6 @@ export class NavComponent implements OnInit {
   }
 
   getCategoryId(categoryId: number) {
-
     this.productService.setProductsByCategoryId(categoryId);
   }
 

@@ -8,6 +8,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ErrorInterceptor } from './Helpers/error.interceptor';
 import { JwtInterceptor } from './Helpers/jwt.interceptor';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AlertifyService } from './Services/alertify.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
+    AlertifyService,
   ],
   bootstrap: [AppComponent]
 })

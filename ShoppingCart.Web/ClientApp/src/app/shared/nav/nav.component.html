@@ -1,4 +1,65 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+  <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>Brand<b>Name</b></a>
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+    <div class="navbar-nav" *ngFor="let category of categoryList">
+      <a href="javascript:void(0);" class="nav-item nav-link active" [id]="category.categoryId"
+         (click)="getCategoryId(category.categoryId)">
+        {{category.categoryName}}
+      </a>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+      <a href="#" class="nav-item nav-link messages" [routerLink]="['/shoppingcart/cart/cart']">
+        <i class="fa fa-shopping-cart"></i><span class="badge" *ngIf="this.cartService.getNumberOfItems()">{{this.cartService.getNumberOfItems()}}</span>
+      </a>
+      <div class="nav-item dropdown" *ngIf="this.authService.isLoggedIn">
+        <a href="javascript:void(0);" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">
+          <img src="../../../assets/img_avatar.png" class="avatar" alt="Avatar">{{this.authService.getUserFullName()}} <b class="caret"></b>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item" [routerLink]="['/registration/profile/profile']">
+            <i class="fa fa-user-o">
+            </i> Profile
+          </a>
+          <a href="javascript:void(0);" class="dropdown-item">
+            <i class="fa fa-sliders">
+            </i> Settings
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="javascript:void(0);" class="dropdown-item" (click)="logOut()">
+            <i class="fa fa-power-off">
+            </i> Logout
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="navbar-nav ml-auto" *ngIf="!this.authService.isLoggedIn">
+      <!-- <a href="" class="text-right" [routerLink]="['registration/test/test']"><i class="fa fa-sign-out"></i>Test</a> -->
+      <a href="#" class="nav-link mr-4" [routerLink]="['registration/login/login']">
+        Login
+      </a>
+      <a href="#" class="btn btn-primary sign-up-btn" [routerLink]="['registration/register/register']">
+        Sign up
+      </a>
+    </div>
+  </div>
+</nav>
+<div class="px-md-4 mb-3 bg-white"></div>
+
+<!--<div class="nav-item dropdown">
+  <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-toggle="dropdown">Services</a>
+  <div class="dropdown-menu">
+    <a href="#" class="dropdown-item">Web Design</a>
+    <a href="#" class="dropdown-item">Web Development</a>
+    <a href="#" class="dropdown-item">Graphic Design</a>
+    <a href="#" class="dropdown-item">Digital Marketing</a>
+  </div>
+</div>-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a href="#" class="navbar-brand">Shopping<b>Cart</b></a>
   <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
     <span class="navbar-toggler-icon"></span>
@@ -8,12 +69,12 @@
     <div class="navbar-nav" *ngFor="let category of categoryList">
       <a href="javascript:void(0);" class="nav-item nav-link" [id]="category.categoryId" (click)="getCategoryId(category.categoryId)">{{category.categoryName}}</a>
     </div>
-    <!--<div class="navbar-nav ml-auto action-buttons">
+    <div class="navbar-nav ml-auto action-buttons">
       <a href="" class="text-right" [routerLink]="['registration/test/test']"><i class="fa fa-sign-out"></i>Test</a>
-    </div>-->
+    </div>
     <ul class="navbar-nav ml-auto action-buttons">
       <li class="nav-item">
-        <a class="nav-link" 
+        <a class="nav-link"
            [routerLink]="['/shoppingcart/cart/cart']">
           <i class="fa fa-globe">
             <span class="badge badge-success">{{this.cartService.getNumberOfItems()}}</span>
@@ -36,5 +97,4 @@
     </div>
   </div>
 </nav>
-<div class="px-md-4 mb-3 bg-white"></div>
-
+<div class="px-md-4 mb-3 bg-white"></div>-->

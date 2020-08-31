@@ -7,10 +7,11 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from '../Services/auth.service';
 import { TestComponent } from './test/test.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent, TestComponent],
+  declarations: [LoginComponent, RegisterComponent, TestComponent, ProfileComponent],
   providers:[AuthService],
   imports: [
     CommonModule,

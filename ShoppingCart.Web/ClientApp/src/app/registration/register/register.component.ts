@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ValidatorFn, AbstractControl } from '@angular/forms';
 import { AuthService } from '../../Services/auth.service';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { AlertService } from '../../Services/alert.service';
 import { UserService } from '../../services/user-service.service';
 import { finalize } from 'rxjs/operators';
-
+import { AlertifyService } from 'src/app/Services/alertify.service';
 
 @Component({
   selector: 'app-register',
@@ -14,8 +13,12 @@ import { finalize } from 'rxjs/operators';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor(private formBuilder: FormBuilder, private authService: AuthService, private spinner: NgxSpinnerService,
-    private alertService: AlertService, private userService: UserService) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService,
+    private spinner: NgxSpinnerService,
+    private alertifyService: AlertifyService,
+    private userService: UserService) { }
 
   userForm = this.formBuilder.group(
     {
@@ -35,10 +38,10 @@ export class RegisterComponent implements OnInit {
       address2: ["", Validators.required],
       address3: ["", Validators.required],
     }, {
-      validator: this.userService.passwordMatchValidator(
-        "password",
-        "confirmPassword"
-      )
+    validator: this.userService.passwordMatchValidator(
+      "password",
+      "confirmPassword"
+    )
   }
   );
 
@@ -99,11 +102,11 @@ export class RegisterComponent implements OnInit {
       .subscribe(
         result => {
           if (result) {
-            this.alertService.success('Registration successful');
+            this.alertifyService.success('Registration successful');
           }
         },
         error => {
-          this.alertService.error(error);
+          this.alertifyService.error(error);
         });
   }
 }

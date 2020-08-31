@@ -57,8 +57,8 @@ namespace ShoppingCart.API.Controllers
                 {
                     Id = user.UserId,
                     Username = user.UserName,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
+                    user.FirstName,
+                    user.LastName,
                     //Token = generateJwtToken(user.UserId,user.Email)
                     Token = userService.GenerateJwtToken(user.UserId, user.Email, appSettings.Secret)
                 }); 

@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/Services/auth.service';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { User } from '../../shared/Models/user.model';
-import { AlertService } from 'src/app/Services/alert.service';
 import { first } from 'rxjs/operators';
 import { ActivatedRoute, Router } from '@angular/router';
+import { AlertifyService } from 'src/app/Services/alertify.service';
+import { StorageService } from 'src/app/Services/storage.service';
 
 @Component({
   selector: 'app-login',
@@ -23,10 +24,10 @@ export class LoginComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private spinner: NgxSpinnerService,
-    private alertService: AlertService,
+    private alertifyService: AlertifyService,
     private route: ActivatedRoute,
-    private router: Router) {
-
+    private router: Router,
+    private storageService: StorageService) {
   }
 
   ngOnInit(): void {
@@ -40,10 +41,11 @@ export class LoginComponent implements OnInit {
       .pipe(first())
       .subscribe(
         data => {
+          this.alertifyService.success("Sucessfully Logged in");
           this.router.navigate([this.returnUrl]);
         },
         error => {
-          this.alertService.error(error);
+          this.alertifyService.error(error);
         });
   }
 }

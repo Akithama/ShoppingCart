@@ -6,10 +6,9 @@ import { SharedComponent } from './shared.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavComponent } from './nav/nav.component';
-import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
-  declarations: [SharedComponent, FooterComponent, HeaderComponent,NavComponent, AlertComponent],
+  declarations: [SharedComponent, FooterComponent, HeaderComponent,NavComponent],
   imports: [
     CommonModule,
     SharedRoutingModule
@@ -17,8 +16,7 @@ import { AlertComponent } from './alert/alert.component';
   exports:[
     NavComponent,
     FooterComponent,
-    SharedComponent,
-    AlertComponent
+    SharedComponent
   ]
 })
 export class SharedModule { }

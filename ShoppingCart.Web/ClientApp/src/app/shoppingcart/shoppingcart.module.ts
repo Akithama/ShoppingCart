@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { ShoppingcartRoutingModule } from './shoppingcart-routing.module';
 import { ShoppingcartComponent } from './shoppingcart.component';
 import { FiltersComponent } from './filters/filters.component';
@@ -9,12 +8,15 @@ import { CartComponent } from './cart/cart.component';
 import { ProductItemComponent } from './product-list/product-item/product-item.component';
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent, CartItemComponent, ProductDetailsComponent],
   imports: [
     CommonModule,
-    ShoppingcartRoutingModule
+    ShoppingcartRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
 

@@ -1,15 +1,48 @@
-<form [formGroup]="myForm">
-  <input type="text" formControlName="name">
-  <input type="email" formControlName="email">
+<!-- main app container -->
+<div class="col-sm-6">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="username">User Name</label>
+      <input type="text" formControlName="username" class="form-control"
+        [ngClass]="{'is-invalid':username.errors && username.touched}" id="username" placeholder="Username">
+      <div class="invalid-feedback" *ngIf="username.hasError('required')">
+        Username is required
+      </div>
+      <div class="invalid-feedback" *ngIf="username.hasError('minlength')">
+        Username must be at least 3 characters
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Quantity</label>
+      <input type="number" min="1" max="10" formControlName="quantity" required name="quantity" 
+      class="form-control" [ngClass]="{'is-invalid':quantity.errors && quantity.touched}" id="quantity">
+      <div class="invalid-feedback" *ngIf="quantity.hasError('required')">
+        Quantity is required
+      </div>
+      <div class="invalid-feedback" *ngIf="quantity.hasError('min')">
+        Minimum Quantity is 1
+      </div>
+      <div class="invalid-feedback" *ngIf="quantity.hasError('max')">
+        Maximum Quantity is 10
+      </div>
+    </div>
+    <div class="text-center">
+      <button class="btn btn-success" type="submit" [disabled]="userForm.invalid">
+        <i class="fas fa-save"></i> Register
+      </button>
+      <button class="btn btn-secondary" (click)="clear()">
+        <i class="fas fa-snowplow"></i> Clear
+      </button>
+    </div>
+  </form>
+</div>
 
-  <div *ngIf="myForm.get('email').status === 'PENDING'">
-    Checking...
-  </div>
-  <div *ngIf="myForm.get('email').status === 'VALID'">
-    😺 Email is available!
-  </div>
 
-  <div *ngIf="myForm.get('email').errors && myForm.get('email').errors.emailTaken">
-    😢 Oh noes, this email is already taken!
-  </div>
-</form>
+
+
+<!-- <div class="invalid-feedback" *ngIf="quantity.hasError('required')">
+            E-mail is required
+          </div> -->
+<!-- <div class="invalid-feedback" *ngIf="quantity.errors?.pattern">
+            Quantity Error
+          </div> -->

@@ -1,0 +1,161 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="portlet light profile-sidebar-portlet bordered">
+      <div class="profile-userpic">
+        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="img-responsive" alt="">
+      </div>
+      <div class="profile-usertitle">
+        <div class="profile-usertitle-name"> Marcus Doe </div>
+        <div class="profile-usertitle-job"> Developer </div>
+      </div>
+      <div class="profile-userbuttons">
+        <button type="button" class="btn btn-info  btn-sm">Follow</button>
+        <button type="button" class="btn btn-info  btn-sm">Message</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#profile">Profile</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#address">Address</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#payment">Payment</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div id="profile" class="tab-pane fade in active show">
+        <h3>Profile</h3>
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+          <div class="form-group col">
+            <label for="username">User Name</label>
+            <input type="text"
+                   formControlName="username"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':username.errors && username.touched}"
+                   id="username" readonly
+                   placeholder="Username">
+            <div class="invalid-feedback"
+                 *ngIf="username.hasError('required')">
+              Username is required
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="email">E-mail</label>
+            <input type="text"
+                   formControlName="email"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':email.errors && email.touched}"
+                   id="email"
+                   placeholder="E-Mail" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+            <div class="invalid-feedback"
+                 *ngIf="email.hasError('required')">
+              E-mail is required
+            </div>
+            <div class="invalid-feedback"
+                 *ngIf="email.errors?.pattern">
+              Please provide a valid email address
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="firstname">First Name</label>
+            <input type="text"
+                   formControlName="firstname"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':firstname.errors && firstname.touched}"
+                   id="firstname"
+                   placeholder="First Name">
+            <div class="invalid-feedback"
+                 *ngIf="firstname.hasError('required')">
+              First Name is required
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="lastname">Last Name</label>
+            <input type="text"
+                   formControlName="lastname"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':lastname.errors && lastname.touched}"
+                   id="lastname"
+                   placeholder="Last Name">
+            <div class="invalid-feedback"
+                 *ngIf="lastname.hasError('required')">
+              Last Name is required
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="mobilenumber">Mobile Number</label>
+            <input type="text"
+                   formControlName="mobilenumber"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':mobilenumber.errors && mobilenumber.touched}"
+                   id="mobilenumber"
+                   placeholder="Mobile Number" pattern="^((\\+91-?)|0)?[0-9]{10}$">
+            <div class="invalid-feedback"
+                 *ngIf="mobilenumber.hasError('required')">
+              Mobile Number is required
+            </div>
+            <div class="invalid-feedback"
+                 *ngIf="mobilenumber.errors?.pattern">
+              Please, Enter 10 digit Mobile Number
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="address1">Address1</label>
+            <input type="text"
+                   formControlName="address1"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':address1.errors && address1.touched}"
+                   id="address1"
+                   placeholder="Address1">
+            <div class="invalid-feedback"
+                 *ngIf="address1.hasError('required')">
+              Address1 is required
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="address2">Address2</label>
+            <input type="text"
+                   formControlName="address2"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':address2.errors && address2.touched}"
+                   id="address2"
+                   placeholder="Address2">
+            <div class="invalid-feedback"
+                 *ngIf="address2.hasError('required')">
+              Address2 is required
+            </div>
+          </div>
+          <div class="form-group col">
+            <label for="address3">Address3</label>
+            <input type="text"
+                   formControlName="address3"
+                   class="form-control"
+                   [ngClass]="{'is-invalid':address3.errors && address3.touched}"
+                   id="address3"
+                   placeholder="Address1">
+            <div class="invalid-feedback"
+                 *ngIf="address3.hasError('required')">
+              Address3 is required
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-success"
+                    type="submit"
+                    [disabled]="profileForm.invalid">
+              <i class="fas fa-save"></i> Update
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="address" class="tab-pane fade">
+        <h3>Address</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="payment" class="tab-pane fade">
+        <h3>Payment Method</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      </div>
+    </div>
+  </div>
+</div>
+

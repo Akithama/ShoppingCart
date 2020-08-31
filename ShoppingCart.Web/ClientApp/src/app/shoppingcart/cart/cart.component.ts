@@ -9,8 +9,10 @@ import { Product } from '../../Models/product';
 })
 export class CartComponent implements OnInit {
 
-  cartItems: Product[];
+  cartItems: Product[]
   cartTotal = 0
+  payment: any = {}
+  discount: number = 0
 
   constructor(private cartService: CartService) { }
 
@@ -23,6 +25,34 @@ export class CartComponent implements OnInit {
     this.cartService.removeItems(Item.productId);
     this.cartService.getCartItems();
     this.cartItems = this.cartService.getCartItems()
+  }
+
+  getTotal() {
+    let total = 0;
+
+    for (let i = 0; i < this.cartItems.length; i++) {
+      if (this.cartItems[i].price) {
+        total += this.cartItems[i].price * this.cartItems[i].items;
+      }
+    }
+    return total;
+  }
+
+  getGrandTotal() {
+    return this.getTotal() - this.discount;
+  }
+
+  setDiscount(code: string) {
+    let discount = 10;
+    let amount = 0;
+
+    console.log(code)
+    this.discount = 10
+    //return discount;
+  }
+
+  getDiscountAmont() {
+    return this.discount;
   }
 }
 

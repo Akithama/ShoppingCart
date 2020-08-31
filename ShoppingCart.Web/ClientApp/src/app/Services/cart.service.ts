@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { Product } from '../Models/product';
+import { StorageService } from './storage.service';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +10,15 @@ export class CartService {
 
   cartItems = [];
 
-  constructor() { }
+  constructor(private storageService: StorageService) { }
 
-  sendCart(productItem: Product) {
-    this.cartItems.push(productItem)
-    this.sendCartToLocal(this.cartItems)
+  sendCart(productItem: Product): boolean {
+    if (!this.cartItems.find(x => x.productId === productItem.productId)) {
+      this.cartItems.push(productItem)
+      this.sendCartToLocal(this.cartItems)
+      return true;
+    }
+    return false;
   }
 
   getCartItems() {
@@ -35,10 +40,17 @@ export class CartService {
   }
 
   sendCartToLocal(cart: any[]) {
-    localStorage.setItem("cartItems", JSON.stringify(cart))
+    //sessionStorage.setItem("cartItems", JSON.stringify(cart))
+    sessionStorage.setItem("cartItems", this.storageService.encryptData(cart))
   }
 
   getCartfromLocal(): any[] {
-    return JSON.parse(localStorage.getItem("cartItems"))
+    if (sessionStorage.getItem("cartItems")!=null) {
+    let numberOfItems = this.storageService.decryptData(sessionStorage.getItem("cartItems"))  //JSON.parse(sessionStorage.getItem("cartItems"))
+      if (numberOfItems != null) {
+        return this.storageService.decryptData(sessionStorage.getItem("cartItems")) //JSON.parse(sessionStorage.getItem("cartItems"))
+      }
+    }
+    return [];
   }
 }

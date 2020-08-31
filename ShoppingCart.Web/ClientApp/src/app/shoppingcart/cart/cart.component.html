@@ -27,15 +27,13 @@
                   </figure>
                 </td>
                 <td>
-                  <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                  </select>
-                </td>
+                  <input id="quantity-{{item.productId}}" type="number" min="1" max="{{item.quantity}}" ngDefaultControl
+                    [(ngModel)]="item.items" required placeholder="1">
                 <td>
-                  <div class="price-wrap"> <var class="price">{{item.price}}</var> <small class="text-muted">{{item.price}}</small> </div>
+                  <div class="price-wrap">
+                    <var class="price">{{item.price | currency}}</var>
+                    <small class="text-muted">{{item.price * item.items | currency}}</small>
+                  </div>
                 </td>
                 <td class="text-right d-none d-md-block">
                   <a (click)="removeItem(item)" class="btn btn-light" data-abc="true"> Remove</a>
@@ -53,9 +51,10 @@
             <div class="form-group">
               <label>Have coupon?</label>
               <div class="input-group">
-                <input type="text" class="form-control coupon" name="" placeholder="Coupon code">
+                <input type="text" class="form-control coupon" placeholder="Coupon code" #CouponCode id="CouponCode">
                 <span class="input-group-append">
-                  <button class="btn btn-primary btn-apply coupon">
+                  <button type="submit" class="btn btn-primary btn-apply coupon"
+                    (click)="setDiscount(CouponCode.value)">
                     Apply
                   </button>
                 </span>
@@ -68,18 +67,18 @@
         <div class="card-body">
           <dl class="dlist-align">
             <dt>Total price:</dt>
-            <dd class="text-right ml-3">$69.97</dd>
+            <dd class="text-right ml-3">{{ getTotal() | currency }}</dd>
           </dl>
           <dl class="dlist-align">
             <dt>Discount:</dt>
-            <dd class="text-right text-danger ml-3">- $10.00</dd>
+            <dd class="text-right text-danger ml-3">- {{ getDiscountAmont() | currency }}</dd>
           </dl>
           <dl class="dlist-align">
             <dt>Total:</dt>
-            <dd class="text-right text-dark b ml-3"><strong>$59.97</strong></dd>
+            <dd class="text-right text-dark b ml-3"><strong>{{ getGrandTotal() | currency }}</strong></dd>
           </dl>
           <hr> <a href="#" class="btn btn-out btn-primary btn-square btn-main" data-abc="true">
-            Make Purchase
+            Check Out
           </a>
           <a href="#" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">
             Continue Shopping
