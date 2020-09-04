@@ -17,13 +17,13 @@ namespace ShoppingCart.API.Helpers
     {
         public override void OnException(ExceptionContext context)
         {
-            context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
+            if (context != null)
+            {
+                context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
 
-            var exception = context.Exception;
-            context.Result = new JsonResult(exception.Message);
-
-
-            // Add serilog hear.....
+                var exception = context.Exception;
+                context.Result = new JsonResult(exception.Message);
+            }
         }
     }
 }

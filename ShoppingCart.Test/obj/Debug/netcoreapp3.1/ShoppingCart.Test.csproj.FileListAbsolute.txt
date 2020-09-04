@@ -341,8 +341,6 @@ C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Shopping
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
-C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -383,7 +381,6 @@ C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Moq.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Serilog.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll

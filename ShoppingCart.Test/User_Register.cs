@@ -35,9 +35,10 @@ namespace ShoppingCart.Test
             var logger = new Mock<ILogger<UserController>>();
             var userUservice = new Mock<IUserService>();
             var userRepo = new Mock<IUserRepository>();
+            var addressRepo = new Mock<IAddressRepository>();
 
             //Act
-            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings.Object);
+            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings.Object, addressRepo.Object);
             userUservice.Setup(x => x.RegisterUser(model, model.Password)).Returns(model);
             var result = controller.Register(model);
 
@@ -63,19 +64,18 @@ namespace ShoppingCart.Test
                 Address3 = "Add1"
             };
             var apSettings = new Mock<IOptions<AppSettings>>();
-            var logger = new Mock<ILogger<UserController>>();
             var userUservice = new Mock<IUserService>();
             var userRepo = new Mock<IUserRepository>();
+            var addressRepo = new Mock<IAddressRepository>();
 
             //Act
-            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings.Object);
+            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings.Object, addressRepo.Object);
             //userUservice.Setup(x => x.RegisterUser(model, model.Password)).Returns(model);
             var result = controller.Register(model);
 
             //Assert
             Assert.IsNotNull(result);
 
-            //var usr = new UserService()
         }
 
 

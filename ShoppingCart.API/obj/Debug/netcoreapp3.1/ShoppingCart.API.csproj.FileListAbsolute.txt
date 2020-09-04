@@ -173,8 +173,6 @@ C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\ShoppingC
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\ShoppingCart.API.pdb
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
-C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
@@ -203,7 +201,6 @@ C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll

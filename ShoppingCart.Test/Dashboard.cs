@@ -67,7 +67,7 @@ namespace ShoppingCart.Test
             //Act
             var controller = new ProductController(repo.Object);
             repo.Setup(x => x.GetProductsByCategoryId(2)).Returns(product);
-            var result = controller.GetProductsByCategoryId("2");
+            var result = controller.GetProductsByCategoryId(2);
 
             //Assert
             Assert.IsTrue(result.Value.Count() > 0);

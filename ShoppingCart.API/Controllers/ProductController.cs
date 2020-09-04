@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Data.Infrastructure.Interfaces;
 using ShoppingCart.Data.Models;
@@ -32,10 +30,9 @@ namespace ShoppingCart.API.Controllers
         }
 
         [HttpGet("category")]
-        public ActionResult<IEnumerable<Product>> GetProductsByCategoryId(string categoryId)
-        {
-            int catId = Convert.ToInt32(categoryId);
-            var products = productRepository.GetProductsByCategoryId(catId);
+        public ActionResult<IEnumerable<Product>> GetProductsByCategoryId(int categoryId)
+        {            
+            var products = productRepository.GetProductsByCategoryId(categoryId);
             if (products.Count != 0)
                 return products;
 

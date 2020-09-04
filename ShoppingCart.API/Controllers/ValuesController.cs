@@ -13,7 +13,7 @@ namespace ShoppingCart.API.Controllers
     public class ValuesController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public static ActionResult<IEnumerable<string>> Get()
         {
             List<string> list = new List<string>(){ "API", "Working" };
 

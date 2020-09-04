@@ -29,11 +29,12 @@ namespace ShoppingCart.Test
             var logger = new Mock<ILogger<UserController>>();
             var userUservice = new Mock<IUserService>();
             var userRepo = new Mock<IUserRepository>();
-            
+            var addressRepo = new Mock<IAddressRepository>();
+
             //Act
-            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings);
+            var controller = new UserController(userUservice.Object, userRepo.Object, apSettings, addressRepo.Object);
             userUservice.Setup(x => x.Authenticate(model.Username, model.Password)).Returns(userModel);
-            userUservice.Setup(x => x.GenerateJwtToken(userModel.UserId, userModel.Email, apSettings.Value.Secret)).Returns("");
+            userUservice.Setup(x => x.GenerateJwtToken(userModel.UserId.ToString(), userModel.Email, apSettings.Value.Secret)).Returns("");
 
             var result = controller.Authenticate(model);
 

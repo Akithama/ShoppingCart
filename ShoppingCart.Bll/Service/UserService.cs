@@ -12,7 +12,7 @@ namespace ShoppingCart.Bll.Service
 {
     public class UserService : IUserService
     {
-        private IUnitOfWork _unitOfWork;
+        private readonly IUnitOfWork _unitOfWork;
 
         public UserService(IUnitOfWork unitOfWork)
         {
@@ -41,57 +41,89 @@ namespace ShoppingCart.Bll.Service
 
         public UserViewModel RegisterUser(UserViewModel userVM, string password)
         {
-            // validation
-            if (string.IsNullOrWhiteSpace(password))
-                throw new Exception("Password is required");
-
-            if (_unitOfWork.User.UserExists(userVM.UserName))
-                throw new Exception("Username \"" + userVM.UserName + "\" is already taken");
-
-            if (_unitOfWork.User.UserEmailExists(userVM.Email))
-                throw new Exception("E-Mail \"" + userVM.Email + "\" is already taken");
-
-            byte[] passwordHash, passwordSalt;
-            CreatePasswordHash(password, out passwordHash, out passwordSalt);
-
-            User user = new User
+            if (userVM != null)
             {
-                UserName = userVM.UserName,
-                PasswordHash = passwordHash,
-                PasswordSalt = passwordSalt,
-                DateRegister = DateTime.Now,
-                Email = userVM.Email,
-                FirstName = userVM.FirstName,
-                LastName = userVM.LastName,
-                IsAdmin = false,
-                MobileNumber = userVM.MobileNumber
-            };
+                // validation
+                if (string.IsNullOrWhiteSpace(password))
+                    throw new Exception("Password is required");
 
-            //_context.User.Add(user);
-            _unitOfWork.User.Add(user);
+                if (_unitOfWork.User.UserExists(userVM.UserName))
+                    throw new Exception("Username \"" + userVM.UserName + "\" is already taken");
 
-            Address address = new Address
+                if (_unitOfWork.User.UserEmailExists(userVM.Email))
+                    throw new Exception("E-Mail \"" + userVM.Email + "\" is already taken");
+
+                //CreatePasswordHash(password, out passwordHash, out passwordSalt);
+                CreatePasswordHash(password, out byte[] passwordHash, out byte[] passwordSalt);
+
+                User user = new User
+                {
+                    UserName = userVM.UserName,
+                    PasswordHash = passwordHash,
+                    PasswordSalt = passwordSalt,
+                    DateRegister = DateTime.Now,
+                    Email = userVM.Email,
+                    FirstName = userVM.FirstName,
+                    LastName = userVM.LastName,
+                    IsAdmin = false,
+                    MobileNumber = userVM.MobileNumber
+                };
+
+                _unitOfWork.User.Add(user);
+
+                Address address = new Address
+                {
+                    Address1 = userVM.Address1,
+                    Address2 = userVM.Address2,
+                    Address3 = userVM.Address3,
+                    IsDelivery = true,
+                    User = user
+                };
+
+                _unitOfWork.Address.Add(address);
+
+                _unitOfWork.Save();
+
+                return userVM;
+            }
+            else
             {
-                Address1 = userVM.Address1,
-                Address2 = userVM.Address2,
-                Address3 = userVM.Address3,
-                IsDelivery = true,
-                User = user
-            };
+                throw new ArgumentNullException(nameof(password));
+            }
+        }
 
-            // _context.Address.Add(address);
-            _unitOfWork.Address.Add(address);
+        public UserUpdateViewModel UpdateUser(UserUpdateViewModel userVM)
+        {
+            if (userVM != null)
+            {
+                var user = _unitOfWork.User.GetById(userVM.UserId);
+                if (user != null)
+                {
+                    user.FirstName = userVM.FirstName;
+                    user.LastName = userVM.LastName;
+                    user.MobileNumber = userVM.MobileNumber;
 
-            //_context.SaveChanges();
-            _unitOfWork.Save();
+                    _unitOfWork.User.Update(user);
+                    _unitOfWork.Save();
 
+                    var address = _unitOfWork.Address.GetById(userVM.UserId);
+                    if (address != null)
+                    {
+                        address.Address1 = userVM.Address1;
+                        address.Address2 = userVM.Address2;
+                        address.Address3 = userVM.Address3;
+                        _unitOfWork.Address.Update(address);
+                        _unitOfWork.Save();
+                    }
+                }
+            }
             return userVM;
         }
 
         private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
         {
-            if (password == null) throw new ArgumentNullException("password");
-            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Value cannot be empty or whitespace only string.", "password");
+            if (password == null) throw new ArgumentNullException(nameof(password));
+            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Value cannot be empty or whitespace only string.", nameof(password));
 
             using (var hmac = new System.Security.Cryptography.HMACSHA512())
             {
@@ -102,9 +134,13 @@ namespace ShoppingCart.Bll.Service
 
         private static bool VerifyPasswordHash(string password, byte[] storedHash, byte[] storedSalt)
         {
-            if (password == null) throw new ArgumentNullException("password");
-            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Value cannot be empty or whitespace only string.", "password");
-            if (storedHash.Length != 64) throw new ArgumentException("Invalid length of password hash (64 bytes expected).", "passwordHash");
+            if (password == null) throw new ArgumentNullException(nameof(password));
+            if (string.IsNullOrWhiteSpace(password)) throw new ArgumentException("Value cannot be empty or whitespace only string.", nameof(password));
+            if (storedHash.Length != 64)
+            {
+                throw new ArgumentException("Invalid length of password hash (64 bytes expected).", "passwordHash");
+            }
+
             if (storedSalt.Length != 128) throw new ArgumentException("Invalid length of password salt (128 bytes expected).", "passwordHash");
 
             using (var hmac = new System.Security.Cryptography.HMACSHA512(storedSalt))
@@ -119,7 +155,7 @@ namespace ShoppingCart.Bll.Service
             return true;
         }
 
-        public string GenerateJwtToken(int customerId, string email, string secret)
+        public string GenerateJwtToken(string customerId, string email, string secret)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(secret);
@@ -127,8 +163,8 @@ namespace ShoppingCart.Bll.Service
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, customerId.ToString()),
-                    new Claim(ClaimTypes.Email, email.ToString())
+                    new Claim(ClaimTypes.Name, customerId),
+                    new Claim(ClaimTypes.Email, email?.ToString())
                 }),
                 Expires = DateTime.UtcNow.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)

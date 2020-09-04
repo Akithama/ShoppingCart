@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import * as alertyfy from 'alertifyjs';
 
-
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -10,43 +9,41 @@ import * as alertyfy from 'alertifyjs';
 })
 export class TestComponent implements OnInit {
 
+  id: number;
+
+  form: FormGroup;
+
+
   constructor(
-    private formBuilder: FormBuilder,
   ) { }
 
-  userForm = new FormGroup(
-    {
-      username: new FormControl('',[Validators.required]),
-      quantity: new FormControl('',[Validators.required,Validators.min(1),Validators.max(10)])
-    }
-  );
+  ngOnInit() {        
+    this.form = new FormGroup({
+      title: new FormControl('', [Validators.required])
+    });
 
-
-
-  // userForm = this.formBuilder.group(
-  //   {
-  //     username: ["", [Validators.required, Validators.minLength(3)]],
-  //     quantity: ["", [Validators.required]]
-  //   }
-  // );
-
-  get username() {
-    return this.userForm.get('username')
+    this.form.setValue({
+      title: 'Title'
+    })
   }
-
-  get quantity() {
-    return this.userForm.get('quantity')
-  }
-
-
-  ngOnInit() { }
 
   clear() {
-    this.userForm.reset();
-    //this.username.setValue("");
+    this.form.reset();
   }
 
-  onSubmit() {
-    console.log(this.userForm.value);
+  submit() {
+    console.log(this.form.value);
+  }
+
+  get f() {
+    return this.form.controls;
+  }
+
+  get title(): any {
+    return this.form.get('title');
+  }
+
+  setValue() {
+    this.form.setValue({title:'Title'});
   }
 }

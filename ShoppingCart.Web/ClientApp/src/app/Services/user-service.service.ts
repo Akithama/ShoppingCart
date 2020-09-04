@@ -3,11 +3,15 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { FormGroup, AbstractControl } from '@angular/forms';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { User } from '../shared/Models/user.model';
+import { userUrl } from 'src/config/api';
+import { UserUpdate } from '../Models/UserUpdate';
 
 @Injectable({
   providedIn: "root"
 })
 export class UserService {
+  
   constructor(private http: HttpClient) { }
 
   passwordMatchValidator(password: string, confirmPassword: string) {
@@ -45,11 +49,16 @@ export class UserService {
   //API call 
   checkUsernameNotTaken(username: string): Observable<boolean> {
     let params = new HttpParams().set('userName', username)
-    return this.http.get("http://localhost:4000/user/userexists", { params }).pipe(
+    return this.http.get(userUrl+"/userexists", { params }).pipe(
       map((usernameList: Array<any>) =>
         usernameList.filter(user => user.userName === username)
       ),
       map(users => !users.length)
     );
   }
+
+  find(id:string): Observable<UserUpdate> {
+    let params = new HttpParams().set('id', id.valueOf())
+    return this.http.get<UserUpdate>(userUrl + '/user' , { params })    
+  }   
 }

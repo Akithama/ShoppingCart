@@ -1,19 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
 namespace ShoppingCart.Bll.Service
 {
-    public class UserViewModel
+    public class UserUpdateViewModel
     {
         public int UserId { get; set; }
         [Required]
         public string UserName { get; set; }
-
-        [Required]
-        public string Password { get; set; }
 
         [Required]
         public string FirstName { get; set; }
@@ -31,6 +27,5 @@ namespace ShoppingCart.Bll.Service
         public string Address2 { get; set; }
         [Required]
         public string Address3 { get; set; }
-
     }
 }
