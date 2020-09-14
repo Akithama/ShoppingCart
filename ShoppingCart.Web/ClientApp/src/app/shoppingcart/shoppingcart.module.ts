@@ -9,9 +9,18 @@ import { ProductItemComponent } from './product-list/product-item/product-item.c
 import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
-  declarations: [ShoppingcartComponent, FiltersComponent, ProductListComponent, CartComponent, ProductItemComponent, CartItemComponent, ProductDetailsComponent],
+  declarations: [
+    ShoppingcartComponent,
+    FiltersComponent, 
+    ProductListComponent, 
+    CartComponent, 
+    ProductItemComponent,
+    CartItemComponent, 
+    ProductDetailsComponent, 
+    PaymentComponent],
   imports: [
     CommonModule,
     ShoppingcartRoutingModule,

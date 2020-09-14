@@ -96,40 +96,25 @@
           </div>
           <div class="form-group col">
             <label for="address1">Address1</label>
-            <input type="text"
-                   formControlName="address1"
-                   class="form-control"
-                   [ngClass]="{'is-invalid':address1.errors && address1.touched}"
-                   id="address1"
-                   placeholder="Address1">
-            <div class="invalid-feedback"
-                 *ngIf="address1.hasError('required')">
+            <input type="text" formControlName="address1" class="form-control"
+              [ngClass]="{'is-invalid':address1.errors && address1.touched}" id="address1" placeholder="Address1">
+            <div class="invalid-feedback" *ngIf="address1.hasError('required')">
               Address1 is required
             </div>
           </div>
           <div class="form-group col">
             <label for="address2">Address2</label>
-            <input type="text"
-                   formControlName="address2"
-                   class="form-control"
-                   [ngClass]="{'is-invalid':address2.errors && address2.touched}"
-                   id="address2"
-                   placeholder="Address2">
-            <div class="invalid-feedback"
-                 *ngIf="address2.hasError('required')">
+            <input type="text" formControlName="address2" class="form-control"
+              [ngClass]="{'is-invalid':address2.errors && address2.touched}" id="address2" placeholder="Address2">
+            <div class="invalid-feedback" *ngIf="address2.hasError('required')">
               Address2 is required
             </div>
           </div>
           <div class="form-group col">
             <label for="address3">Address3</label>
-            <input type="text"
-                   formControlName="address3"
-                   class="form-control"
-                   [ngClass]="{'is-invalid':address3.errors && address3.touched}"
-                   id="address3"
-                   placeholder="Address1">
-            <div class="invalid-feedback"
-                 *ngIf="address3.hasError('required')">
+            <input type="text" formControlName="address3" class="form-control"
+              [ngClass]="{'is-invalid':address3.errors && address3.touched}" id="address3" placeholder="Address1">
+            <div class="invalid-feedback" *ngIf="address3.hasError('required')">
               Address3 is required
             </div>
           </div>
@@ -148,7 +133,61 @@
       </div>
       <div id="payment" class="tab-pane fade">
         <h3>Payment Method</h3>
-        <p>Add Credit/Debit Card</p>
+        <form [formGroup]="cardForm" (ngSubmit)="onPaymentSubmit()">
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+              <label class="custom-control-label" for="paypal">Paypal</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="nameOnCard" placeholder="" required="">
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Card Number</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="" required="">
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <!-- <input type="text" class="form-control" id="expireDate" placeholder="" required=""> -->
+              <input type="text" placeholder="Datepicker" class="form-control" bsDatepicker required="">
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="" required="">
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-success" type="submit" [disabled]="profileForm.invalid">
+              Update
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   </div>

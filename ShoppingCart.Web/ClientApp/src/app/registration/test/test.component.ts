@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import * as alertyfy from 'alertifyjs';
+import { FormGroup, FormBuilder, Validators, FormControl, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-test',
@@ -9,41 +8,11 @@ import * as alertyfy from 'alertifyjs';
 })
 export class TestComponent implements OnInit {
 
-  id: number;
 
-  form: FormGroup;
-
-
-  constructor(
+  constructor(private formBuilder: FormBuilder
   ) { }
 
-  ngOnInit() {        
-    this.form = new FormGroup({
-      title: new FormControl('', [Validators.required])
-    });
-
-    this.form.setValue({
-      title: 'Title'
-    })
+  ngOnInit() {
   }
 
-  clear() {
-    this.form.reset();
-  }
-
-  submit() {
-    console.log(this.form.value);
-  }
-
-  get f() {
-    return this.form.controls;
-  }
-
-  get title(): any {
-    return this.form.get('title');
-  }
-
-  setValue() {
-    this.form.setValue({title:'Title'});
-  }
 }

@@ -241,3 +241,6 @@ C:\Cart Function\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\staticweb
 C:\Cart Function\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.pdb
 C:\Cart Function\ShoppingCart\ShoppingCart.API\obj\Debug\netcoreapp3.1\ShoppingCart.API.genruntimeconfig.cache
+C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Cart Function\ShoppingCart\ShoppingCart.API\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll

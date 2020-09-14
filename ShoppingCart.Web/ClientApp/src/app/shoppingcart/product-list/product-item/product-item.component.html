@@ -20,7 +20,7 @@
                         Minimum Quantity is 1
                     </div>
                     <div class="invalid-feedback" *ngIf="quantity.hasError('max')">
-                        Maximum Quantity is 10
+                        Maximum Quantity is {{productItem.quantity}}
                     </div>
                 </div>
             </div>

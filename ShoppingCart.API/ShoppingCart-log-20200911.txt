@@ -1,0 +1,14 @@
+2020-09-11 11:30:33.699 +05:30 [Information] User profile is available. Using '"C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-11 11:30:37.952 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2020-09-11 11:30:37.960 +05:30 [Information] Hosting environment: "Development"
+2020-09-11 11:30:37.960 +05:30 [Information] Content root path: "C:\Cart Function\ShoppingCart\ShoppingCart.API"
+2020-09-11 11:30:38.158 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:4000/Values  
+2020-09-11 11:30:38.180 +05:30 [Warning] Failed to determine the https port for redirect.
+2020-09-11 11:30:39.319 +05:30 [Information] Request finished in 1162.263ms 404 
+2020-09-11 11:31:01.077 +05:30 [Information] Request starting HTTP/1.1 POST http://localhost:4000/api/email application/json 129
+2020-09-11 11:31:01.318 +05:30 [Information] Executing endpoint '"ShoppingCart.API.Controllers.EmailController.SentMail (ShoppingCart.API)"'
+2020-09-11 11:31:01.612 +05:30 [Information] Route matched with "{action = \"SentMail\", controller = \"Email\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult SentMail(ShoppingCart.Bll.ViewModels.EmailViewModel)" on controller "ShoppingCart.API.Controllers.EmailController" ("ShoppingCart.API").
+2020-09-11 11:31:09.433 +05:30 [Information] Executing ObjectResult, writing value of type '"<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+2020-09-11 11:31:09.546 +05:30 [Information] Executed action "ShoppingCart.API.Controllers.EmailController.SentMail (ShoppingCart.API)" in 7926.1691ms
+2020-09-11 11:31:09.546 +05:30 [Information] Executed endpoint '"ShoppingCart.API.Controllers.EmailController.SentMail (ShoppingCart.API)"'
+2020-09-11 11:31:09.547 +05:30 [Information] Request finished in 8483.4324ms 400 application/json; charset=utf-8

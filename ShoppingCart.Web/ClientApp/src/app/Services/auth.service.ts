@@ -13,11 +13,12 @@ import { userUrl } from 'src/config/api';
 })
 export class AuthService {
 
-  constructor(private http: HttpClient, private storageService: StorageService, private router: Router) {
-
+  constructor(
+    private http: HttpClient, 
+    private storageService: StorageService, 
+    private router: Router) {
   }
 
-  //Check whether the user is logged or not.
   get isLoggedIn(): boolean {
     if (sessionStorage.getItem('auth_token') != null) {
       return true
@@ -77,6 +78,21 @@ export class AuthService {
     });
     let options = { headers: headers };
     return this.http.put(userUrl + '/UpdateUser', userUpdate, options)
+      .pipe(
+        map((data: any) => {
+          return data;
+        }), catchError(error => {
+          return throwError(error);
+        })
+      )
+  }
+
+  registerCard(paymentUpdate: any) {
+    let headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    let options = { headers: headers };
+    return this.http.put(userUrl + '/RegisterCard', paymentUpdate, options)
       .pipe(
         map((data: any) => {
           return data;

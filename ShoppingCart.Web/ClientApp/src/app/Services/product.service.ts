@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import { Product } from '../Models/product';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable, BehaviorSubject, Subject } from 'rxjs';
-import { productUrl } from '../../config/api';
+import { productUrl, userUrl } from '../../config/api';
+import { AbstractControl } from '@angular/forms';
+import { map } from 'rxjs/operators';
 
 const apiProductUrl = "http://localhost:4000/api/product/category?";
 
@@ -47,5 +49,25 @@ export class ProductService {
     this.http.get<Product>(productUrl+'/product', { params: params }).subscribe((product) => {
       this.productDetail.next(product)
     })
+  }
+
+  validateMaximumQuantity(control: AbstractControl) {
+    console.log(control)
+
+    return this.checkQuantityExceed(control.value).pipe(
+      map(res => {
+        return res ? null : { usernameTaken: true };
+      })
+    );
+  }
+
+  checkQuantityExceed(username: string): Observable<boolean> {
+    let params = new HttpParams().set('userName', 'test')
+    return this.http.get(userUrl+"/userexists", { params }).pipe(
+      map((usernameList: Array<any>) =>
+        usernameList.filter(user => user.userName === username)
+      ),
+      map(users => !users.length)
+    );
   }
 }

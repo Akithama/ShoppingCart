@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using ShoppingCart.API.Helpers;
 using ShoppingCart.Bll.Service;
 using ShoppingCart.Bll.Service.Interface;
+using ShoppingCart.Data;
 using ShoppingCart.Data.Infrastructure.Interfaces;
 using ShoppingCart.Data.Infrastructure.Repository;
 using ShoppingCart.Data.Models;
@@ -40,6 +41,12 @@ namespace ShoppingCart.API
             // configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
+
+            var emailSettingSection = Configuration.GetSection("EmailSettings");
+            services.Configure<EmailSettings>(emailSettingSection);
+
+            //configure Email settings
+            var emailSettings= emailSettingSection.Get<EmailSettings>();
 
             // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
@@ -72,6 +79,8 @@ namespace ShoppingCart.API
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAddressRepository, AddressRepository>();
+            services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IEmailService, EmailService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

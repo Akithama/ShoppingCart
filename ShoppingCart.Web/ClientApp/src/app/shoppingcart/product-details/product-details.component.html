@@ -11,14 +11,30 @@
       <h6 class="title-attr"><small>Quantity:</small></h6>
       <div>
         <div class="btn-minus"><span class="glyphicon glyphicon-minus"></span></div>
-        <input value="1" />
+        <!-- <input value="1" /> -->
+        <form [formGroup]="productForm">
+        <input type="number" formControlName="quantity" required name="quantity" id="quantity" class="form-control"
+          style="width: 100px;" [ngClass]="{'is-invalid':quantity.errors && quantity.touched}">
+        <div class="invalid-feedback" *ngIf="quantity.hasError('required')">
+          Quantity is required
+        </div>
+        <div class="invalid-feedback" *ngIf="quantity.hasError('min')">
+          Minimum Quantity is 1
+        </div>
+        <div class="invalid-feedback" *ngIf="quantity.hasError('max')">
+          Maximum Quantity is {{product.quantity}}
+        </div>
+      </form>
         <div class="btn-plus"><span class="glyphicon glyphicon-plus"></span></div>
       </div>
     </div>
     <div class="section" style="padding-bottom:20px;">
-      <button class="btn btn-success"><span style="margin-right:20px" 
-        class="glyphicon glyphicon-shopping-cart"
-          aria-hidden="true"></span>Add To Cart</button>
+      <!-- <button class="btn btn-success" [disabled]="productForm.invalid"><span class="glyphicon glyphicon-shopping-cart"
+          aria-hidden="true" (click)="addToCart()"></span>Add To Cart</button>           -->
+          <button type="button" class="btn btn-sm btn-primary" (click)="addToCart()"
+                    [disabled]="productForm.invalid">
+                    Add to cart
+                </button>
     </div>
     <div style="width:100%;border-top:1px solid silver">
       <h4>Description</h4><br>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../Services/cart.service';
 import { Product } from '../../Models/product';
+import { FormGroup, FormControl, AbstractControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cart',
@@ -54,6 +55,7 @@ export class CartComponent implements OnInit {
   getDiscountAmont() {
     return this.discount;
   }
+
 }
 
 

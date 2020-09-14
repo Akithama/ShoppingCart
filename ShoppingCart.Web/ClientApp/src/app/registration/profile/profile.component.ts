@@ -17,9 +17,12 @@ export class ProfileComponent implements OnInit {
   id: string
   user: UserUpdate
   profileForm: FormGroup
+  cardForm: FormGroup
+
+  model;
+  bsValue: Date = new Date();
 
   constructor(
-    private formBuilder: FormBuilder,
     private storageService: StorageService,
     private userService: UserService,
     private authService: AuthService,
@@ -27,7 +30,8 @@ export class ProfileComponent implements OnInit {
     private alertifyService: AlertifyService) {
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {    
+
     this.profileForm = new FormGroup({
       userId: new FormControl(''),
       username: new FormControl('', [Validators.required]),
@@ -56,6 +60,13 @@ export class ProfileComponent implements OnInit {
         address3:data.address3
       })
     });
+
+    this.cardForm = new FormGroup({
+      nameOnCard: new FormControl('', [Validators.required]),
+      cardNumber: new FormControl('', [Validators.required]),
+      expireDate: new FormControl('', [Validators.required]),
+      cvv: new FormControl('', [Validators.required]),
+    })
   }
 
   get f() {
@@ -71,6 +82,22 @@ export class ProfileComponent implements OnInit {
         result => {
           if (result) {
             this.alertifyService.success('User Update successful');
+          }
+        },
+        error => {
+          this.alertifyService.error(error);
+        });
+  }
+
+  onPaymentSubmit(){
+    this.authService.registerCard(this.cardForm.value)
+      .pipe(finalize(() => {
+        this.spinner.hide();
+      }))
+      .subscribe(
+        result => {
+          if (result) {
+            this.alertifyService.success('Card Registration successful');
           }
         },
         error => {

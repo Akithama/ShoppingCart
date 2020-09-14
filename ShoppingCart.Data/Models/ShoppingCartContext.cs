@@ -16,10 +16,12 @@ namespace ShoppingCart.Data.Models
         }
 
         public virtual DbSet<Address> Address { get; set; }
+        public virtual DbSet<CardDetail> CardDetail { get; set; }
         public virtual DbSet<Category> Category { get; set; }
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderDetail> OrderDetail { get; set; }
         public virtual DbSet<Payment> Payment { get; set; }
+        public virtual DbSet<PaymentMethod> PaymentMethod { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<User> User { get; set; }
 
@@ -53,6 +55,40 @@ namespace ShoppingCart.Data.Models
                     .HasConstraintName("FK_Address_User");
             });
 
+            modelBuilder.Entity<CardDetail>(entity =>
+            {
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.CardNumber)
+                    .HasMaxLength(16)
+                    .IsFixedLength();
+
+                entity.Property(e => e.Cvv)
+                    .HasColumnName("CVV")
+                    .HasMaxLength(3)
+                    .IsFixedLength();
+
+                entity.Property(e => e.DateExpire).HasColumnType("datetime");
+
+                entity.Property(e => e.NameOnCard).HasMaxLength(500);
+
+                entity.Property(e => e.PayId).HasColumnName("PayID");
+
+                entity.Property(e => e.UserId).HasColumnName("UserID");
+
+                entity.HasOne(d => d.Pay)
+                    .WithMany(p => p.CardDetail)
+                    .HasForeignKey(d => d.PayId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_CardDetail_PaymentMethod");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.CardDetail)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_CardDetail_User");
+            });
+
             modelBuilder.Entity<Category>(entity =>
             {
                 entity.Property(e => e.CategoryId).HasColumnName("CategoryID");
@@ -62,9 +98,7 @@ namespace ShoppingCart.Data.Models
 
             modelBuilder.Entity<Order>(entity =>
             {
-                entity.Property(e => e.OrderId)
-                    .HasColumnName("OrderID")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.OrderId).HasColumnName("OrderID");
 
                 entity.Property(e => e.DateCreated).HasColumnType("datetime");
 
@@ -88,8 +122,6 @@ namespace ShoppingCart.Data.Models
 
             modelBuilder.Entity<OrderDetail>(entity =>
             {
-                entity.HasKey(e => new { e.Id, e.OrderId });
-
                 entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.OrderId).HasColumnName("OrderID");
@@ -137,6 +169,17 @@ namespace ShoppingCart.Data.Models
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Payment_User");
+            });
+
+            modelBuilder.Entity<PaymentMethod>(entity =>
+            {
+                entity.HasKey(e => e.PayId);
+
+                entity.Property(e => e.PayId)
+                    .HasColumnName("PayID")
+                    .ValueGeneratedNever();
+
+                entity.Property(e => e.Type).HasMaxLength(50);
             });
 
             modelBuilder.Entity<Product>(entity =>

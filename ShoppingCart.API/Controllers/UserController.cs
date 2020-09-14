@@ -144,14 +144,23 @@ namespace ShoppingCart.API.Controllers
             else
                 return BadRequest(new { message = "please provide information" });
         }
+
+        [AllowAnonymous]
+        [HttpPut("RegisterCard")]
+        public IActionResult RegisterNewCard([FromBody] CardDetail model)
+        {
+            if (model != null)
+            {
+                var user = userService.RegisterCard(model);
+                if (user)
+                    return Ok();
+                else
+                {
+                    return BadRequest(new { message = "Update Unsucessfull." });
+                }
+            }
+            else
+                return BadRequest(new { message = "please provide information" });
+        }
     }
 }
-
-
-
-//var user = userRepository.GetById(id);
-//            if (user != null)
-//            {
-//                return user;
-//            }
-//            return NotFound("User Not Found");

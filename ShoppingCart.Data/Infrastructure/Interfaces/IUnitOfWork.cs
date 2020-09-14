@@ -10,6 +10,9 @@ namespace ShoppingCart.Data.Infrastructure.Interfaces
         IAddressRepository Address { get; }
         ICategoryRepository Category { get; }
         IProductRepository Product { get; }
+        ICardRepository Card { get; }
+        IOrderRepository Order { get; }
+        IOrderDetailRepository OrderDetail { get; }
         void Save();
     }
 }

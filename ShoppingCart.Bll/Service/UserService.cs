@@ -173,5 +173,30 @@ namespace ShoppingCart.Bll.Service
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
+        public CardDetail UpdateCard(CardDetail model)
+        {
+            if (model != null)
+            {
+                var card =_unitOfWork.Card.GetById(model.CardNumber);
+                if (card != null)
+                {
+                    //hold no need update........
+                }
+            }
+            throw new NotImplementedException();
+        }
+
+        public bool RegisterCard(CardDetail model)
+        {
+            if (model != null)
+            {
+                _unitOfWork.Card.Add(model);
+                _unitOfWork.Save();
+                return true;
+            }
+
+            return false;
+        }
     }
 }

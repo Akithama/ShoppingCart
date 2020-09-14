@@ -10,6 +10,7 @@ import { TestComponent } from './test/test.component';
 import { ProfileComponent } from './profile/profile.component';
 
 
+
 @NgModule({
   declarations: [LoginComponent, RegisterComponent, TestComponent, ProfileComponent],
   providers:[AuthService],

@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Injectable } from '@angular/core';
 import { Product } from 'src/app/Models/product';
 import { CartService } from 'src/app/Services/cart.service';
 import { ProductService } from '../../../Services/product.service';
 import { AlertifyService } from '../../../Services/alertify.service';
-import { Validators, FormGroup, FormControl } from '@angular/forms';
+import { Validators, FormGroup, FormControl, AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'app-product-item',
@@ -12,7 +12,7 @@ import { Validators, FormGroup, FormControl } from '@angular/forms';
 })
 export class ProductItemComponent implements OnInit {
 
-  @Input() productItem:Product
+  @Input() productItem: Product
 
   constructor(
     private cartService: CartService,
@@ -22,10 +22,11 @@ export class ProductItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
- 
+
   productForm = new FormGroup(
     {
-      quantity: new FormControl(1,[Validators.required,Validators.min(1),Validators.max(10)])
+      quantity: new FormControl(1, [Validators.required, Validators.min(1),
+      (control: AbstractControl) => Validators.max(this.productItem?.quantity)(control)])
     }
   );
 

@@ -30,7 +30,7 @@ C:\Cart Function\ShoppingCart\ShoppingCart.Bll\bin\Debug\netcoreapp3.1\ShoppingC
 C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.csprojAssemblyReference.cache
 C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.AssemblyInfoInputs.cache
 C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.AssemblyInfo.cs
-C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.csproj.CoreCompileInputs.cache
 C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.csproj.CopyComplete
 C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.pdb
+C:\Cart Function\ShoppingCart\ShoppingCart.Bll\obj\Debug\netcoreapp3.1\ShoppingCart.Bll.csproj.CoreCompileInputs.cache

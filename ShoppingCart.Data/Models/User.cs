@@ -8,6 +8,7 @@ namespace ShoppingCart.Data.Models
         public User()
         {
             Address = new HashSet<Address>();
+            CardDetail = new HashSet<CardDetail>();
             Order = new HashSet<Order>();
             Payment = new HashSet<Payment>();
         }
@@ -24,6 +25,7 @@ namespace ShoppingCart.Data.Models
         public bool? IsAdmin { get; set; }
 
         public virtual ICollection<Address> Address { get; set; }
+        public virtual ICollection<CardDetail> CardDetail { get; set; }
         public virtual ICollection<Order> Order { get; set; }
         public virtual ICollection<Payment> Payment { get; set; }
     }

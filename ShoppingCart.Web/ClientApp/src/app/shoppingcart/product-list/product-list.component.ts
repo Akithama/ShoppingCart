@@ -16,11 +16,11 @@ export class ProductListComponent implements OnInit {
   constructor(private productService: ProductService) {
     this.subscription = this.productService.onProducts().subscribe(products => {
       if (products) {
-        this.productList = products;
+        this.productList = products;        
       } else {
         this.productList = [];
       }
-    });
+    });    
   }
 
   ngOnDestroy() {
@@ -31,6 +31,7 @@ export class ProductListComponent implements OnInit {
   ngOnInit(): void {
     this.productService.getProducts().subscribe((products) => {
       this.productList = products;
+      console.log(products)
     })
   }
 

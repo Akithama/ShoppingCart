@@ -10,6 +10,9 @@ namespace ShoppingCart.Data.Infrastructure.Repository
         private IUserRepository _user;
         private IAddressRepository _address;
         private IProductRepository _product;
+        private ICardRepository _card;
+        private IOrderRepository _order;
+        private IOrderDetailRepository _orderDetail;
 
         public UnitOfWork(ShoppingCartContext context)
         {
@@ -60,6 +63,41 @@ namespace ShoppingCart.Data.Infrastructure.Repository
                     _product = new ProductRepository(_context);
                 }
                 return _product;
+            }
+        }
+        public ICardRepository Card
+        {
+            get
+            {
+                if (_card == null)
+                {
+                    _card = new CardRepository(_context);
+                }
+                return _card;
+            }
+        }
+
+        public IOrderRepository Order
+        {
+            get
+            {
+                if (_order == null)
+                {
+                    _order = new OrderRepository(_context);
+                }
+                return _order;
+            }
+        }
+
+        public IOrderDetailRepository OrderDetail
+        {
+            get
+            {
+                if (_orderDetail == null)
+                {
+                    _orderDetail = new OrderDetailRepository(_context);
+                }
+                return _orderDetail;
             }
         }
 

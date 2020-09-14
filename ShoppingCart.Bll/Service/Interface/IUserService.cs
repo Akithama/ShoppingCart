@@ -11,5 +11,7 @@ namespace ShoppingCart.Bll.Service.Interface
         UserViewModel RegisterUser(UserViewModel user, string password);
         UserUpdateViewModel UpdateUser(UserUpdateViewModel user);
         string GenerateJwtToken(string customerId, string email,string secret);
+        CardDetail UpdateCard(CardDetail model);
+        bool RegisterCard(CardDetail model);
     }
 }
