@@ -14,11 +14,59 @@ namespace ShoppingCart.Bll.Service
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IEmailService emailService;
+        private IOrderRepository orderRepository;
+        private IOrderDetailRepository orderDetailRepository;
 
-        public OrderService(IUnitOfWork unitOfWork, IEmailService emailService)
+        public OrderService(IUnitOfWork unitOfWork, IEmailService emailService, IOrderRepository orderRepository, IOrderDetailRepository orderDetailRepository)
         {
             this._unitOfWork = unitOfWork;
             this.emailService = emailService;
+            this.orderRepository = orderRepository;
+            this.orderDetailRepository = orderDetailRepository;
+        }        
+
+        public List<OrderHistoryViewModel> GetOrderHistory(int ID)
+        {            
+            var orders = orderRepository.GetAllByUserID(ID);
+            List<OrderHistoryViewModel> orderHistoryList = new List<OrderHistoryViewModel>();
+
+            foreach (var order in orders)
+            {
+                List<OrderDetail> orderDetails = orderDetailRepository.GetAllByOrderID(order.OrderId);
+
+                OrderHistoryViewModel orderHistory = new OrderHistoryViewModel()
+                {
+                    OrderID = order.OrderId,
+                    CustomerName = "",
+                    Status = "shipped",
+                    NoOfProducts = orderDetails.Count,
+                    Total = (decimal)order.TotalAmount,
+                    DateAdded = order.DateCreated.ToString()
+                };
+                orderHistoryList.Add(orderHistory);
+            }
+            return orderHistoryList;
+        }
+
+        public List<OrderDetailHistoryViewModel> GetOrderDetailHistory(int orderID)
+        {
+            var orderDetails = orderDetailRepository.GetAllByOrderID(orderID);
+            List < OrderDetailHistoryViewModel > orderDetailHistoryList = new List<OrderDetailHistoryViewModel>();
+
+            foreach (var item in orderDetails)
+            {
+                OrderDetailHistoryViewModel OrderDetailHistory = new OrderDetailHistoryViewModel()
+                {
+                    ProductID = item.ProductId,
+                    ProductName = _unitOfWork.Product.GetById(item.ProductId).ProductName,
+                    Price = item.Price,
+                    Quantity = item.Quantity,
+                    Total = item.SubTotal
+                };
+                orderDetailHistoryList.Add(OrderDetailHistory);
+            }
+
+            return orderDetailHistoryList;
         }
 
         public bool PlaceOrder(List<OrderViewModel> model, int userID, EmailSettings emailSettings)

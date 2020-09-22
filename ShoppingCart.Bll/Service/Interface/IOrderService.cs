@@ -9,5 +9,7 @@ namespace ShoppingCart.Bll.Service.Interface
     public interface IOrderService
     {
         bool PlaceOrder(List<OrderViewModel> model, int userID, EmailSettings emailSettings);
+        List<OrderHistoryViewModel> GetOrderHistory(int ID);
+        List<OrderDetailHistoryViewModel> GetOrderDetailHistory(int orderID);
     }
 }

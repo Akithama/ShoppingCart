@@ -481,3 +481,6 @@ C:\Cart Function\ShoppingCart\ShoppingCart.Test\obj\Debug\netcoreapp3.1\Shopping
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\obj\Debug\netcoreapp3.1\ShoppingCart.Test.dll
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\obj\Debug\netcoreapp3.1\ShoppingCart.Test.pdb
 C:\Cart Function\ShoppingCart\ShoppingCart.Test\obj\Debug\netcoreapp3.1\ShoppingCart.Test.genruntimeconfig.cache
+C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Cart Function\ShoppingCart\ShoppingCart.Test\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll

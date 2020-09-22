@@ -10,6 +10,7 @@ import { CartItemComponent } from './cart/cart-item/cart-item.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaymentComponent } from './payment/payment.component';
+import { OrderHistoryComponent } from './order-history/order-history.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { PaymentComponent } from './payment/payment.component';
     ProductItemComponent,
     CartItemComponent, 
     ProductDetailsComponent, 
-    PaymentComponent],
+    PaymentComponent, OrderHistoryComponent],
   imports: [
     CommonModule,
     ShoppingcartRoutingModule,

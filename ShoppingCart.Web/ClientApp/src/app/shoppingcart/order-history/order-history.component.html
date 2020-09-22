@@ -1,0 +1,73 @@
+<table class="table table-bordered table-sm table-hover" *ngIf=!isView>
+  <thead class="thead-light">
+    <tr>
+      <th scope="col" class="text-right">Order ID</th>
+      <th scope="col" class="text-left">Customer</th>
+      <th scope="col" class="text-center">No. of Products</th>
+      <th scope="col" class="text-center">Status</th>
+      <th scope="col" class="text-right">Total</th>
+      <th scope="col" class="text-right">Date Added</th>
+      <th scope="col" class="text-center"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orderList;let i = index">
+      <th scope="row" class="text-right">{{order.orderID}}</th>
+      <td>Buddhika Dhananjaya</td>
+      <td>{{order.noOfProducts}}</td>
+      <td>{{order.status}}</td>
+      <td>{{order.total}}</td>
+      <td>{{order.dateAdded}}</td>
+      <td class="text-center"><a href="javascript:void(0);" (click)="ViewOrderHistory(order.orderID)"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="OrderDetails" class="table table-bordered table-sm table-hover" *ngIf=isView>
+  <thead class="thead-light">
+    <tr>
+      <th class="text-left" colspan="2">Order Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-left" style="width: 50%;"> <b>Order ID:</b> #12625<br>
+        <b>Date Added:</b> 02/07/2020</td>
+      <td class="text-left" style="width: 50%;"> <b>Payment Method:</b> PayHere (Visa, Master and Amex)<br>
+                       <b>Shipping Method:</b> By Courier Service  (In a working day) </td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="Address" class="table table-bordered table-sm table-hover" *ngIf=isView>
+  <thead class="thead-light">
+    <tr>
+      <th class="text-left" colspan="2">Payment Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="text-left">Buddhika Dhananjaya<br>"Weda Madura" Sadun Uyana, Arachchikanda<br>Hikkaduwa 80230<br>Southern<br>Sri Lanka</td>
+      <td class="text-left">Buddhika Dhananjaya<br>"Weda Madura" Sadun Uyana, Arachchikanda<br>Hikkaduwa 80230<br>Southern<br>Sri Lanka</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="OrderDetails" class="table table-bordered table-sm table-hover" *ngIf=isView>
+  <thead class="thead-light">
+    <tr>
+      <th class="text-left">Product Name</th>
+      <th class="text-left">Quantity</th>
+      <th class="text-left">Price</th>
+      <th class="text-left">Total</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let detail of orderDetails">
+    <tr>
+      <td class="text-left"> {{detail.productName}}</td>
+      <td class="text-left">{{detail.quantity}}</td>
+      <td class="text-left">{{detail.price}}</td>
+      <td class="text-left">{{detail.total}}</td>
+    </tr>
+  </tbody>
+</table>
